@@ -1,0 +1,1 @@
+Rscript inat_images.R -o 10 -b bounds.txt
