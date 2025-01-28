@@ -7,6 +7,7 @@ Created on Mon Jan 27 11:38:00 2025
 # Import require packages
 import numpy as np
 from PIL import Image
+import cv2
 from pathlib import Path
 import pandas as pd
 from collections import defaultdict
@@ -16,7 +17,7 @@ import os
 fox_image_folder = 'C:/Users/nicho/OneDrive - Newcastle University/General - Fox-AI/Processed/Fox/'
 notfox_image_folder = 'C:/Users/nicho/OneDrive - Newcastle University/General - Fox-AI/Processed/Not Fox/'
 
-# This will properly search subdirectories
+# This will search subdirectories
 fox_files = glob.glob(f"{fox_image_folder}**/*.jpg", recursive=True)
 notfox_files = glob.glob(f"{notfox_image_folder}**/*.jpg", recursive=True)
 
@@ -27,7 +28,7 @@ print(f"Total non fox images: {len(notfox_files)}")
 # Assign different classes
 def classify_images(base_path, valid_classes):
     """
-    Classify images based on their parent folder names.
+    Classify images based on their filenames instead of parent folder names.
     
     Args:
         base_path (str): Base path containing image files
@@ -47,24 +48,17 @@ def classify_images(base_path, valid_classes):
         'parent_folders': []
     }
     
-    # Find all image files recursively
-    # Done above
-    
-    
-    print(f"Found {len(notfox_files)} images")
-    
+    # Use the existing file lists
     for img_path in notfox_files:
         path = Path(img_path)
-        
-        # Get all parent folder names
+        filename = path.stem.lower()  # Get filename without extension and convert to lowercase
         parents = [p.name.lower() for p in path.parents]
         
-        # Find all matching classes in parent folders
+        # Find all matching classes in filename
         assigned_classes = set()  # Using set to avoid duplicates
-        for parent in parents:
-            for class_name in valid_classes:
-                if class_name in parent:  # Check if class name appears in folder name
-                    assigned_classes.add(class_name)
+        for class_name in valid_classes:
+            if class_name in filename:  # Check if class name appears in filename
+                assigned_classes.add(class_name)
         
         # If image matches multiple classes, it will be counted in each
         if assigned_classes:
@@ -161,8 +155,16 @@ def process_crop_images(df, class_name, target_size=(224, 224), channels=1):
             # Add after img_array is created but before appending to processed_images:
             output_folder = notfox_image_folder + f"preprocessed_{class_name}_images"
             Path(output_folder).mkdir(exist_ok=True)
-            Image.fromarray((img_array * 255).astype(np.uint8)).save(f"{output_folder}/{row['filename']}")
             
+            # Convert back to 0-255 range and correct data type
+            save_img = (img_array * 255).astype(np.uint8)
+            if channels == 1:
+                save_img = save_img.squeeze()  # Remove single channel dimension if grayscale
+            
+            # Save using cv2
+            output_path = str(Path(output_folder) / row['filename'])
+            cv2.imwrite(output_path, save_img)
+                        
             # Add to df
             processed_images.append(img_array)
             processed_filenames.append(row['filename'])
@@ -185,7 +187,7 @@ def process_crop_images(df, class_name, target_size=(224, 224), channels=1):
 # Example usage
 if __name__ == "__main__":
     # Assuming df is your DataFrame from the previous classification
-    class_name = 'dog'  # choose your class
+    class_name = 'bird'  # choose your class
     target_size = (224, 224)  # specify desired size
     channels = 1  # 1 for grayscale, 3 for RGB
     
