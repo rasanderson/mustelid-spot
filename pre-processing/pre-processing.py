@@ -187,7 +187,7 @@ def process_crop_images(df, class_name, target_size=(224, 224), channels=1):
 # Example usage
 if __name__ == "__main__":
     # Assuming df is your DataFrame from the previous classification
-    class_name = 'bird'  # choose your class
+    class_name = 'person'  # choose your class
     target_size = (224, 224)  # specify desired size
     channels = 1  # 1 for grayscale, 3 for RGB
     

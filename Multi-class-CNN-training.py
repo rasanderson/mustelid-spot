@@ -2,6 +2,7 @@
 
 # Import packages
 import numpy as np
+import pandas as pd
 from PIL import Image
 import matplotlib.pyplot as plt
 from pathlib import Path
@@ -31,20 +32,19 @@ def match_folder_by_class(folder_path, classes):
             # Extract ID, assuming consistent naming convention
             folder_id = folder.split('_')[1]
             
-            # Find matching class
-            matching_class = classes[classes['id'] == folder_id]
+            # Convert folder_id to integer index
+            idx = int(folder_id)
             
-            if not matching_class.empty:
-                folder_class_map[folder] = matching_class['class_name'].iloc[1]
+            # Check if index is within classes range
+            if 0 <= idx < len(classes):
+                folder_class_map[folder] = classes[idx]
             else:
                 print(f"No class found for folder: {folder}")
         
-        except (IndexError, KeyError):
+        except (IndexError, ValueError, KeyError):
             print(f"Could not process folder: {folder}")
     
     return folder_class_map
-
-
 
 def encode_classes(classes):
     """
@@ -89,7 +89,7 @@ def get_image_paths(directory):
     print(f"Found {len(image_paths)} images in {directory}")
     return image_paths
 
-def preprocess_image(image_path, target_size=(64, 64)):
+def preprocess_image(image_path, target_size=(64,64)):
     """
     Load, resize, and flatten an image to grayscale for CNN training.
 
@@ -108,30 +108,29 @@ def preprocess_image(image_path, target_size=(64, 64)):
     img_array = img_array.reshape(target_size[0], target_size[1], 1)
     return img_array
 
-def load_multi_class_data(fox_dir, non_fox_dir, target_size=(64,64)):
+def load_multi_class_data(fox_dir, non_fox_dir):
     """
     Load the preprocessed images into arrays with labels per class.
     
     Args:
         fox_dir (str): Path to directory containing fox images
         non_fox_dir (str): Path to directory containing non fox images seperated into seperate folders
+        classes (list): List of class names
+        target_size (tuple): Desired image dimensions
     
     Returns:
         tuple: (X_data, y_labels) where X_data is the loaded images and y_labels are the respective class label
     """
-    #Get paths
-    fox_paths = get_image_paths(fox_image_folder)
-    non_fox_paths = match_folder_by_class(non_fox_dir, classes)
-
-    # Initiate array for image and label
+        # Initiate array for image and label
     images = []
     labels = []
 
     # Process fox images (label 0)
     print("Loading fox images...")
+    fox_paths = get_image_paths(fox_dir)
     for i, path in enumerate(fox_paths):
         try:
-            img = preprocess_image(path, target_size)
+            img = preprocess_image(path)
             images.append(img)
             labels.append(0)
             if (i + 1) % 100 == 0:
@@ -141,16 +140,25 @@ def load_multi_class_data(fox_dir, non_fox_dir, target_size=(64,64)):
         
     # Loop process non fox images (label 1-i)
     print("\nLoading non fox images...")
-    for i, path in enumerate(match_folder_by_class(non_fox_paths)):
-        try:
-            img = preprocess_image(path, target_size)
-            images.append(img)
-            labels.append(i)
-            print(f"{i} is class {path.name}")
-            if (i + 1) % 100 == 0:
-                print(f"Processed {i + 1} fox images")
-        except Exception as e:
-            print(f"Error processing {path}: {str(e)}")
+    
+    # Use match_folder_by_class to get folder-to-class mapping
+    folder_class_map = match_folder_by_class(non_fox_dir, pd.DataFrame({'id': range(len(classes)), 'class_name': classes})) 
+    
+    for folder, class_name in folder_class_map.items():
+        folder_path = os.path.join(non_fox_dir, folder)
+
+        # Get image paths for this folder
+        folder_image_paths = get_image_paths(folder_path)
+
+        for i, path in enumerate(folder_image_paths):
+            try:
+                img = preprocess_image(path, target_size)
+                images.append(img)
+                labels.append(class_to_num[class_name])
+                if (i + 1) % 100 == 0:
+                    print(f"Processed {i + 1} images for {class_name}")
+            except Exception as e:
+                print(f"Error processing {path}: {str(e)}")
         
      
     X_data = np.array(images)
@@ -159,15 +167,19 @@ def load_multi_class_data(fox_dir, non_fox_dir, target_size=(64,64)):
     # Print dataset summary
     print("\nDataset summary:")
     print(f"Total images: {len(X_data)}")
-    print(f"Fox images: {np.sum(y_labels == 1)}")
-    print(f"Non-fox images: {np.sum(y_labels == 0)}")
+    for cls in classes:
+        print(f"{cls} images: {np.sum(y_labels == class_to_num[cls])}")
     print(f"X shape: {X_data.shape}")
     print(f"y shape: {y_labels.shape}")
 
     return X_data, y_labels
 
+#Get paths
+fox_paths = get_image_paths(fox_image_folder)
+non_fox_paths = match_folder_by_class(notfox_image_folder, classes)
+
 # Call into a CNN
-x_data, y_labels = load_multi_class_data(fox_image_folder, notfox_image_folder, target_size=(64,64))
+x_data, y_labels = load_multi_class_data(fox_image_folder, notfox_image_folder)
 
 # Split into training and validation
 from sklearn.model_selection import train_test_split
@@ -185,11 +197,11 @@ model = Sequential([
     Conv2D(64, (3, 3), activation='relu'),
     Flatten(),
     Dense(64, activation='relu'),
-    Dense(1, activation='sigmoid') #Change to multiclass equivalent
+    Dense(1, activation='softmax') #Changed to multiclass equivalent
 ])
 
 model.compile(optimizer = 'adam',
-              loss = 'binary_crossentropy', #Change
+              loss = 'bsparse_categorical_crossentropy', # Updated
               metrics = ['accuracy'])
 
 # Train the model
