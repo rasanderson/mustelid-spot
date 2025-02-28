@@ -1,6 +1,23 @@
-import subprocess
-import sys
+# CNN training with Claude's help for fox classification
+# Nicholas Allen, SNES, Newcastle University
+
 import os
+import sys
+import datetime
+import subprocess
+import numpy as np
+import pandas as pd
+import seaborn as sns
+from PIL import Image
+import tensorflow as tf
+from pathlib import Path
+import matplotlib.pyplot as plt
+from collections import Counter
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import precision_recall_curve, average_precision_score 
 
 def install_requirements():
     """Install required packages if they are not already installed."""
@@ -21,25 +38,6 @@ def install_requirements():
     except Exception as e:
         print(f"Error installing requirements: {str(e)}")
         sys.exit(1)
-
-#if __name__ == '__main__':
-#    install_requirements()
-
-import numpy as np
-from PIL import Image
-import os
-from pathlib import Path
-import matplotlib.pyplot as plt
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, confusion_matrix
-import seaborn as sns
-from collections import Counter
-
-import tensorflow as tf
-import os
 
 def setup_gpu():
     """Check for GPU availability and configure TensorFlow accordingly."""
@@ -70,18 +68,7 @@ def setup_gpu():
         os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
         return False
 
-# Add this at the start of your main code
-if __name__ == "__main__":
-    using_gpu = setup_gpu()
-    
-    # You can then modify your model training parameters based on GPU availability
-    if using_gpu:
-        batch_size = 32  # Larger batch size for GPU
-    else:
-        batch_size = 16  # Smaller batch size for CPU
-
-
-def load_and_preprocess_image(image_path, target_size=(224, 224)):
+def load_and_preprocess_image(image_path, target_size=(64, 64)):
     """Load and preprocess a single image."""
     img = Image.open(image_path).convert('L').resize(target_size, Image.Resampling.LANCZOS)
     return np.array(img).reshape(*target_size, 1) / 255.0
@@ -154,18 +141,18 @@ def load_dataset(base_dir, classes):
     for cls, count in class_counts.items():
         print(f"{cls}: {count} images")
     
-    return np.array(images), np.array(labels)
+    return np.array(images), np.array(labels), class_counts
 
-def create_model(num_classes, input_shape=(224, 224, 1)):
+def create_model(num_classes, input_shape=(64, 64, 1)):
     """Create and compile the CNN model."""
     model = Sequential([
-        Conv2D(32, (3, 3), activation='relu', input_shape=input_shape),
+        Conv2D(16, (3, 3), activation='relu', input_shape=input_shape),
+        MaxPooling2D((2, 2)),
+        Conv2D(32, (3, 3), activation='relu'),
         MaxPooling2D((2, 2)),
         Conv2D(64, (3, 3), activation='relu'),
-        MaxPooling2D((2, 2)),
-        Conv2D(128, (3, 3), activation='relu'),
         Flatten(),
-        Dense(224, activation='relu'),
+        Dense(64, activation='relu'),
         Dense(num_classes, activation='softmax')
     ])
     
@@ -179,8 +166,8 @@ def create_model(num_classes, input_shape=(224, 224, 1)):
     model.summary()
     return model
 
-def plot_training_history(history):
-    """Plot training and validation metrics."""
+def plot_training_history(history, plots_dir, run_name):
+    """Plot training and validation metrics and save the figure."""
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4))
     
     # Accuracy plot
@@ -200,9 +187,22 @@ def plot_training_history(history):
     ax2.legend()
     
     plt.tight_layout()
+    
+    # Save the figure
+    plot_path = os.path.join(plots_dir, f"training_history_{run_name}.png")
+    plt.savefig(plot_path, dpi=300, bbox_inches='tight')
+    print(f"Saved training history plot to {plot_path}")
+    
+    # Also save raw history data as CSV
+    history_df = pd.DataFrame(history.history)
+    history_df['run_name'] = run_name  # Use the same indentation style as the line above
+    history_csv_path = os.path.join(plots_dir, f"training_history_{run_name}.csv")
+    history_df.to_csv(history_csv_path, index=False)
+    print(f"Saved training metrics to {history_csv_path}")
+    
     plt.show()
 
-def plot_confusion_matrix_with_histogram(y_true, y_pred, classes):
+def plot_confusion_matrix_with_histogram(y_true, y_pred, classes, plots_dir, run_name):
     """
     Plot confusion matrices alongside a histogram of class distribution.
     
@@ -214,6 +214,8 @@ def plot_confusion_matrix_with_histogram(y_true, y_pred, classes):
         Predicted labels
     classes : list
         List of class names
+    plots_dir : str
+        Directory to save plots
     """
   
     # Calculate confusion matrix
@@ -236,7 +238,7 @@ def plot_confusion_matrix_with_histogram(y_true, y_pred, classes):
     
     # Plot raw counts
     ax1 = fig.add_subplot(gs[0])
-    sns.heatmap(cm, annot=True, fmt='d', xticklabels=classes, yticklabels=classes, ax=ax1, cmap="Blues")
+    sns.heatmap(cm, annot=True, fmt='d', xticklabels=classes, yticklabels=classes, ax=ax1)
     ax1.set_title('Raw Confusion Matrix', fontsize=14)
     ax1.set_ylabel('True Label', fontsize=12)
     ax1.set_xlabel('Predicted Label', fontsize=12)
@@ -244,7 +246,7 @@ def plot_confusion_matrix_with_histogram(y_true, y_pred, classes):
     
     # Plot normalized values (as percentages)
     ax2 = fig.add_subplot(gs[1])
-    sns.heatmap(cm_norm, annot=True, fmt='.1%', xticklabels=classes, yticklabels=classes, ax=ax2, cmap="Blues")
+    sns.heatmap(cm_norm, annot=True, fmt='.1%', xticklabels=classes, yticklabels=classes, ax=ax2)
     ax2.set_title('Normalized Confusion Matrix', fontsize=14)
     ax2.set_ylabel('True Label', fontsize=12)
     ax2.set_xlabel('Predicted Label', fontsize=12)
@@ -252,7 +254,7 @@ def plot_confusion_matrix_with_histogram(y_true, y_pred, classes):
     
     # Plot class distribution histogram
     ax3 = fig.add_subplot(gs[2])
-    bars = ax3.barh(class_names, counts, color='skyblue')
+    bars = ax3.barh(class_names, counts, color='darkred')
     ax3.set_title('Class Distribution', fontsize=14)
     ax3.set_xlabel('Number of Samples', fontsize=12)
     ax3.set_ylabel('Class', fontsize=12)
@@ -268,9 +270,70 @@ def plot_confusion_matrix_with_histogram(y_true, y_pred, classes):
                  fontsize=10)
     
     plt.tight_layout()
+    
+    # Save the figure
+    plot_path = os.path.join(plots_dir, f"confusion_matrix_{run_name}.png")
+    plt.savefig(plot_path, dpi=300, bbox_inches='tight')
+    print(f"Saved confusion matrix plot to {plot_path}")
+    
+    # Save confusion matrix as CSV
+    cm_df = pd.DataFrame(cm, index=classes, columns=classes)
+    cm_csv_path = os.path.join(plots_dir, f"confusion_matrix_{run_name}.csv")
+    cm_df.to_csv(cm_csv_path)
+    
+    # Save normalized confusion matrix as CSV
+    cm_norm_df = pd.DataFrame(cm_norm, index=classes, columns=classes)
+    cm_norm_csv_path = os.path.join(plots_dir, f"confusion_matrix_normalized_{run_name}.csv")
+    cm_norm_df.to_csv(cm_norm_csv_path)
+    
+    print(f"Saved confusion matrices to CSV files")
+    
     plt.show()
 
-def evaluate_model(model, X_val, y_val, classes):
+def plot_precision_recall_curves(y_val, y_pred_prob, classes, plots_dir):
+    """Plot precision-recall curves for each class and save the figure."""
+    n_classes = len(classes)
+    
+    # Convert to one-hot encoding for precision-recall curve
+    y_val_bin = np.zeros((len(y_val), n_classes))
+    for i in range(len(y_val)):
+        y_val_bin[i, y_val[i]] = 1
+    
+    plt.figure(figsize=(12, 8))
+    
+    # Store average precision scores for CSV export
+    ap_scores = {}
+    
+    # For each class
+    for i in range(n_classes):
+        precision, recall, _ = precision_recall_curve(y_val_bin[:, i], y_pred_prob[:, i])
+        avg_precision = average_precision_score(y_val_bin[:, i], y_pred_prob[:, i])
+        ap_scores[classes[i]] = avg_precision
+        
+        plt.plot(recall, precision, lw=2, 
+                 label=f'{classes[i]} (AP={avg_precision:.2f})')
+    
+    plt.xlabel('Recall', fontsize=12)
+    plt.ylabel('Precision', fontsize=12)
+    plt.title('Precision-Recall Curves for Each Class', fontsize=14)
+    plt.legend(loc="best")
+    plt.grid(True, linestyle='--', alpha=0.7)
+    plt.tight_layout()
+    
+    # Save the figure
+    plot_path = os.path.join(plots_dir, f"precision_recall_curves_{run_name}.png")
+    plt.savefig(plot_path, dpi=300, bbox_inches='tight')
+    print(f"Saved precision-recall curves to {plot_path}")
+    
+    # Save average precision scores as CSV
+    ap_df = pd.DataFrame({'Class': list(ap_scores.keys()), 'Average_Precision': list(ap_scores.values())})
+    ap_csv_path = os.path.join(plots_dir, f"average_precision_scores_{run_name}.csv")
+    ap_df.to_csv(ap_csv_path, index=False)
+    print(f"Saved average precision scores to {ap_csv_path}")
+    
+    plt.show()
+
+def evaluate_model(model, X_val, y_val, classes, plots_dir, run_name):
     """Evaluate the model and print detailed metrics."""
     print("\nModel Evaluation:")
     
@@ -280,43 +343,89 @@ def evaluate_model(model, X_val, y_val, classes):
     
     # Print classification report
     print("\nClassification Report:")
+    report = classification_report(y_val, y_pred_classes, target_names=classes, output_dict=True)
     print(classification_report(y_val, y_pred_classes, target_names=classes))
     
-    # Plot confusion matrix with histogram
-    plot_confusion_matrix_with_histogram(y_val, y_pred_classes, classes)
+    # Save classification report to CSV
+    report_df = pd.DataFrame(report).transpose()
+    report_csv_path = os.path.join(plots_dir, f"classification_report_{run_name}.csv")
+    report_df.to_csv(report_csv_path)
+    print(f"Saved classification report to {report_csv_path}")
     
-    # Plot precision-recall curves for each class (if multi-class)
+    # Plot and save confusion matrix with histogram
+    plot_confusion_matrix_with_histogram(y_val, y_pred_classes, classes, plots_dir, run_name)
+    
+    # Plot and save precision-recall curves for each class (if multi-class)
     n_classes = len(classes)
     if n_classes > 2:
-        plt.figure(figsize=(12, 8))
-        
-        # Convert to one-hot encoding for precision-recall curve
-        y_val_bin = np.zeros((len(y_val), n_classes))
-        for i in range(len(y_val)):
-            y_val_bin[i, y_val[i]] = 1
-        
-        # For each class
-        for i in range(n_classes):
-            precision, recall, _ = precision_recall_curve(y_val_bin[:, i], y_pred_prob[:, i])
-            avg_precision = average_precision_score(y_val_bin[:, i], y_pred_prob[:, i])
-            
-            plt.plot(recall, precision, lw=2, 
-                     label=f'{classes[i]} (AP={avg_precision:.2f})')
-        
-        plt.xlabel('Recall', fontsize=12)
-        plt.ylabel('Precision', fontsize=12)
-        plt.title('Precision-Recall Curves for Each Class', fontsize=14)
-        plt.legend(loc="best")
-        plt.grid(True, linestyle='--', alpha=0.7)
-        plt.tight_layout()
-        plt.show()
+        plot_precision_recall_curves(y_val, y_pred_prob, classes, plots_dir)
+    
+    return report
 
-def train_model(base_dir, classes, epochs=10, batch_size=32):
+def save_training_summary(output_dir, classes, class_counts, history, report, run_name):
+    """Save a summary of training parameters and results to CSV."""
+    # Create summary dictionary
+    summary = {
+        'Date': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        'Total Classes': len(classes),
+        'Final Training Accuracy': history.history['accuracy'][-1],
+        'Final Training Loss': history.history['loss'][-1],
+        'Final Validation Accuracy': history.history['val_accuracy'][-1],
+        'Final Validation Loss': history.history['val_loss'][-1],
+        'Macro Avg Precision': report['macro avg']['precision'],
+        'Macro Avg Recall': report['macro avg']['recall'],
+        'Macro Avg F1-score': report['macro avg']['f1-score'],
+        'Weighted Avg Precision': report['weighted avg']['precision'],
+        'Weighted Avg Recall': report['weighted avg']['recall'],
+        'Weighted Avg F1-score': report['weighted avg']['f1-score'],
+    }
+    
+    # Add class counts
+    for cls, count in class_counts.items():
+        if cls in classes:
+            summary[f'{cls}_count'] = count
+    
+    # Add per-class metrics
+    for cls in classes:
+        if cls in report:
+            summary[f'{cls}_precision'] = report[cls]['precision']
+            summary[f'{cls}_recall'] = report[cls]['recall']
+            summary[f'{cls}_f1'] = report[cls]['f1-score']
+    
+    # Save to CSV
+    summary_df = pd.DataFrame([summary])
+    summary_path = os.path.join(output_dir, f"training_summary_{run_name}.csv")
+    summary_df.to_csv(summary_path, index=False)
+    print(f"Saved training summary to {summary_path}")
+    
+    return summary
+
+def create_output_directory(base_output_dir, run_name):
+    """Create a named output directory to save results."""
+    # Use the run name as part of the output directory
+    output_dir = os.path.join(base_output_dir, run_name)
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Create subdirectories
+    plots_dir = os.path.join(output_dir, "plots")
+    models_dir = os.path.join(output_dir, "models")
+    
+    os.makedirs(plots_dir, exist_ok=True)
+    os.makedirs(models_dir, exist_ok=True)
+    
+    print(f"Created output directory: {output_dir}")
+    return output_dir, plots_dir, models_dir
+
+def train_model(base_dir, classes, output_dir, run_name, epochs=10, batch_size=64):
     """Main function to train the model."""
     print(f"Starting training process with {len(classes)} classes")
+    print(f"Results will be saved to: {output_dir}")
+    
+    # Create output directories
+    output_dir, plots_dir, models_dir = create_output_directory(output_dir, run_name)
     
     # Load and preprocess data
-    X, y = load_dataset(base_dir, classes)
+    X, y, class_counts = load_dataset(base_dir, classes)
     print(f"\nTotal dataset size: {len(X)} images")
     
     # Find which classes are actually present in the dataset
@@ -353,18 +462,47 @@ def train_model(base_dir, classes, epochs=10, batch_size=32):
     
     print("\nTraining complete! Generating evaluation plots...")
     
-    # Plot training history
-    plot_training_history(history)
+    # Plot and save training history
+    plot_training_history(history, plots_dir, run_name)
     
-    # Use the enhanced evaluate_model function directly
-    evaluate_model(model, X_val, y_val, present_classes)
+    # Evaluate model and save results
+    report = evaluate_model(model, X_val, y_val, present_classes, plots_dir, run_name)
     
-    return model, history
+    # Save model
+    model_path = os.path.join(models_dir, f"fox_classifier_model_{run_name}.h5")
+    model.save(model_path)
+    print(f"Saved model to {model_path}")
     
+    # Save training summary
+    summary = save_training_summary(output_dir, present_classes, class_counts, history, report, run_name)
+    
+    return model, history, summary
+
 # Example usage:
 if __name__ == "__main__":
-    #base_dir = "C:/Users/nicho/OneDrive - Newcastle University/General - Fox-AI/Processed"
+    # Check if GPU is available
+    using_gpu = setup_gpu()
+    
+    # Set batch size based on GPU availability
+    if using_gpu:
+        batch_size = 64  # Larger batch size for GPU
+    else:
+        batch_size = 16  # Smaller batch size for CPU
+    
+    # Data directory
     base_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed"
+    
+    # Output directory for saving results
+    output_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/"
+
+	# Set a name for this training run
+    run_name = "fox_v3"  # You can change this for each run
+    
+    # Class definitions
     classes = ['fox', 'person', 'bird', 'lagomorph', 'deer', 'squirrel', 'badger', 'dog']
     
-    model, history = train_model(base_dir, classes)
+    # Train model
+    model, history, summary = train_model(base_dir, classes, output_dir, epochs=10, run_name=run_name, batch_size=batch_size)
+    
+    print("\nTraining and evaluation completed successfully!")
+    print(f"All results saved to {output_dir}")

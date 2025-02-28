@@ -40,12 +40,21 @@ Clone the repository
 git clone https://github.com/nickallen0/Fox-spot.git
 ```
 
-Assuming you python installed you can run **inference** on a folder of images by running the following from your command line, assuming you've already navigated to the folder which contains the repo'
-
+Inside an Anaconda Prompt window, navigate to the repository in your files. 
 ```
 cd "repo/folder/location"
 ```
-then when you're there you run the following and select your image folder
+
+Then create and activate a virtual environment with the required packages to run tensorflow on your GPU. It should default to CPU if not.
+```
+conda env create -f tensorflow-windows.yml
+conda activate gpuenv-tensorflow
+```
+You can run **inference** on a folder of images by running the following
+```
+python Inference-pipeline.py
+```
+If you want to train your own model, you can adjust the parameters in the ***Claude-CNN.py*** file, which can then be run like this:
 ```
 python CNN-inference.py
 ```
