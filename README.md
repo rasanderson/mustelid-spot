@@ -31,3 +31,22 @@ A custom CNN will be created in Python to classify animal species into the class
 
 ## Outputs
 The main outputs from this project are a comprehensive **dataset** with a representative sample of species commonly found in the British countryside. A **species classification model** with an emphasis on reliable fox detection is the other main output. 
+
+
+## Getting started
+Clone the repository
+
+```
+git clone https://github.com/nickallen0/Fox-spot.git
+```
+
+Assuming you python installed you can run **inference** on a folder of images by running the following from your command line, assuming you've already navigated to the folder which contains the repo'
+
+```
+cd "repo/folder/location"
+```
+then when you're there you run the following and select your image folder
+```
+python CNN-inference.py
+```
+

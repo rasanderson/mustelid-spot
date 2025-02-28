@@ -1,3 +1,5 @@
 image_scraping/library/
 image_scraping/images/
 tfenv/
+MegaDetectorV6.pt
+tensorflow-gpu-project/

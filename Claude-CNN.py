@@ -1,3 +1,30 @@
+import subprocess
+import sys
+import os
+
+def install_requirements():
+    """Install required packages if they are not already installed."""
+    try:
+        # Print current working directory for debugging
+        print(f"Current working directory: {os.getcwd()}")
+        
+        # Get absolute path to requirements.txt
+        requirements_path = os.path.join(os.path.dirname(__file__), 'requirements.txt')
+        print(f"Looking for requirements.txt at: {requirements_path}")
+        
+        # Check if file exists
+        if not os.path.exists(requirements_path):
+            raise FileNotFoundError(f"requirements.txt not found at {requirements_path}")
+            
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', requirements_path])
+        print("Required packages installed successfully!")
+    except Exception as e:
+        print(f"Error installing requirements: {str(e)}")
+        sys.exit(1)
+
+#if __name__ == '__main__':
+#    install_requirements()
+
 import numpy as np
 from PIL import Image
 import os
@@ -11,7 +38,50 @@ from sklearn.metrics import classification_report, confusion_matrix
 import seaborn as sns
 from collections import Counter
 
-def load_and_preprocess_image(image_path, target_size=(64, 64)):
+import tensorflow as tf
+import os
+
+def setup_gpu():
+    """Check for GPU availability and configure TensorFlow accordingly."""
+    try:
+        # Check if GPU is available
+        physical_devices = tf.config.list_physical_devices('GPU')
+        
+        if physical_devices:
+            print("GPU(s) detected:")
+            for device in physical_devices:
+                print(f"  {device}")
+            
+            # Configure TensorFlow to use GPU memory growth
+            for gpu in physical_devices:
+                tf.config.experimental.set_memory_growth(gpu, True)
+            
+            print("GPU memory growth enabled")
+            return True
+        else:
+            print("No GPU detected. Running on CPU.")
+            # Set TensorFlow to use CPU only
+            os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+            return False
+            
+    except Exception as e:
+        print(f"Error setting up GPU: {str(e)}")
+        print("Defaulting to CPU.")
+        os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+        return False
+
+# Add this at the start of your main code
+if __name__ == "__main__":
+    using_gpu = setup_gpu()
+    
+    # You can then modify your model training parameters based on GPU availability
+    if using_gpu:
+        batch_size = 32  # Larger batch size for GPU
+    else:
+        batch_size = 16  # Smaller batch size for CPU
+
+
+def load_and_preprocess_image(image_path, target_size=(224, 224)):
     """Load and preprocess a single image."""
     img = Image.open(image_path).convert('L').resize(target_size, Image.Resampling.LANCZOS)
     return np.array(img).reshape(*target_size, 1) / 255.0
@@ -86,16 +156,16 @@ def load_dataset(base_dir, classes):
     
     return np.array(images), np.array(labels)
 
-def create_model(num_classes, input_shape=(64, 64, 1)):
+def create_model(num_classes, input_shape=(224, 224, 1)):
     """Create and compile the CNN model."""
     model = Sequential([
         Conv2D(32, (3, 3), activation='relu', input_shape=input_shape),
         MaxPooling2D((2, 2)),
         Conv2D(64, (3, 3), activation='relu'),
         MaxPooling2D((2, 2)),
-        Conv2D(64, (3, 3), activation='relu'),
+        Conv2D(128, (3, 3), activation='relu'),
         Flatten(),
-        Dense(64, activation='relu'),
+        Dense(224, activation='relu'),
         Dense(num_classes, activation='softmax')
     ])
     
@@ -132,15 +202,71 @@ def plot_training_history(history):
     plt.tight_layout()
     plt.show()
 
-def plot_confusion_matrix(y_true, y_pred, classes):
-    """Plot confusion matrix."""
+def plot_confusion_matrix_with_histogram(y_true, y_pred, classes):
+    """
+    Plot confusion matrices alongside a histogram of class distribution.
+    
+    Parameters:
+    -----------
+    y_true : array-like
+        True labels
+    y_pred : array-like
+        Predicted labels
+    classes : list
+        List of class names
+    """
+  
+    # Calculate confusion matrix
     cm = confusion_matrix(y_true, y_pred)
-    plt.figure(figsize=(12, 8))
-    sns.heatmap(cm, annot=True, fmt='d', xticklabels=classes, yticklabels=classes)
-    plt.title('Confusion Matrix')
-    plt.ylabel('True Label')
-    plt.xlabel('Predicted Label')
-    plt.xticks(rotation=45)
+    
+    # Create normalized confusion matrix
+    cm_norm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+    
+    # Calculate class distribution
+    class_counts = Counter(y_true)
+    class_indices = sorted(class_counts.keys())
+    counts = [class_counts[idx] for idx in class_indices]
+    class_names = [classes[idx] for idx in class_indices]
+    
+    # Set up the figure with three subplots
+    fig = plt.figure(figsize=(24, 8))
+    
+    # Define grid for subplots
+    gs = fig.add_gridspec(1, 3, width_ratios=[4, 4, 2])
+    
+    # Plot raw counts
+    ax1 = fig.add_subplot(gs[0])
+    sns.heatmap(cm, annot=True, fmt='d', xticklabels=classes, yticklabels=classes, ax=ax1, cmap="Blues")
+    ax1.set_title('Raw Confusion Matrix', fontsize=14)
+    ax1.set_ylabel('True Label', fontsize=12)
+    ax1.set_xlabel('Predicted Label', fontsize=12)
+    ax1.set_xticklabels(ax1.get_xticklabels(), rotation=45, ha='right')
+    
+    # Plot normalized values (as percentages)
+    ax2 = fig.add_subplot(gs[1])
+    sns.heatmap(cm_norm, annot=True, fmt='.1%', xticklabels=classes, yticklabels=classes, ax=ax2, cmap="Blues")
+    ax2.set_title('Normalized Confusion Matrix', fontsize=14)
+    ax2.set_ylabel('True Label', fontsize=12)
+    ax2.set_xlabel('Predicted Label', fontsize=12)
+    ax2.set_xticklabels(ax2.get_xticklabels(), rotation=45, ha='right')
+    
+    # Plot class distribution histogram
+    ax3 = fig.add_subplot(gs[2])
+    bars = ax3.barh(class_names, counts, color='skyblue')
+    ax3.set_title('Class Distribution', fontsize=14)
+    ax3.set_xlabel('Number of Samples', fontsize=12)
+    ax3.set_ylabel('Class', fontsize=12)
+    
+    # Add count labels to bars
+    for bar in bars:
+        width = bar.get_width()
+        ax3.text(width + width*0.05, 
+                 bar.get_y() + bar.get_height()/2,
+                 f'{width}', 
+                 ha='left', 
+                 va='center',
+                 fontsize=10)
+    
     plt.tight_layout()
     plt.show()
 
@@ -149,17 +275,43 @@ def evaluate_model(model, X_val, y_val, classes):
     print("\nModel Evaluation:")
     
     # Get predictions
-    y_pred = model.predict(X_val)
-    y_pred_classes = np.argmax(y_pred, axis=1)
+    y_pred_prob = model.predict(X_val)
+    y_pred_classes = np.argmax(y_pred_prob, axis=1)
     
     # Print classification report
     print("\nClassification Report:")
     print(classification_report(y_val, y_pred_classes, target_names=classes))
     
-    # Plot confusion matrix
-    plot_confusion_matrix(y_val, y_pred_classes, classes)
+    # Plot confusion matrix with histogram
+    plot_confusion_matrix_with_histogram(y_val, y_pred_classes, classes)
+    
+    # Plot precision-recall curves for each class (if multi-class)
+    n_classes = len(classes)
+    if n_classes > 2:
+        plt.figure(figsize=(12, 8))
+        
+        # Convert to one-hot encoding for precision-recall curve
+        y_val_bin = np.zeros((len(y_val), n_classes))
+        for i in range(len(y_val)):
+            y_val_bin[i, y_val[i]] = 1
+        
+        # For each class
+        for i in range(n_classes):
+            precision, recall, _ = precision_recall_curve(y_val_bin[:, i], y_pred_prob[:, i])
+            avg_precision = average_precision_score(y_val_bin[:, i], y_pred_prob[:, i])
+            
+            plt.plot(recall, precision, lw=2, 
+                     label=f'{classes[i]} (AP={avg_precision:.2f})')
+        
+        plt.xlabel('Recall', fontsize=12)
+        plt.ylabel('Precision', fontsize=12)
+        plt.title('Precision-Recall Curves for Each Class', fontsize=14)
+        plt.legend(loc="best")
+        plt.grid(True, linestyle='--', alpha=0.7)
+        plt.tight_layout()
+        plt.show()
 
-def train_model(base_dir, classes, epochs=20, batch_size=32):
+def train_model(base_dir, classes, epochs=10, batch_size=32):
     """Main function to train the model."""
     print(f"Starting training process with {len(classes)} classes")
     
@@ -204,32 +356,15 @@ def train_model(base_dir, classes, epochs=20, batch_size=32):
     # Plot training history
     plot_training_history(history)
     
-    # Evaluate model using only the classes that are present
-    def evaluate_model(model, X_val, y_val, classes, present_class_indices):
-        """Evaluate the model and print detailed metrics."""
-        print("\nModel Evaluation:")
-        
-        # Get predictions
-        y_pred = model.predict(X_val)
-        y_pred_classes = np.argmax(y_pred, axis=1)
-        
-        # Use only the classes that are present in the dataset
-        present_classes = [classes[i] for i in present_class_indices]
-        
-        # Print classification report
-        print("\nClassification Report:")
-        print(classification_report(y_val, y_pred_classes, target_names=present_classes))
-        
-        # Plot confusion matrix
-        plot_confusion_matrix(y_val, y_pred_classes, present_classes)
-    
-    evaluate_model(model, X_val, y_val, classes, unique_classes)
+    # Use the enhanced evaluate_model function directly
+    evaluate_model(model, X_val, y_val, present_classes)
     
     return model, history
-
+    
 # Example usage:
 if __name__ == "__main__":
-    base_dir = "C:/Users/nicho/OneDrive - Newcastle University/General - Fox-AI/Processed"
-    classes = ['fox', 'person', 'bird', 'dog', 'lagomorph', 'deer', 'squirrel', 'badger'] #, 'empty', 'cat']
+    #base_dir = "C:/Users/nicho/OneDrive - Newcastle University/General - Fox-AI/Processed"
+    base_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed"
+    classes = ['fox', 'person', 'bird', 'lagomorph', 'deer', 'squirrel', 'badger', 'dog']
     
     model, history = train_model(base_dir, classes)
