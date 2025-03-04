@@ -3,7 +3,6 @@
 
 import os
 import sys
-import datetime
 import subprocess
 import numpy as np
 import pandas as pd
@@ -11,33 +10,16 @@ import seaborn as sns
 from PIL import Image
 import tensorflow as tf
 from pathlib import Path
+from datetime import datetime
 import matplotlib.pyplot as plt
 from collections import Counter
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+from tensorflow.keras.utils import set_random_seed
 from sklearn.model_selection import train_test_split
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization, Resizing, Lambda
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.metrics import precision_recall_curve, average_precision_score 
-
-def install_requirements():
-    """Install required packages if they are not already installed."""
-    try:
-        # Print current working directory for debugging
-        print(f"Current working directory: {os.getcwd()}")
-        
-        # Get absolute path to requirements.txt
-        requirements_path = os.path.join(os.path.dirname(__file__), 'requirements.txt')
-        print(f"Looking for requirements.txt at: {requirements_path}")
-        
-        # Check if file exists
-        if not os.path.exists(requirements_path):
-            raise FileNotFoundError(f"requirements.txt not found at {requirements_path}")
-            
-        subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', requirements_path])
-        print("Required packages installed successfully!")
-    except Exception as e:
-        print(f"Error installing requirements: {str(e)}")
-        sys.exit(1)
 
 def setup_gpu():
     """Check for GPU availability and configure TensorFlow accordingly."""
@@ -68,7 +50,29 @@ def setup_gpu():
         os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
         return False
 
-def load_and_preprocess_image(image_path, target_size=(64, 64)):
+def install_requirements():
+    """Install required packages if they are not already installed."""
+    try:
+        # Print current working directory for debugging
+        print(f"Current working directory: {os.getcwd()}")
+        
+        # Get absolute path to requirements.txt
+        requirements_path = os.path.join(os.path.dirname(__file__), 'requirements.txt')
+        print(f"Looking for requirements.txt at: {requirements_path}")
+        
+        # Check if file exists
+        if not os.path.exists(requirements_path):
+            raise FileNotFoundError(f"requirements.txt not found at {requirements_path}")
+            
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', requirements_path])
+        print("Required packages installed successfully!")
+    except Exception as e:
+        print(f"Error installing requirements: {str(e)}")
+        sys.exit(1)
+
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+def load_and_preprocess_image(image_path, target_size=(224, 224)):
     """Load and preprocess a single image."""
     img = Image.open(image_path).convert('L').resize(target_size, Image.Resampling.LANCZOS)
     return np.array(img).reshape(*target_size, 1) / 255.0
@@ -86,14 +90,16 @@ def load_dataset(base_dir, classes):
     print(f"\nLoading fox images from {fox_dir}")
     fox_count = 0
     for img_path in fox_dir.glob("**/*.jp*g"):
-        try:
-            images.append(load_and_preprocess_image(img_path))
-            labels.append(0)
-            fox_count += 1
-            if fox_count % 100 == 0:
-                print(f"Loaded {fox_count} fox images")
-        except Exception as e:
-            print(f"Error loading {img_path}: {e}")
+	    # Only include images with 'crop' in the filename
+        if 'crop' in img_path.name.lower():
+            try:
+                images.append(load_and_preprocess_image(img_path))
+                labels.append(0)
+                fox_count += 1
+                if fox_count % 100 == 0:
+                    print(f"Loaded {fox_count} fox images")
+            except Exception as e:
+                print(f"Error loading {img_path}: {e}")
     class_counts['fox'] = fox_count
     
     # Load non-fox images (classes 1+)
@@ -115,7 +121,7 @@ def load_dataset(base_dir, classes):
                     print(f"\nProcessing {class_name} images from {folder}")
                     class_count = 0
                     
-                    for img_path in folder.glob("**/*.jp*g"):
+                    for img_path in folder.glob("**/*.jp*g") or folder.glob("**/*JP*G"):
                         try:
                             images.append(load_and_preprocess_image(img_path))
                             labels.append(class_idx)
@@ -143,22 +149,43 @@ def load_dataset(base_dir, classes):
     
     return np.array(images), np.array(labels), class_counts
 
-def create_model(num_classes, input_shape=(64, 64, 1)):
+def create_model(num_classes, input_shape=(224, 224, 1)):
     """Create and compile the CNN model."""
     model = Sequential([
-        Conv2D(16, (3, 3), activation='relu', input_shape=input_shape),
+	    Lambda(lambda x: tf.image.per_image_standardization(x), input_shape=input_shape, name='standardization'),
+
+        # First block - 32 filters
+        Conv2D(32, (3, 3), padding='same', activation='relu'),
+        Conv2D(32, (3, 3), padding='same', activation='relu'),
         MaxPooling2D((2, 2)),
-        Conv2D(32, (3, 3), activation='relu'),
+        BatchNormalization(),
+        Dropout(0.25),
+        
+        # Second block - 64 filters
+        Conv2D(64, (3, 3), padding='same', activation='relu'),
+        Conv2D(64, (3, 3), padding='same', activation='relu'),
         MaxPooling2D((2, 2)),
-        Conv2D(64, (3, 3), activation='relu'),
+        BatchNormalization(),
+        Dropout(0.25),
+        
+        # Third block - 128 filters
+        Conv2D(128, (3, 3), padding='same', activation='relu'),
+        Conv2D(128, (3, 3), padding='same', activation='relu'),
+        MaxPooling2D((2, 2)),
+        BatchNormalization(),
+        Dropout(0.25),
+        
+        # Fully connected layers
         Flatten(),
-        Dense(64, activation='relu'),
+        Dense(256, activation='relu'),
+        BatchNormalization(),
+        Dropout(0.5),
         Dense(num_classes, activation='softmax')
     ])
     
     model.compile(
         optimizer='adam',
-        loss='sparse_categorical_crossentropy',
+        loss='sparse_categorical_crossentropy', #binary_crossentropy #sparse_categorical_crossentropy
         metrics=['accuracy']
     )
     
@@ -366,7 +393,7 @@ def save_training_summary(output_dir, classes, class_counts, history, report, ru
     """Save a summary of training parameters and results to CSV."""
     # Create summary dictionary
     summary = {
-        'Date': datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        'Date': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         'Total Classes': len(classes),
         'Final Training Accuracy': history.history['accuracy'][-1],
         'Final Training Loss': history.history['loss'][-1],
@@ -416,7 +443,7 @@ def create_output_directory(base_output_dir, run_name):
     print(f"Created output directory: {output_dir}")
     return output_dir, plots_dir, models_dir
 
-def train_model(base_dir, classes, output_dir, run_name, epochs=10, batch_size=64):
+def train_model(base_dir, classes, output_dir, run_name, epochs=100, batch_size=32):
     """Main function to train the model."""
     print(f"Starting training process with {len(classes)} classes")
     print(f"Results will be saved to: {output_dir}")
@@ -442,7 +469,7 @@ def train_model(base_dir, classes, output_dir, run_name, epochs=10, batch_size=6
     for cls in missing_classes:
         print(f"- {cls}")
     
-    X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.3, random_state=42)
     print(f"\nTraining set size: {len(X_train)}")
     print(f"Validation set size: {len(X_val)}")
     
@@ -450,6 +477,12 @@ def train_model(base_dir, classes, output_dir, run_name, epochs=10, batch_size=6
     num_classes = len(unique_classes)
     print(f"\nCreating model with {num_classes} output classes")
     model = create_model(num_classes)
+
+	# Define Early Stopping and Model Checkpoint callbacks
+    early_stopping = EarlyStopping(monitor='val_accuracy', patience=10, mode='max', restore_best_weights=True, verbose=1)
+    checkpoint = ModelCheckpoint(os.path.join(models_dir, f'best_model_{run_name}.h5'), 
+                                monitor='val_accuracy', 
+                                save_best_only=True)
     
     print("\nStarting model training...")
     history = model.fit(
@@ -457,6 +490,7 @@ def train_model(base_dir, classes, output_dir, run_name, epochs=10, batch_size=6
         epochs=epochs,
         batch_size=batch_size,
         validation_data=(X_val, y_val),
+		callbacks=[early_stopping, checkpoint],
         verbose=1
     )
     
@@ -485,24 +519,24 @@ if __name__ == "__main__":
     
     # Set batch size based on GPU availability
     if using_gpu:
-        batch_size = 64  # Larger batch size for GPU
+        batch_size = 32  # Larger batch size for GPU
     else:
-        batch_size = 16  # Smaller batch size for CPU
+        batch_size = 4  # Smaller batch size for CPU
     
     # Data directory
-    base_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed"
+    base_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/"
     
     # Output directory for saving results
     output_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/"
 
 	# Set a name for this training run
-    run_name = "fox_v3"  # You can change this for each run
+    run_name = f"fox_v7_{timestamp}"  # Change this for each run
     
     # Class definitions
-    classes = ['fox', 'person', 'bird', 'lagomorph', 'deer', 'squirrel', 'badger', 'dog']
+    classes = ['fox', 'lagomorph', 'person', 'squirrel', 'badger', 'dog', 'cat']#, 'bird', 'deer']
     
     # Train model
-    model, history, summary = train_model(base_dir, classes, output_dir, epochs=10, run_name=run_name, batch_size=batch_size)
+    model, history, summary = train_model(base_dir, classes, output_dir, epochs=100, run_name=run_name, batch_size=batch_size)
     
     print("\nTraining and evaluation completed successfully!")
     print(f"All results saved to {output_dir}")

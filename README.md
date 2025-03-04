@@ -58,4 +58,9 @@ If you want to train your own model, you can adjust the parameters in the ***Cla
 ```
 python CNN-inference.py
 ```
-
+## Videos
+If you have a video, you can use the **video_to_frames.py** script to extract frames at an interval rate of your choice. You can call it like this:
+```
+python video_to_frames.py input_directory output_directory --interval 5.0
+```
+then put the images through the pipeline above.

@@ -14,12 +14,17 @@ from collections import defaultdict
 import glob
 import os
 
-fox_image_folder = 'C:/Users/nicho/OneDrive - Newcastle University/General - Fox-AI/Processed/Fox/'
-notfox_image_folder = 'C:/Users/nicho/OneDrive - Newcastle University/General - Fox-AI/Processed/Not Fox/'
+# home
+#fox_image_folder = 'C:/Users/nicho/OneDrive - Newcastle University/General - Fox-AI/Processed/Fox/'
+#notfox_image_folder = 'C:/Users/nicho/OneDrive - Newcastle University/General - Fox-AI/Processed/Not Fox/'
+
+#uni
+fox_image_folder = 'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Fox/'
+notfox_image_folder = 'F:/Fox-AI/Non-fox/Processed/animal/' #'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Not Fox/'
 
 # This will search subdirectories
-fox_files = glob.glob(f"{fox_image_folder}**/*.jpg", recursive=True)
-notfox_files = glob.glob(f"{notfox_image_folder}**/*.jpg", recursive=True)
+fox_files = glob.glob(f"{fox_image_folder}**/*.jp*g", recursive=True)
+notfox_files = glob.glob(f"{notfox_image_folder}**/*.jp*g", recursive=True)
 
 # Print results
 print(f"Total fox images: {len(fox_files)}")
@@ -93,7 +98,7 @@ def classify_images(base_path, valid_classes):
 # Example usage
 if __name__ == "__main__":
     # Define valid classes
-    classes = ['person', 'bird', 'dog', 'lagomorph', 'deer', 'squirrel', 'badger', 'empty', 'cat']
+    classes = ['person', 'bird', 'dog', 'lagomorph', 'deer', 'squirrel', 'badger', 'empty', 'cat', 'animal']
     
     # Classify images
     df = classify_images(notfox_image_folder, classes)
@@ -153,7 +158,7 @@ def process_crop_images(df, class_name, target_size=(224, 224), channels=1):
             img_array = img_array.astype(np.float32) / 255.0
             
             # Add after img_array is created but before appending to processed_images:
-            output_folder = notfox_image_folder + f"preprocessed_{class_name}_images"
+            output_folder = 'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Not Fox/' + f"preprocessed/preprocessed_{class_name}_images"
             Path(output_folder).mkdir(exist_ok=True)
             
             # Convert back to 0-255 range and correct data type
@@ -187,7 +192,7 @@ def process_crop_images(df, class_name, target_size=(224, 224), channels=1):
 # Example usage
 if __name__ == "__main__":
     # Assuming df is your DataFrame from the previous classification
-    class_name = 'person'  # choose your class
+    class_name = 'animal'  # choose your class
     target_size = (224, 224)  # specify desired size
     channels = 1  # 1 for grayscale, 3 for RGB
     
