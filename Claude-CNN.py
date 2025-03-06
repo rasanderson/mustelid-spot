@@ -18,6 +18,9 @@ from tensorflow.keras.utils import set_random_seed
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization, Resizing, Lambda
+from tensorflow.keras.layers.experimental import preprocessing
+from tensorflow.keras.callbacks import ReduceLROnPlateau, EarlyStopping, ModelCheckpoint
+from tensorflow.keras.optimizers import Adam
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.metrics import precision_recall_curve, average_precision_score 
 
@@ -150,27 +153,50 @@ def load_dataset(base_dir, classes):
     return np.array(images), np.array(labels), class_counts
 
 def create_model(num_classes, input_shape=(224, 224, 1)):
+    """Set CNN learning parameters"""
+    # Initial learning rate
+    initial_learning_rate = 0.001
+    
+    # Create an optimizer with a decreasing learning rate schedule
+    lr_schedule = tf.keras.optimizers.schedules.PolynomialDecay(
+        initial_learning_rate,
+        decay_steps=1000,
+        end_learning_rate=0.0001,
+        power=1.0)  # Linear decay
+    
+    optimizer = Adam(learning_rate=lr_schedule)
+	
     """Create and compile the CNN model."""
     model = Sequential([
-	    Lambda(lambda x: tf.image.per_image_standardization(x), input_shape=input_shape, name='standardization'),
+	    # Input layer with the specified shape
+        tf.keras.Input(shape=input_shape),
+        
+        # Data augmentation layers (part of the model)
+        preprocessing.RandomFlip("horizontal"),
+        preprocessing.RandomRotation(0.2),
+        preprocessing.RandomZoom(0.1),
+        preprocessing.RandomTranslation(0.1, 0.1),
+		
+		# Image standardization
+		Lambda(lambda x: tf.image.per_image_standardization(x), input_shape=input_shape, name='standardization'),
 
         # First block - 32 filters
-        Conv2D(32, (3, 3), padding='same', activation='relu'),
-        Conv2D(32, (3, 3), padding='same', activation='relu'),
+        Conv2D(32, (3, 3), padding='same', activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.001)),
+        Conv2D(32, (3, 3), padding='same', activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.001)),
         MaxPooling2D((2, 2)),
         BatchNormalization(),
         Dropout(0.25),
         
         # Second block - 64 filters
-        Conv2D(64, (3, 3), padding='same', activation='relu'),
-        Conv2D(64, (3, 3), padding='same', activation='relu'),
+        Conv2D(64, (3, 3), padding='same', activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.001)),
+        Conv2D(64, (3, 3), padding='same', activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.001)),
         MaxPooling2D((2, 2)),
         BatchNormalization(),
         Dropout(0.25),
         
         # Third block - 128 filters
-        Conv2D(128, (3, 3), padding='same', activation='relu'),
-        Conv2D(128, (3, 3), padding='same', activation='relu'),
+        Conv2D(128, (3, 3), padding='same', activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.001)),
+        Conv2D(128, (3, 3), padding='same', activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.001)),
         MaxPooling2D((2, 2)),
         BatchNormalization(),
         Dropout(0.25),
@@ -179,12 +205,12 @@ def create_model(num_classes, input_shape=(224, 224, 1)):
         Flatten(),
         Dense(256, activation='relu'),
         BatchNormalization(),
-        Dropout(0.5),
+        Dropout(0.3),
         Dense(num_classes, activation='softmax')
     ])
     
     model.compile(
-        optimizer='adam',
+        optimizer=optimizer,
         loss='sparse_categorical_crossentropy', #binary_crossentropy #sparse_categorical_crossentropy
         metrics=['accuracy']
     )
@@ -519,7 +545,7 @@ if __name__ == "__main__":
     
     # Set batch size based on GPU availability
     if using_gpu:
-        batch_size = 32  # Larger batch size for GPU
+        batch_size = 64  # Larger batch size for GPU
     else:
         batch_size = 4  # Smaller batch size for CPU
     
@@ -530,10 +556,10 @@ if __name__ == "__main__":
     output_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/"
 
 	# Set a name for this training run
-    run_name = f"fox_v7_{timestamp}"  # Change this for each run
+    run_name = f"fox_v8_{timestamp}"  # Change this for each run
     
     # Class definitions
-    classes = ['fox', 'lagomorph', 'person', 'squirrel', 'badger', 'dog', 'cat']#, 'bird', 'deer']
+    classes = ['fox', 'lagomorph', 'person', 'squirrel', 'badger', 'dog']#, 'cat', 'bird', 'deer']
     
     # Train model
     model, history, summary = train_model(base_dir, classes, output_dir, epochs=100, run_name=run_name, batch_size=batch_size)

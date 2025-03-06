@@ -45,22 +45,23 @@ Inside an Anaconda Prompt window, navigate to the repository in your files.
 cd "repo/folder/location"
 ```
 
-Then create and activate a virtual environment with the required packages to run tensorflow on your GPU. It should default to CPU if not.
+Then create and activate a virtual environment with the required packages to run tensorflow on your NVIDIA GPU. It should default to CPU if you don't have one.
 ```
 conda env create -f tensorflow-windows.yml
 conda activate gpuenv-tensorflow
 ```
 You can run **inference** on a folder of images by running the following
 ```
-python Inference-pipeline.py
+python pipeline.py "C:/your/image/folder/path"
 ```
 If you want to train your own model, you can adjust the parameters in the ***Claude-CNN.py*** file, which can then be run like this:
 ```
 python CNN-inference.py
 ```
+
 ## Videos
 If you have a video, you can use the **video_to_frames.py** script to extract frames at an interval rate of your choice. You can call it like this:
 ```
 python video_to_frames.py input_directory output_directory --interval 5.0
 ```
-then put the images through the pipeline above.
+then put the images through the pipeline script above.
