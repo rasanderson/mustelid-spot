@@ -53,32 +53,19 @@ def setup_gpu():
         os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
         return False
 
-def install_requirements():
-    """Install required packages if they are not already installed."""
-    try:
-        # Print current working directory for debugging
-        print(f"Current working directory: {os.getcwd()}")
-        
-        # Get absolute path to requirements.txt
-        requirements_path = os.path.join(os.path.dirname(__file__), 'requirements.txt')
-        print(f"Looking for requirements.txt at: {requirements_path}")
-        
-        # Check if file exists
-        if not os.path.exists(requirements_path):
-            raise FileNotFoundError(f"requirements.txt not found at {requirements_path}")
-            
-        subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', requirements_path])
-        print("Required packages installed successfully!")
-    except Exception as e:
-        print(f"Error installing requirements: {str(e)}")
-        sys.exit(1)
-
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
 def load_and_preprocess_image(image_path, target_size=(224, 224)):
     """Load and preprocess a single image."""
     img = Image.open(image_path).convert('L').resize(target_size, Image.Resampling.LANCZOS)
     return np.array(img).reshape(*target_size, 1) / 255.0
+
+	 # Create horizontally flipped version
+    img_flipped = img.transpose(Image.FLIP_LEFT_RIGHT)
+    img_flipped_array = np.array(img_flipped)
+    
+    # Stack them together (equivalent to np.concatenate with axis=0 for 2D arrays)
+    return np.stack([img_array, img_flipped_array])
 
 def load_dataset(base_dir, classes):
     """Load images and labels from directory structure."""
@@ -172,9 +159,9 @@ def create_model(num_classes, input_shape=(224, 224, 1)):
         tf.keras.Input(shape=input_shape),
         
         # Data augmentation layers (part of the model)
-        preprocessing.RandomFlip("horizontal"),
+        #preprocessing.RandomFlip("horizontal"), #done in preprocessing now.
         preprocessing.RandomRotation(0.2),
-        preprocessing.RandomZoom(0.1),
+        preprocessing.RandomZoom(0.2),
         preprocessing.RandomTranslation(0.1, 0.1),
 		
 		# Image standardization
@@ -545,7 +532,7 @@ if __name__ == "__main__":
     
     # Set batch size based on GPU availability
     if using_gpu:
-        batch_size = 64  # Larger batch size for GPU
+        batch_size = 32  # Larger batch size for GPU
     else:
         batch_size = 4  # Smaller batch size for CPU
     
