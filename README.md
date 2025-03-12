@@ -26,30 +26,87 @@ A comprehensive dataset has been compiled from multiple sources and partners. Th
       "properties": {},
       "geometry": {
         "coordinates": [
-          [
-            [
-              -10.383790273927985,
-              49.5051521604382
-            ],
-            [
-              2.262716584614566,
-              49.5051521604382
-            ],
-            [
-              2.262716584614566,
-              60.818102492765064
-            ],
-            [
-              -10.383790273927985,
-              60.818102492765064
-            ],
-            [
-              -10.383790273927985,
-              49.5051521604382
-            ]
-          ]
+          -1.698741133194659,
+          55.216431568778034
         ],
-        "type": "Polygon"
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -1.688664626895104,
+          55.21026624114833
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -2.5291190407248507,
+          51.8066621140494
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -4.535462938051381,
+          57.26003913359881
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          29.95466591469011,
+          51.25521871711163
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -1.8863741420236124,
+          54.962605676768476
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -3.9011584429612185,
+          57.059023340266776
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -1.5977816241011453,
+          55.02662015237996
+        ],
+        "type": "Point"
       }
     }
   ]
