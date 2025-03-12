@@ -4,7 +4,6 @@
 <font size="8"> A UK Species Classification Deep Learning Framework for Conservation </font>
 <br>
 <hr>
-<br><br>
 </div>
 
 # Fox-spot
@@ -18,7 +17,7 @@ Code repository for the Fox detection and classification project using AI. This 
 #### Image sources
 A comprehensive dataset has been compiled from multiple sources and partners. The following table lists contributors and their contact details.
 
-```
+```geojson
 {
   "type": "FeatureCollection",
   "features": [
