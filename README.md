@@ -1,18 +1,61 @@
+![image](https://github.com/nickallen0/Fox-spot/blob/main/assets/header-fox.png)
+
+<div align="center"> 
+<font size="8"> A UK Species Classification Deep Learning Framework for Conservation </font>
+<br>
+<hr>
+<br><br>
+</div>
+
 # Fox-spot
-Code repository for the Fox detection and classification project using AI. This project between Newcastle University and Perdix is running from September 2024 to May 2025. 
+Code repository for the Fox detection and classification project using AI. This project between Newcastle University and Perdix is running from September 2024 to May 2025. The Newcastle University team is made up of Roy Sanderson, Pete Robertson, Nicholas Allen and Ava Waine.
 
-## Team
-
-The Newcastle University team is made up of Roy Sanderson, Pete Robertson, Nicholas Allen and Ava Waine.
-
-## Project plan
-### Objectives
+## Objectives
 1.   Create a dataset of camera trap images split into common species occuring in the British countryside
 2.   Create a species classification model for camera trap images
 
 ### 1. Create a comprehensive dataset
 #### Image sources
 A comprehensive dataset has been compiled from multiple sources and partners. The following table lists contributors and their contact details.
+
+```
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -10.383790273927985,
+              49.5051521604382
+            ],
+            [
+              2.262716584614566,
+              49.5051521604382
+            ],
+            [
+              2.262716584614566,
+              60.818102492765064
+            ],
+            [
+              -10.383790273927985,
+              60.818102492765064
+            ],
+            [
+              -10.383790273927985,
+              49.5051521604382
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    }
+  ]
+}
+```
 
 |Contributor |Contact  | Contribution|
 --- | --- | ---|
