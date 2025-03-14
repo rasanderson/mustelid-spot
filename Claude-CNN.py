@@ -55,22 +55,35 @@ def setup_gpu():
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-def load_and_preprocess_image(image_path, target_size=(224, 224)):
-    """Load and preprocess a single image."""
+import numpy as np
+from pathlib import Path
+from PIL import Image
+import random
+
+import numpy as np
+from pathlib import Path
+from PIL import Image
+import random
+
+def load_and_preprocess_image(image_path, target_size=(224, 224), augment=True):
+    """Load and preprocess a single image with optional augmentation."""
     img = Image.open(image_path).convert('L').resize(target_size, Image.Resampling.LANCZOS)
-    return np.array(img).reshape(*target_size, 1) / 255.0
-
-	 # Create horizontally flipped version
-    img_flipped = img.transpose(Image.FLIP_LEFT_RIGHT)
-    img_flipped_array = np.array(img_flipped)
+    img_array = np.array(img).reshape(*target_size, 1) / 255.0
     
-    # Stack them together (equivalent to np.concatenate with axis=0 for 2D arrays)
-    return np.stack([img_array, img_flipped_array])
+    if augment:
+        # Create horizontally flipped version
+        img_flipped = img.transpose(Image.FLIP_LEFT_RIGHT)
+        img_flipped_array = np.array(img_flipped).reshape(*target_size, 1) / 255.0
+        
+        # Return as a list of separate images rather than stacked array
+        return [img_array, img_flipped_array]
+    
+    return img_array
 
-def load_dataset(base_dir, classes):
-    """Load images and labels from directory structure."""
-    images = []
-    labels = []
+def load_dataset(base_dir, classes, augment=True):
+    """Load images and labels from directory structure with class balancing."""
+    # Dictionary to store images by class
+    class_images = {cls_idx: [] for cls_idx in range(len(classes))}
     class_counts = {cls: 0 for cls in classes}
     
     print(f"Starting to load dataset from {base_dir}")
@@ -80,21 +93,21 @@ def load_dataset(base_dir, classes):
     print(f"\nLoading fox images from {fox_dir}")
     fox_count = 0
     for img_path in fox_dir.glob("**/*.jp*g"):
-	    # Only include images with 'crop' in the filename
+        # Only include images with 'crop' in the filename
         if 'crop' in img_path.name.lower():
             try:
-                images.append(load_and_preprocess_image(img_path))
-                labels.append(0)
+                # Store the path instead of loading the image now
+                class_images[0].append(img_path)
                 fox_count += 1
                 if fox_count % 100 == 0:
-                    print(f"Loaded {fox_count} fox images")
+                    print(f"Found {fox_count} fox images")
             except Exception as e:
-                print(f"Error loading {img_path}: {e}")
+                print(f"Error processing {img_path}: {e}")
     class_counts['fox'] = fox_count
     
     # Load non-fox images (classes 1+)
     notfox_dir = Path(base_dir) / "Not Fox/preprocessed"
-    print(f"\nLoading non-fox images from {notfox_dir}")
+    print(f"\nFinding non-fox images from {notfox_dir}")
     
     for folder in notfox_dir.iterdir():
         if not folder.is_dir():
@@ -102,27 +115,27 @@ def load_dataset(base_dir, classes):
         
         try:
             # Extract the class name from the folder name
-            folder_name = folder.name.lower()  # Convert to lowercase
+            folder_name = folder.name.lower()
             
             # Find which class this folder corresponds to
             class_found = False
             for class_idx, class_name in enumerate(classes):
-                if class_name in folder_name:
+                if class_idx > 0 and class_name in folder_name:
                     print(f"\nProcessing {class_name} images from {folder}")
                     class_count = 0
                     
                     for img_path in folder.glob("**/*.jp*g") or folder.glob("**/*JP*G"):
                         try:
-                            images.append(load_and_preprocess_image(img_path))
-                            labels.append(class_idx)
+                            # Store the path instead of loading the image now
+                            class_images[class_idx].append(img_path)
                             class_count += 1
                             if class_count % 100 == 0:
-                                print(f"Loaded {class_count} {class_name} images")
+                                print(f"Found {class_count} {class_name} images")
                         except Exception as e:
-                            print(f"Error loading {img_path}: {e}")
+                            print(f"Error processing {img_path}: {e}")
                     
                     class_counts[class_name] = class_count
-                    print(f"Finished loading {class_count} {class_name} images")
+                    print(f"Finished finding {class_count} {class_name} images")
                     class_found = True
                     break
             
@@ -132,12 +145,71 @@ def load_dataset(base_dir, classes):
         except Exception as e:
             print(f"Error processing folder {folder}: {e}")
     
-    print("\nDataset loading complete!")
-    print("\nClass distribution:")
-    for cls, count in class_counts.items():
-        print(f"{cls}: {count} images")
+    # Find the class with the minimum number of samples
+    min_count = min([len(imgs) for imgs in class_images.values()])
+    print(f"\nSmallest class has {min_count} images")
     
-    return np.array(images), np.array(labels), class_counts
+    # Randomly sample the same number of images from each class
+    # We'll use a flat list to collect all images
+    all_images = []
+    all_labels = []
+    
+    for class_idx, image_paths in class_images.items():
+        # Randomly sample min_count images from this class
+        sampled_paths = random.sample(image_paths, min_count)
+        
+        class_name = classes[class_idx] if class_idx > 0 else 'fox'
+        print(f"Randomly sampled {min_count} images for class {class_name}")
+        
+        # Process images in batches to show progress
+        batch_size = 100
+        for batch_idx in range(0, len(sampled_paths), batch_size):
+            batch_paths = sampled_paths[batch_idx:batch_idx + batch_size]
+            batch_count = 0
+            
+            for img_path in batch_paths:
+                try:
+                    result = load_and_preprocess_image(img_path, augment=augment)
+                    
+                    # Handle both augmented and non-augmented cases
+                    if augment and isinstance(result, list):
+                        # For augmented data, add each image separately
+                        for img in result:
+                            all_images.append(img)
+                            all_labels.append(class_idx)
+                            batch_count += 1
+                    else:
+                        # For non-augmented data (or if augment=False)
+                        all_images.append(result)
+                        all_labels.append(class_idx)
+                        batch_count += 1
+                        
+                except Exception as e:
+                    print(f"Error loading {img_path}: {e}")
+            
+            print(f"  Processed batch {batch_idx//batch_size + 1}/{(len(sampled_paths)-1)//batch_size + 1} " +
+                  f"({batch_count} images loaded)")
+    
+    # Convert to numpy arrays with proper shapes
+    images_array = np.array(all_images)
+    labels_array = np.array(all_labels)
+    
+    # Print information about the final dataset
+    print("\nBalanced dataset loading complete!")
+    imgs_per_class = min_count * (2 if augment else 1)
+    print(f"Each class has exactly {imgs_per_class} images " + 
+          f"({min_count} original + {min_count} augmented)" if augment else "")
+    print(f"Total dataset size: {len(images_array)} images")
+    print(f"Dataset shape: {images_array.shape}")
+    
+    # Create final class counts dictionary for return
+    # Include augmentation in the counts if used
+    final_class_counts = {
+        classes[i] if i > 0 else 'fox': min_count * (2 if augment else 1) 
+        for i in range(len(classes))
+    }
+    
+    return images_array, labels_array, final_class_counts
 
 def create_model(num_classes, input_shape=(224, 224, 1)):
     """Set CNN learning parameters"""
@@ -537,16 +609,16 @@ if __name__ == "__main__":
         batch_size = 4  # Smaller batch size for CPU
     
     # Data directory
-    base_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/"
+    base_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Cleaned/"
     
     # Output directory for saving results
     output_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/"
 
 	# Set a name for this training run
-    run_name = f"fox_v8_{timestamp}"  # Change this for each run
+    run_name = f"fox_v9_{timestamp}"  # Change this for each run
     
     # Class definitions
-    classes = ['fox', 'lagomorph', 'person', 'squirrel', 'badger', 'dog']#, 'cat', 'bird', 'deer']
+    classes = ['fox', 'lagomorph', 'person', 'squirrel', 'badger', 'dog', 'bird', 'deer', 'muntjack', 'boar']#, 'cat']
     
     # Train model
     model, history, summary = train_model(base_dir, classes, output_dir, epochs=100, run_name=run_name, batch_size=batch_size)

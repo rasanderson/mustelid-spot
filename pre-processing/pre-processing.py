@@ -20,7 +20,7 @@ import os
 
 #uni
 fox_image_folder = 'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Fox/'
-notfox_image_folder = 'F:/Fox-AI/Non-fox/Processed/animal/' #'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Not Fox/'
+notfox_image_folder = 'D:/Processed Boar and Mutjack/Muntjack/Muntjack/' #'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Not Fox/'
 
 # This will search subdirectories
 fox_files = glob.glob(f"{fox_image_folder}**/*.jp*g", recursive=True)
@@ -158,7 +158,7 @@ def process_crop_images(df, class_name, target_size=(224, 224), channels=1):
             img_array = img_array.astype(np.float32) / 255.0
             
             # Add after img_array is created but before appending to processed_images:
-            output_folder = 'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Not Fox/' + f"preprocessed/preprocessed_{class_name}_images"
+            output_folder = 'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Not Fox/' + f"preprocessed/preprocessed_munjack_{class_name}_images"
             Path(output_folder).mkdir(exist_ok=True)
             
             # Convert back to 0-255 range and correct data type
@@ -192,7 +192,7 @@ def process_crop_images(df, class_name, target_size=(224, 224), channels=1):
 # Example usage
 if __name__ == "__main__":
     # Assuming df is your DataFrame from the previous classification
-    class_name = 'animal'  # choose your class
+    class_name = 'deer'  # choose your class
     target_size = (224, 224)  # specify desired size
     channels = 1  # 1 for grayscale, 3 for RGB
     

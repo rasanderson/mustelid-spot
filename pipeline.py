@@ -14,7 +14,7 @@ import json
 import shutil
 
 # Fixed paths and settings
-MODEL_NAME = "fox_v8_20250306_161645"
+MODEL_NAME = "fox_v8_20250307_170508"
 MODEL_PATH = f"C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/{MODEL_NAME}/models/best_model_{MODEL_NAME}.h5"
 CLASS_NAMES = ['fox', 'lagomorph', 'person', 'squirrel', 'badger', 'dog']
 TARGET_SIZE = (224, 224)
