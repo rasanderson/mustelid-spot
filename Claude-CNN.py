@@ -232,7 +232,7 @@ def create_model(num_classes, input_shape=(224, 224, 1)):
         
         # Data augmentation layers (part of the model)
         #preprocessing.RandomFlip("horizontal"), #done in preprocessing now.
-        preprocessing.RandomRotation(0.2),
+        preprocessing.RandomRotation(0.3),
         preprocessing.RandomZoom(0.2),
         preprocessing.RandomTranslation(0.1, 0.1),
 		
@@ -604,7 +604,7 @@ if __name__ == "__main__":
     
     # Set batch size based on GPU availability
     if using_gpu:
-        batch_size = 32  # Larger batch size for GPU
+        batch_size = 64  # Larger batch size for GPU
     else:
         batch_size = 4  # Smaller batch size for CPU
     
@@ -615,7 +615,7 @@ if __name__ == "__main__":
     output_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/"
 
 	# Set a name for this training run
-    run_name = f"fox_v9_{timestamp}"  # Change this for each run
+    run_name = f"fox_v10_{timestamp}"  # Change this for each run
     
     # Class definitions
     classes = ['fox', 'lagomorph', 'person', 'squirrel', 'badger', 'dog', 'bird', 'deer', 'muntjack', 'boar']#, 'cat']

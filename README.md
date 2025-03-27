@@ -218,3 +218,27 @@ If you have a video, you can use the **video_to_frames.py** script to extract fr
 python video_to_frames.py input_directory output_directory --interval 5.0
 ```
 then put the images through the pipeline script above.
+
+
+### Tensorboard
+In order to track progress of the model training in real time, Keras models can be monitored through Tensorboard. 
+![tensorboard screengrab](assets/tensorboard.png)
+In the same environment and file location, it can be called with:
+```
+python
+>>>import tensorflow as tf
+>>>exit()
+tensorboard --logdir=logs/fit
+```
+in your code you need to specify the location to log the information to
+```
+log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+tensorboard_callback = TensorBoard(log_dir=log_dir, histogram_freq=1)
+```
+then you need to make sure this is called when you use `model.fit`
+```
+model.fit(
+	...
+	callbacks = tensorboard_callback
+)
+```

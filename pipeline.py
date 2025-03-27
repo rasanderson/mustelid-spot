@@ -14,12 +14,12 @@ import json
 import shutil
 
 # Fixed paths and settings
-MODEL_NAME = "fox_v8_20250307_170508"
+MODEL_NAME = "fox_v10_20250325_170446"
 MODEL_PATH = f"C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/{MODEL_NAME}/models/best_model_{MODEL_NAME}.h5"
-CLASS_NAMES = ['fox', 'lagomorph', 'person', 'squirrel', 'badger', 'dog']
+CLASS_NAMES = ['fox', 'lagomorph', 'person', 'squirrel', 'badger', 'dog', 'bird', 'deer', 'muntjack', 'boar']
 TARGET_SIZE = (224, 224)
-DETECTION_THRESHOLD = 0.3
-CLASSIFICATION_THRESHOLD = 0.5
+DETECTION_THRESHOLD = 0.2
+CLASSIFICATION_THRESHOLD = 0.3
 BATCH_SIZE = 16
 
 def load_classification_model():
