@@ -222,7 +222,7 @@ then put the images through the pipeline script above.
 
 ### Tensorboard
 In order to track progress of the model training in real time, Keras models can be monitored through Tensorboard. 
-![tensorboard screengrab](assets/tensorboard.png)
+![tensorboard screengrab](assets/tensorboard.PNG)
 In the same environment and file location, it can be called with:
 ```
 python
