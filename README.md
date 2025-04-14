@@ -242,3 +242,7 @@ model.fit(
 	callbacks = tensorboard_callback
 )
 ```
+Now when you run your model fit you can go to your browser and navigate to the address given when running tensorboard. On my machine that looks like this
+```
+http://localhost:6006/
+```

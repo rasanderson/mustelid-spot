@@ -4,3 +4,4 @@ tfenv/
 MegaDetectorV6.pt
 tensorflow-gpu-project/
 .env
+transfer_classification_model.h5

@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
     "\\pre-processing"
   ],
-  "SelectedNode": "\\CNN2.py",
+  "SelectedNode": "\\pre-processing\\pre-processing.py",
   "PreviewInSolutionExplorer": false
 }
