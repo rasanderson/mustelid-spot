@@ -3,6 +3,7 @@
 import fal_client
 import os
 from dotenv import load_dotenv, dotenv_values
+from pathlib import Path
 import json
 import time
 from tqdm import tqdm
@@ -12,34 +13,35 @@ load_dotenv()
 
 FAL_KEY = os.environ.get('FAL_KEY')
 
-#output_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Cleaned/Fox/FLUX_API"
-output_dir = "F:/Fox-AI/To process/Flux/badger"
+output_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Cleaned/Fox/FLUX_API"
+#output_dir = "F:/Fox-AI/To process/Flux/human"
+Path(output_dir).mkdir(exist_ok=True)
 
 # Parameters
-animal = "badger"
+animal = "baby fox"
 prompt = f"zoomed in, up close and realistic picture of a {animal} walking"
 batch_size = 4  # Number of images per API call
-total_images = 200  # Total images to generate
+total_images = 100  # Total images to generate
 image_width = 512
 image_height = 512
 
 # Optional: Additional prompt variations for diversity
 prompt_variations = [
-    f"zoomed in, up close and realistic picture of a {animal} walking in snow",
-    f"zoomed in, up close and realistic picture of a {animal} walking in autumn leaves",
-    f"zoomed in, up close and realistic picture of a {animal} walking in a meadow",
-    f"zoomed in, up close and realistic picture of a {animal} walking through forest",
-	f"zoomed in, up close and realistic picture of a {animal} walking away in a hedge",
+    f"zoomed in, up close and realistic picture of a young {animal} walking in snow",
+    f"zoomed in, up close and realistic picture of a young {animal} walking in autumn leaves",
+    f"zoomed in, up close and realistic picture of a young {animal} walking in a meadow",
+    f"zoomed in, up close and realistic picture of a young {animal} walking through forest",
+	f"zoomed in, up close and realistic picture of a young {animal} walking away in a hedge",
     f"zoomed in, up close and realistic picture of a {animal} walking away in autumn leaves",
-    f"zoomed in, up close and realistic picture of a {animal} walking away in grass",
+    f"zoomed in, up close and realistic picture of a {animal} walking away in grass next to a wooden fence",
     f"zoomed in, up close and realistic picture of a {animal} walking away through forest",
-	f"zoomed in, up close and realistic picture of a {animal} walking across the shot in a hedge",
-    f"zoomed in, up close and realistic picture of a {animal} walking across the shot in autumn leaves",
-    f"zoomed in, up close and realistic picture of a {animal} walking across the shot in grass",
+	f"zoomed in, up close and realistic picture of a young {animal} walking across the shot in a hedge",
+    f"zoomed in, up close and realistic picture of a young {animal} walking across the shot in autumn leaves",
+    f"zoomed in, up close and realistic picture of a young {animal} walking across the shot in grass by a wooden fence",
     f"zoomed in, up close and realistic picture of a {animal} walking across the shot through forest",
     f"zoomed in, up close and realistic picture of a {animal} looking away in a clearing",
     f"zoomed in, up close and realistic picture of a {animal} looking away in autumn leaves",
-    f"zoomed in, up close and realistic picture of a {animal} looking away in a meadow",
+    f"zoomed in, up close and realistic picture of a young {animal} looking away in a meadow",
     f"zoomed in, up close and realistic picture of a {animal} looking away through forest",
 	f"zoomed in, up close and realistic picture of a {animal} looking away away along a hedge",
 ]
@@ -84,7 +86,7 @@ for batch in tqdm(range(num_batches)):
             url = image_data['url']
             
             # Create a unique filename
-            global_index = batch * batch_size + i + 1
+            global_index = batch * batch_size + i #+ 111
             filename = f"{global_index:03d}_{animal}.png"
             filepath = os.path.join(output_dir, filename)
             

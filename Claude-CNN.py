@@ -554,7 +554,7 @@ def train_model(base_dir, classes, output_dir, run_name, epochs=100, batch_size=
     for cls in missing_classes:
         print(f"- {cls}")
     
-    X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.3, random_state=42)
+    X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
     print(f"\nTraining set size: {len(X_train)}")
     print(f"Validation set size: {len(X_val)}")
     
@@ -615,13 +615,13 @@ if __name__ == "__main__":
     output_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/"
 
 	# Set a name for this training run
-    run_name = f"fox_v10_{timestamp}"  # Change this for each run
+    run_name = f"fox_v11_synthetic_{timestamp}"  # Change this for each run
     
     # Class definitions
     classes = ['fox', 'lagomorph', 'person', 'squirrel', 'badger', 'dog', 'bird', 'deer', 'muntjack', 'boar']#, 'cat']
     
     # Train model
-    model, history, summary = train_model(base_dir, classes, output_dir, epochs=100, run_name=run_name, batch_size=batch_size)
+    model, history, summary = train_model(base_dir, classes, output_dir, epochs=50, run_name=run_name, batch_size=batch_size)
     
     print("\nTraining and evaluation completed successfully!")
     print(f"All results saved to {output_dir}")
