@@ -1,0 +1,1582 @@
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_24_2 (92)_frame_0001_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1394_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\029_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0030_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141704.390_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\093_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_22_1 (119)_frame_0002_crop2_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1035_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0226_crop4_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_1237_JPEG_jpg.rf.c61840e4c5b169c10661a48b2e4fb12b_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_18_2 (432)_frame_0001_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMAG0138 (1)_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0428_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0029_crop1_roe deer (6).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101850.301_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141741.517_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\034_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\images - 2025-02-14T104831.374_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0013_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0023_crop1_roe deer (12).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0130_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0165_crop1_person (4).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0860_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_9721_JPEG_jpg.rf.f2e81424bdb78785e2a0275810025228_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0853_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0111_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0174_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0327_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_24_2 (14)_frame_0000_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0193_crop2_bird1.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101627.700_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0069_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\125_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\173_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101644.866_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0813_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\043_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101351.025_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0170_crop1_squirrel (4).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0449_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_5151_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0122_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0522_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0793_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_2133_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0677_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101824.999_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154424.361_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142054.369_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0590_crop3_bird.JPG	bird
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d71219s71i2_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\KGA_S3_KHOGB06_R3_IMAG1191_crop.JPG	squirrel
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141942.789_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\SEQ88544_IMG_0013_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0800_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0621_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101619.366_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_23_2 (120)_frame_0001_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101328.393_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0586_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0461_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\003_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\069_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1095_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101832.690_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0120_crop1_roe deer (8).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0075_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0408_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_127_crop.png	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101907.487_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\58dabefe-23d2-11e8-a6a3-ec086b02610b_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0299_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\5857337104_49b72357f3_c_jpg.rf.c077c19a918642348500ae292afe82d4_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154543.066_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0238_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\104_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_2160_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_140_crop.png	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1241_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101631.385_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0456_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1664_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101619.692_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0045_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101923.773_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0197_crop1_bird.JPG	bird
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d61254s231i2_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d54718s45i1_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0032_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101610.590_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (131)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0031_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\441_crop.jpg	squirrel
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142132.456_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0673_crop1_bird.JPG	bird
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141907.810_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0751_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0933_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0790_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0672_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\178_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0666_crop3_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0205_crop6_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\151_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\082_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_5050_JPEG_jpg.rf.8220b9f389fa11064203a105480323d8_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\007_human_crop.png	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (277)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (104)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0253_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20130310_005355_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1320_crop3_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\0673e4eb-aaf3-4c68-a304-163a97a5e932_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0184_crop1_roe deer (13).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_2078_crop2_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0825_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0763_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0294_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0010_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0082_crop2_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_4032_JPEG_jpg.rf.da399540740d550e5927e4c381351e13_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\581_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0853_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0599_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0108_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0451_crop1_person (2).JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154559.024_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1691_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\3986s189i21_crop2_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0071_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0209_crop6_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101805.023_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_80_ (170)_frame_0003_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0892_crop6_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_7732_JPEG_jpg.rf.30a060e36dd6db2332c1de9bc40cc04f_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0782_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T112627.307_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\original (4)_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_80_ (77)_frame_0003_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0592_crop1_squirrel (3).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_3892_JPEG_jpg.rf.43060c3884b8f31b6e95a1d6fe4c09a4_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0442_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\007_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\133_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_2992_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0725_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0658_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0310_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0236_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0106_crop1_roe deer (10).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0327_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0351_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0736_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_24_2 (315)_frame_0000_crop1_animal.jpg	badger
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d23296s27i1_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_7772_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0317_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\082_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0197_crop1_bird (4).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0400_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0073_crop1_roe deer (13).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0946_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium (88)_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\0071_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0053_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_20_2 (241)_frame_0001_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0716_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0982_crop3_bird.JPG	bird
+G:\Data\data_v16\Fox\nhsn\videoplayback (3)-0120_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\039_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_9685_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\183_badger_crop.png	badger
+G:\Data\data_v16\Fox\APHA-processed\fox\20241023131605-RCNX1131_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_38913_JPEG_jpg.rf.931f8003dba5db086f80e03796f506ca_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\images - 2025-02-14T104838.668_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101447.531_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0058_crop1_roe deer (11).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0375_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0654_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0056_crop4_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_4350_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0077_crop1_lagomorph1.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0254_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_5144_JPEG_jpg.rf.d71cc8e37b79a1c2f659f288685f8a03_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_80_ (169)_frame_0005_crop1_animal.jpg	badger
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d19813s7i2_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0529_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101454.888_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0464_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0298_crop1_roe deer (6).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0973_crop1_bird (4).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_2827_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\DeviceMediaActivity_109026_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1448_crop1_person.JPG	person
+G:\Data\data_v16\Fox\APHA-processed\fox\20241023140032-RCNX0963_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0060_crop1_roe deer (12).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0114_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\183_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_2708_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0679_crop2_bird.JPG	bird
+G:\Data\data_v16\Fox\APHA-processed\fox\20241023131326-RCNX0914_crop1_fox.jpg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141755.942_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\006_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0503_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0063_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0244_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0380_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0511_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1007_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101930.051_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\aaa9289e-1262-47ea-a585-9bf6fb56eb6c_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\234_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0990_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_550_JPEG_jpg.rf.c717190dd70ab6fa8c634eb7d3ed36ab_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1625_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1551_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\086_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\008_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_128_crop.png	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101643.191_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\perdix_99956_preprocessed_fox_images\DeviceMediaActivity_111442_crop1_fox.JPG	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_354_JPEG_jpg.rf.2b9bd8703f02b23c42b28e805ca00ab5_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0541_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_23_2 (121)_frame_0001_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0194_crop2_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\1860_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0174_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154339.026_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0240_crop2_person (2).JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154552.491_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141759.500_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0271_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_3195_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\058_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0894_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0104_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101402.956_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\CA-43_01_28_2016_CA-43_0006025_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0103_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0082_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0551_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0815_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0105_crop1_roe deer (8).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0100_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0468_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1460_crop3_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0251_crop1_roe deer (5).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_31_crop.png	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0555_crop3_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0674_crop3_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\193_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101347.907_crop2_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1440_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1390_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0739_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101822.081_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141806.684_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0900_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Fox\APHA-processed\fox\20241125141439-RCNX0487_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_12236_JPEG_jpg.rf.572466a97fb8e21b125e0459e3bc3fb7_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0294_crop1_person (2).JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141823.943_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0098_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0140_crop1_person (5).JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141701.204_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0384_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\518_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0231_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0288_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0314_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_20_1 (76)_frame_0003_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0436_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_43975_JPEG_jpg.rf.f068bc7c0443b6ac2e587edba22a2255_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0194_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0551_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0829_crop2_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_2285_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0166_crop1_person (5).JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141809.578_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142217.570_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0064_crop1_roe deer (6).JPG	deer
+G:\Data\data_v16\Fox\Marion-CP\CT11\100_BTCF\IMG_0247_crop1_fox.JPG	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\096_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1287_crop2_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0654_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\CA-19_08_13_2015_CA-19_0014757_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0357_crop1_person (3).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\59531e1d-23d2-11e8-a6a3-ec086b02610b_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0071_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0112_crop1_roe deer (14).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0157_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d37929s27i1_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0094_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141734.353_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0230_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0607_crop1_squirrel (3).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0608_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0578_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0609_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0145_crop1_person (6).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0105_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\037_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0553_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_235_JPEG_jpg.rf.615216d75b7881cb6dd64278c645f02c_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (87)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\034_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0569_crop3_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_2625_crop2_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_3618_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_24_2 (236)_frame_0003_crop2_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_2989_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154449.858_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0614_crop1_squirrel (3).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\148_human_crop.png	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142115.213_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1737_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0552_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0147_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\06090069_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0189_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141750.540_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0070_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0227_crop4_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\161_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0105_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0077_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0202_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0623_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\Ne1_21_ (15)_frame_0004_crop1_animal.jpg	badger
+G:\Data\data_v16\Fox\APHA-processed\fox\20241024112318-RCNX0323_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1177_crop2_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0143_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Fox\APHA-processed\fox\20241128120753-RCNX3065_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\113_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\022_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0159_crop1_roe deer (9).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_7995_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0865_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0120_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_2137_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0086_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\188_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0028_crop1_roe deer (8).JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141914.477_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0296_crop3_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20170813_222235_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0170_crop1_squirrel (4).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0732_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1036_crop4_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101715.702_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0626_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0257_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0154_crop1_roe deer (15).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0397_crop1_person (3).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0048_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (136)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_3038_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\083_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_5197_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\DeviceMediaActivity_108629_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0088-play_frame_0001_crop2_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0487_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0092_crop1_lagomorph1.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0139_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0254_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101852.013_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025085235-RCNX6511_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0148_crop1_roe deer (13).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0270_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0398_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0050_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0821_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0015_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025085231-RCNX6498_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0630_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0763_frame_0003_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\235_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_8898_JPEG_jpg.rf.ea91a149ca13353c6615c28a50dab742_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101704.179_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_9233_JPEG_jpg.rf.7b054947a018adf4e20b774ad151155f_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0989_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0084_crop4_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0540_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\031_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0708_crop4_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0380_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0795_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1275_crop2_bird.JPG	bird
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d23296s27i1_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0232_crop1_roe deer (8).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0078_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_2498_crop1_badger.JPG	badger
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154417.708_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101930.982_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_23 (15)_frame_0001_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0290_crop1_roe deer (5).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_10153_JPEG_jpg.rf.15f4a90236abf0e8876fbb47bcaf44f3_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_23_2 (36)_frame_0004_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\0531_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\5a1b1616-23d2-11e8-a6a3-ec086b02610b_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0191_crop2_person (3).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\DeviceMediaActivity_108378_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0191_crop1_roe deer (9).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0267_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1214_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0023_crop1_roe deer (8).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0205_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0604_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_3784_JPEG_jpg.rf.60bc5a4ff7d41d794b11126d85e488bb_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1383_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0136_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0648_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_9721_JPEG_jpg.rf.f6e6a7dc822dedd1c376384b95021125_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_83_crop.png	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0043_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0621_crop3_bird.JPG	bird
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (180)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0427_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1173_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0434_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0078_crop1_roe deer (15).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\076_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0694_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0200_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Fox\nhsn\videoplayback (3)-0027_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\05120888_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20150823_023956_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0468_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\image_00112_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\049_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\036_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\176_roe deer_crop.png	deer
+G:\Data\data_v16\Fox\APHA-processed\fox\20241122102350-RCNX5474_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0576_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0018_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101357.531_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_9962_JPEG_jpg.rf.123f8dd2bda10b2e581cbfcb0840f6c6_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0192_crop1_person (4).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\157_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1293_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium (57)_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\APHA-processed\fox\20241122102047-RCNX4852_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0492_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0226_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_2699_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0867_crop1_squirrel (4).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0098_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\199_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0223_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0731_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0902_crop6_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0017_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0080_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0056_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1333_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\original (10)_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d47922s101i2_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101736.520_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0485_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0434_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0603_crop1_person (3).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0532_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_1088_JPEG_jpg.rf.8e952f9bb61a6bb58a333d11cb01d938_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\416e17b7-1596-4312-b150-d5d857717778_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d70613s32i6_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d67776s22i2_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1463_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_22_1 (167)_frame_0004_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0006_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_3429_JPEG_jpg.rf.fcaa71366618dff01b55257d26516546_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0506_crop1_bird (4).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_5098_JPEG_jpg.rf.fafeaf977c8a6543b61af75059f95aa5_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0307_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_29630_JPEG_jpg.rf.06397e14d3348bb2c20b5263c3876e21_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0794_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101338.393_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1328_crop1_bird (4).JPG	bird
+G:\Data\data_v16\Fox\APHA-processed\fox\20241023121508-RCNX0441_crop1_fox.jpg	fox
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025084949-RCNX6176_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0152_crop1_person (5).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101652.420_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0072_crop1_roe deer (5).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0797_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0151_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0063_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\037_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0244_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0150_crop1_roe deer (14).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0078_crop1_lagomorph1.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_3273_JPEG_jpg.rf.6fafe34271c52b7aae30f262704a75ec_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0174_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\007_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0227_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20220427_004819_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_80_ (170)_frame_0000_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101620.194_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\1551c651-1dec-4378-b788-abdb18ae6d11_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_6406_JPEG_jpg.rf.219c3e55f5cb11e193a8be2082111072_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0097_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_2982_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\SEQ84364_IMG_0001_crop.JPG	squirrel
+G:\Data\data_v16\Fox\CEH cairngorms (camera trap)\fox\TL_20201213_210455_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_3257_JPEG_jpg.rf.594e7c7d1e075b625f104a819ec4e557_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0274_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\015_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_20094_JPEG_jpg.rf.2231e0ed4452cbf168ccffbad810be1e_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101907.170_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium (25)_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0752_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0355_crop1_person (3).JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142218.088_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0471_crop1_bird (4).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\6763b948-d6e7-4167-9874-fbe2c4b851c1_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0110_crop2_roe deer (3).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0160_play_frame_0000_crop2_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0237_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0864_crop1_squirrel (3).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0258_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141853.958_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0779_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0245_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0718_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0073_crop1_person (3).JPG	person
+G:\Data\data_v16\Fox\APHA-processed\fox\20241122102331-RCNX5435_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\204_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0019_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142236.511_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\006_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\407_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\074_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\093_squirrel_crop_1.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101852.350_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_4873_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1096_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0985_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_5672_JPEG_jpg.rf.724fbbb2181d312edff2155a22f5b5f0_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0451_crop1_bird.JPG	bird
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T112915.301_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0164_crop1_person (5).JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (73)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\original (6)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_23 (32)_frame_0003_crop1_animal.jpg	badger
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\deployment_2101918_d80b1040-9e99-4c74-a136-2f9c1771658a_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\CA-12_09_07_2016_CA-12_0010716_crop.JPG	squirrel
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\3308s49i1_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0049_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\080_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0626_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\158_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_4273_JPEG_jpg.rf.f6ab902942745a2dd206fc1a9bc23af7_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0383_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20160830_015447_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_3818_JPEG_jpg.rf.8f82697211343a857d1098835d3d0afc_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\464_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0583_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025085153-RCNX6425_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0313_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0447_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0302_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_3286_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_2799_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0112_crop4_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0251_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0874_crop2_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\121_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium (34)_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\APHA-processed\fox\20241023131325-RCNX0915_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0270_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0580_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\078_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0200_crop1_person (3).JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154457.916_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0294_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0055_crop1_roe deer (13).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\045_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Fox\CEH cairngorms (camera trap)\fox\TL_20131023_043627_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d20489s29i1_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\107_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0125_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0711_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_6309_JPEG_jpg.rf.fc3bb8a38581a7aa8e861d7a8c8e0be7_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0190_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_82_crop.png	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_365_JPEG_jpg.rf.f51fe4e12a1609aafc4fb2634bcfd378_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Fox\perdix_99956_preprocessed_fox_images\DeviceMediaActivity_110850_crop1_fox.JPG	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_29783_JPEG_jpg.rf.277034b3cb0b7a29c15a2f8d23ba269b_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_17_ (390)_frame_0001_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0550_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101859.070_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_2196_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\5f7cdfc6-be3d-4013-bfd4-b95bd033728a_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20110403_231737_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0224_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0311_crop1_roe deer (8).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0601_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101343.967_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\022_human_child_crop.png	person
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d65861s6i3_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\14487872457_6971367296_b_jpg.rf.b5d128dd0831693fefc489c01c8f452e_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\14487872457_6971367296_b_jpg.rf.599d7b39c4b3e9a06eefd5d66ee80328_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0273_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0311_crop1_roe deer (9).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0122_crop1_roe deer (9).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0188_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0215_crop3_person.JPG	person
+G:\Data\data_v16\Fox\APHA-processed\fox\20241218152500-RCNX1321_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\010_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\577_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0189_crop1_person (5).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1278_crop3_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_18_2 (439)_frame_0001_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0139_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0134_crop1_roe deer (13).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1548_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0113_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0354_crop1_badger.JPG	badger
+G:\Data\data_v16\Fox\nhsn\videoplayback (1)-0015_crop1_fox.jpg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (109)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d17490s14i5_crop2_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0627_crop1_person (3).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\Cottontail_Rabbit_in_West_Hartford-_Connecticut_2_jpg.rf.839da40b1ea656ee86de95efa82ce4b3_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (112)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1722_crop1_squirrel (3).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0827_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_3818_JPEG_jpg.rf.41296a58d3fec035f226e721251c94b9_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Fox\APHA-processed\fox\20241126144220-RCNX2432_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_2285_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\171_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1306_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0106_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\DeviceMediaActivity_108453_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_142_crop.png	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_4273_JPEG_jpg.rf.f6ab902942745a2dd206fc1a9bc23af7_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1163_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\056_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0702_crop3_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0297_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_10157_JPEG_jpg.rf.009f3b41aaf911ace4b30361a7616c95_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0440_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_7875_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Fox\APHA-processed\fox\20241217095524-RCNX1259_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0649_crop1_person (2).JPG	person
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d69771s3i9_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\DeviceMediaActivity_108629_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\large (1)_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_2024_JPEG_jpg.rf.4707255d0dc7c03c9b3770206dd6e83c_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1266_crop1_squirrel (3).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_2096_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0055_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0217_crop3_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101846.747_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0843_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0541_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141650.949_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\CEH cairngorms (camera trap)\fox\TL_20150227_182329_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1398_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_5145_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0046_crop6_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0127_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\141_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0095_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\020_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_7732_JPEG_jpg.rf.30a060e36dd6db2332c1de9bc40cc04f_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0376_crop1_person (2).JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141908.173_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025085454-RCNX6767_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1177_crop2_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1240_crop3_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20160822_233906_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0867_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T112627.307_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\100_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_39_crop.png	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0098_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0946_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1141_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0008_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (9)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0152_crop1_person (5).JPG	person
+G:\Data\data_v16\Fox\govuk chernobyl foxes (camera trap)\fox\IMAG0095 (2)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0320_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0025_crop1_roe deer (12).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0671_crop3_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0396_crop1_person (3).JPG	person
+G:\Data\data_v16\Fox\APHA-processed\fox\20241122095704-RCNX0515_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0916_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0061_crop1_roe deer (6).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0062_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0096_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0481_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0275_crop2_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101833.741_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\042_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\082_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0105_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0063_crop1_roe deer (9).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0110_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0494_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0003_frame_0000_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0193_crop1_person (6).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\044_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0735_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\248_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0021_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0772_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0374_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0056_crop4_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0168_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\DeviceMediaActivity_109131_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0265_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20140320_203403_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\APHA-processed\fox\20241023131305-RCNX0894_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0547_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_504_JPEG_jpg.rf.fc8c2eebd1aef37d3c45d6a853d1bb14_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_9593_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0536_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\151_badger_crop.png	badger
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d17490s16i1_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0435_crop1_bird.JPG	bird
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142113.535_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0253_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0026_crop1_roe deer (12).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0239_crop1_roe deer (10).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0720_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0113_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0271_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0048_crop6_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0061_crop2_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\014_human_child_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\CA-12_10_04_2016_CA-12_0016600_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1129_crop2_bird.JPG	bird
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T112812.379_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1421_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0080_crop1_roe deer (16).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T102000.233_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\fox20colout_KB_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0161_crop1_roe deer (12).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0076_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0118_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\Cottontail_Rabbit_in_West_Hartford-_Connecticut_5_jpg.rf.3c114b58d1069b3377c9e394dbf01927_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\074_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0224_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0472_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1306_crop3_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0481_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0035_crop1_roe deer (6).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0110_crop1_lagomorph1.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0775_crop1_person.JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154330.151_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0136_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101401.482_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0351_crop2_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0059_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0043_crop2_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0488_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0056_crop3_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101625.228_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0293_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\026_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0172_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\DeviceMediaActivity_111014_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\229_roe deer_crop.png	deer
+G:\Data\data_v16\Fox\APHA-processed\fox\20241122095659-RCNX0472_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0387_crop1_person (3).JPG	person
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d52028s14i1_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T112803.335_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\06090120_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\031_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1442_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0026_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0111_crop1_roe deer (6).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0255_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0025_crop1_roe deer (11).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1244_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0070_crop1_roe deer (5).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0115_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025085236-RCNX6514_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0106_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0073_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141911.754_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0542_crop2_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_17_ (390)_frame_0002_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_116_JPEG_jpg.rf.3e132aaaed602a5459b2c8b745ed5fd7_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\images (6)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0099_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141935.884_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1455_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0148_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium (20)_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0133_crop1_roe deer (5).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\216_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_882_JPEG_jpg.rf.635c585d4cbf2a3abd7809da1c77ee37_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMAG0262_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium (65)_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0197_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0828_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0385_crop2_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0198_crop3_person.JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154440.237_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\022_human_child_crop.png	person
+G:\Data\data_v16\Fox\camera trap (aileen, marion, orlando)\IMG_0913_crop1_fox.JPG	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\141_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\DeviceMediaActivity_108546_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\102_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0698_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0752_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\202_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\TL_20180329_011531_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0297_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0405_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0333_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1432_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0241_crop1_person (3).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0052_crop4_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\49956230946_8718092061_b_jpg.rf.7cd9dde19336be3d4d09c7302b10ab11_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T102048.801_crop3_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0866_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101642.368_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0540_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1301_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20170421_225413_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\080_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0496_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0280_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0056_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101647.366_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0488_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0087_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0296_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0049_crop3_roe deer.JPG	deer
+G:\Data\data_v16\Fox\APHA-processed\fox\20241023130644-RCNX0498_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_2281_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_3635_JPEG_jpg.rf.c693f6bcb4c213b2ab3b42be49060815_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1100_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154428.399_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0362_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\040_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0041_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0051_crop5_roe deer.JPG	deer
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d64638s129i17_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\012_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\136_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1306_crop3_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0166_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0880_crop2_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0128_crop4_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0543_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0057_crop1_lagomorph1.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0741_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0090_crop1_roe deer (12).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\194_roe deer_crop.png	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141756.310_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142142.199_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_2717_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\155_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\CA-12_09_07_2016_CA-12_0010716_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0888_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0494_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\loc_0265_im_001918_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0112_crop5_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101746.429_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0439_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\073_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101958.252_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\092_squirrel_crop.png	squirrel
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d27656s11i1_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0260_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\031_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0174_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1118_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1448_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0088_crop1_roe deer (12).JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154543.554_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_61_crop.png	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_8464_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0079_crop2_roe deer (2).JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142103.543_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (127)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101614.747_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_8898_JPEG_jpg.rf.ea91a149ca13353c6615c28a50dab742_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_32_crop.png	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1150_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0991_crop2_bird.JPG	bird
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d60718s124i3_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T102013.292_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\FLUX_API\122_baby fox_crop.png	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0099_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_2985_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0178_crop2_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\071_human_crop.png	person
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d73935s3i204_crop1_unidentified animal.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1012_crop1_bird (4).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101401.482_crop2_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0879_crop7_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0003_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0097_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\049_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1007_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0715_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0036_crop1_roe deer (10).JPG	deer
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d48164s22i9_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\018_badger_crop.png	badger
+G:\Data\data_v16\Fox\APHA-processed\fox\20241126144133-RCNX2181_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0080_crop1_roe deer (8).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101806.813_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1332_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_11231_JPEG_jpg.rf.d467bdc798df74287d36907f61a65f13_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1257_crop5_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1398_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0476_crop3_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\019_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141929.941_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0552_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0051_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0236_crop1_roe deer (8).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0029_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101728.413_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0433_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_80_ (28)_frame_0003_crop1_animal.jpg	badger
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\images - 2025-02-14T104857.653_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\FLUX_API\137_fox_crop.png	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1160_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_6921_JPEG_jpg.rf.ef0069f6faba350be767bb693735185d_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141949.697_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1322_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1665_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0699_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0438_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0418_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101928.160_crop2_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1585_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142127.727_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_24_2 (87)_frame_0001_crop1_animal.jpg	badger
+G:\Data\data_v16\Fox\perdix_99956_preprocessed_fox_images\DeviceMediaActivity_112058_crop1_fox.JPG	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_6079_JPEG_jpg.rf.625e4ac75d4826fee284d6ab7041caa3_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Fox\APHA-processed\fox\20241023131557-RCNX1126_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\075_human_crop.png	person
+G:\Data\data_v16\Fox\FLUX_API\051_fox_crop.png	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141902.505_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0302_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1452_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0450_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0749_frame_0003_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101755.349_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\099_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154328.887_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0204_crop1_person (3).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0138_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\02180373_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0690_crop2_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\59531e1d-23d2-11e8-a6a3-ec086b02610b_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0744_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1092_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\030_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d17501s49i5_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0301_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0822_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0178_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101559.324_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0604_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0091_crop1_roe deer (16).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0358_crop1_person (3).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1664_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium (44)_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0584_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\063_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0375_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0209_crop1_bird.JPG	bird
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d17490s2i10_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0543_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0158_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0318_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_100_crop.png	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\169_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0926_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_1027_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1868_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0652_crop2_bird (2).JPG	bird
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154403.748_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0662_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0223_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0186_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\231_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0821_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0369_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0508_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0126_crop1_squirrel (3).JPG	squirrel
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\download (1)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025085306-RCNX6581_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1546_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Fox\nhsn\videoplayback (1)-0035_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0125_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101758.036_crop2_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0933_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0047_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0644_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1442_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0060_crop1_roe deer (8).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101624.467_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\093_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\015_human_child_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1044_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\04060218_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0510_crop1_bird (4).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_6670_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0222_crop2_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1230_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0254_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0160_crop1_bird1.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0137_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\175_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_5606_JPEG_jpg.rf.d777a6be6b97030823550759c76bdc4f_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0079_crop4_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0894_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0238_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0252_crop2_person.JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141655.280_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\MTZ_S4_C04_R9_IMAG0415_crop.JPG	squirrel
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025084418-RCNX5512_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0101_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0361_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0699_crop4_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_7073_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0344_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\071_human_crop.png	person
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025085210-RCNX6453_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0240_crop1_roe deer (6).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0083_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20171027_193418_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\082_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0653_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1466_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101745.559_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_6625_JPEG_jpg.rf.b72bc3aa2dbfbc4ae051117d62744eae_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101612.501_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0238_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0180_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0511_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1162_crop2_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0013_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025084931-RCNX6131_crop1_fox.jpg	fox
+G:\Data\data_v16\Fox\APHA-processed\fox\20241125141621-RCNX1041_crop1_fox.jpg	fox
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025082620-RCNX2952_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\001_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0189_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (20)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154549.341_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20170818_011828_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0427_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20140508_015403_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101501.346_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101412.283_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\010_squirrel_crop_1.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0038_crop1_roe deer (8).JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142029.354_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0931_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0711_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0286_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0666_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1172_crop2_bird.JPG	bird
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (13)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0758_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0478_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0569_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\KGA_S3_KHOGB06_R3_IMAG1191_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\013_human_child_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0289_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0657_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0990_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0110_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0675_crop4_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1563_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0193_crop3_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_3962_JPEG_jpg.rf.8a9312142924521574343fea3099f30d_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1082_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20170606_230919_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025085155-RCNX6431_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0427_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0608_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\CA-02_03_10_2015_CA-02_0000496_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\92_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\dac83049-5ff3-4b4b-8251-2aae95249a50_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_7160_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_2210_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\162_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\086_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141955.935_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T112732.391_crop2_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_88_crop.png	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0540_crop1_bird (5).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0099_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0074_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1347_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_12025_JPEG_jpg.rf.3bdbb1411468f11f9c23e40746ba7cae_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d20489s29i1_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_3022_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0427_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\012_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\003_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0703_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\SEQ81475_IMG_0002_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_15276_JPEG_jpg.rf.4523609a81da8d3d9e47a0619f2d5820_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101515.741_crop2_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1447_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101924.290_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d65322s8i2_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0781_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0252_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0031_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0221_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1171_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1155_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0125_crop1_person (5).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0180_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1019_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101439.432_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1195_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1488_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0154_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1147_crop3_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0272_crop4_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0051_crop5_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\BR_20110707_014043_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_22_1 (89)_frame_0003_crop1_animal.jpg	badger
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141731.906_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_2626_crop2_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0115_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0466_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium (31)_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0715_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0090_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1288_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_5537_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101416.252_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0445_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\130_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101830.540_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0279_crop1_roe deer (6).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1326_crop1_bird (4).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_3818_JPEG_jpg.rf.8f82697211343a857d1098835d3d0afc_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\DeviceMediaActivity_109319_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_3821_JPEG_jpg.rf.26a63217da782d5992b0cf6ad3ba6e5b_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0293_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1868_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0479_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\023_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\SEQ86683_IMG_0002_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101631.385_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\93517989-1e43-45a4-a76c-0bfccbed0a7d_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\174_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1301_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0138_crop1_person (5).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0654_crop2_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_11968_JPEG_jpg.rf.63ef6a23c0d00ce7e6a35a3c2638ca05_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0275_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0645_crop1_person (2).JPG	person
+G:\Data\data_v16\Fox\FLUX_API\022_fox_crop.png	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\images - 2025-02-14T104834.730_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_6662_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0182_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\113_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0824_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0308_crop2_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0137_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0228_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1016_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0111_crop5_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0472_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1083_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0902_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0303_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\130_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\0531_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0169_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0180_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Fox\APHA-processed\fox\20241128120748-RCNX3025_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_2705_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0516_crop4_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0737_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1636_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142214.945_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\APHA-processed\fox\20241128120755-RCNX3083_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0678_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\143_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0873_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0190_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\416e17b7-1596-4312-b150-d5d857717778_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0610_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0642_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_3195_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0762_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0021_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\d3d4a76c-cd49-4bc9-945d-cbafa0574f2b_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_38629_JPEG_jpg.rf.96fc52415d3483e81495617509114980_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\DeviceMediaActivity_112065_crop2_person.JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142103.958_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0715_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\024_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\082_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0288_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0083_crop1_roe deer (18).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_80_ (28)_frame_0000_crop2_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0100_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1302_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\013_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101711.883_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_7111_JPEG_jpg.rf.4cefc4ad5153c29bc42089dc98c75852_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101623.750_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\APHA-processed\fox\20241105115342-RCNX0506_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_10504_JPEG_jpg.rf.d313b3bda446f1a1ea3473e729d8a25b_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\088_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0652_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\DeviceMediaActivity_108672_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0320_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\021_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1483_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\06090110_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101423.544_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\041_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_2607_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0575_crop1_squirrel (3).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1455_crop2_person.JPG	person
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (44)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0643_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0562_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\3986s189i21_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141827.755_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101433.410_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0654_crop2_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0053_crop7_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\206_roe deer_crop.png	deer
+G:\Data\data_v16\Fox\Marion-CP\CT07\13Mar_29Mar\IMG_0377_crop1_fox.JPG	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\016_badger_crop.png	badger
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d47922s101i12_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\188_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1018_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_117_crop.png	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101354.385_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\016_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0083_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0243_crop1_roe deer (7).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_11475_JPEG_jpg.rf.08664b2c00365437839a6aab74294a88_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025084949-RCNX6176_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_9514_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\rabbit-383_jpg.rf.bfd5d4b62e8d72625861daf1441e2a40_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0084_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0098_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\SEQ84840_IMG_0002_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0830_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101425.476_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141657.514_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0659_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101937.600_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1459_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0173_crop1_roe deer (12).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0641_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0708_crop1_bird.JPG	bird
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154512.779_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0089_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0071_crop1_roe deer (14).JPG	deer
+G:\Data\data_v16\Fox\APHA-processed\fox\20241023135044-RCNX1053_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0191_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0349_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0174_crop1_roe deer (11).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0432_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0087_crop1_roe deer (6).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0062_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\06090069_crop.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\DeviceMediaActivity_108354_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_80_ (26)_frame_0000_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0280_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0037_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0198_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0043_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141757.197_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0072_crop1_roe deer (8).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0598_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141700.975_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0099_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1523_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0289_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1429_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101455.293_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_15285_JPEG_jpg.rf.d3d8c729ed15733928d1ed8337d353ef_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_6178_JPEG_jpg.rf.c8282c9d9404f5a19415b09fb0d460be_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0248_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1390_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\218_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0487_crop1_badger (2).JPG	badger
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (249)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0017_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\4616855_80b098a3_jpg.rf.8220d383f05c1a90ee16eff675cf8415_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_2139_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\029_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_80_ (176)_frame_0000_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0106_crop1_roe deer (3).JPG	deer
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141905.876_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_22411_JPEG_jpg.rf.10b935a5479b693bfbf8499123b1a5e6_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0371_crop1_person (3).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101424.754_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\084_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0763_frame_0004_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101658.871_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\152_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0136_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Fox\camera trap (aileen, marion, orlando)\IMG_1064_crop1_fox (2).JPG	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\185_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0216_crop1_person (3).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0916_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0072_crop1_roe deer (9).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0590_crop1_badger.JPG	badger
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\d21869s33i16_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0678_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_9595_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0261_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_9686_crop2_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0018_crop2_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0114_crop4_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_7821_JPEG_jpg.rf.526ff1fd6ecb95d1dc177c20c76eb2a6_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0267_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1110_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141946.137_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\CA-12_09_07_2016_CA-12_0009556_crop.JPG	squirrel
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d69856s269i4_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1280_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\animals-rabbits_OGSPXCGUXJ_jpg.rf.330dcf91ae63156cd2851ff198577d77_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Fox\APHA-processed\fox\20241023165534-RCNX0315_crop1_fox.jpg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141939.404_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1155_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1338_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0153_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0187_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1455_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101711.177_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1723_crop1_squirrel (3).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0221_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0021_crop3_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_20_2 (286)_frame_0003_crop4_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0103_crop3_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_33621_JPEG_jpg.rf.b9e5c3d96488c4c381d43821a403b02a_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101331.463_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0202_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0590_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0135_crop1_roe deer (6).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0272_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1428_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0165_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0542_crop2_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1386_crop1_bird.JPG	bird
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025085243-RCNX6532_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\253_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101613.171_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025082620-RCNX2952_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0810_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0608_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_3171_JPEG_jpg.rf.9f3f8f6a66a2646943a7e67d75a2e591_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0494_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\069_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0571_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_2727_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141809.380_crop1_fox.jpeg	fox
+G:\Data\data_v16\Fox\camera trap (aileen, marion, orlando)\IMG_0914_crop1_fox.JPG	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_7999_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025084947-RCNX6172_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_2145_crop1_badger.JPG	badger
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154401.328_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\681_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0193_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0445_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\013_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\253_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0625_crop1_person (3).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0746_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0118_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (13)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0947_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1390_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1406_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101922.413_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0088-play_frame_0001_crop2_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\144_roe deer_crop.png	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0280_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\063_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0353_crop1_badger (2).JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0472_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0699_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Fox\perdix_99956_preprocessed_fox_images\DeviceMediaActivity_110850_crop1_fox.JPG	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0046_crop4_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0289_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T154537.535_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1012_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0738_crop1_person (2).JPG	person
+G:\Data\data_v16\Fox\CEH cairngorms (camera trap)\fox\TL_20150908_165658_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\025_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_7699_JPEG_jpg.rf.01d47110fd4ad0f9af3c4d7da64b4388_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0537_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0140_crop1_person (5).JPG	person
+G:\Data\data_v16\Fox\APHA-processed\fox\20241023131643-RCNX1202_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0190_crop4_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1321_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0428_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1269_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0067_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_24_JPEG_jpg.rf.7970ec7a9b24e83b7ba9286b6be58825_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0048_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\5921662e-23d2-11e8-a6a3-ec086b02610b_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101718.453_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0166_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0276_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\068_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025085223-RCNX6483_crop1_fox.jpg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T112709.351_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0665_crop3_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0282_crop1_roe deer (8).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0435_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101700.934_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0341_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0051_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0244_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1292_crop2_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0667_crop3_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0208_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0144_crop2_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0811_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_7127_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0629_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0271_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0328_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMAG0138 (1)_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0088_crop1_bird.JPG	bird
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141731.906_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0232_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0230_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\133_roe deer_crop.png	deer
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025084820-RCNX6029_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0063_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0246_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0505_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0351_crop1_person (3).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101752.173_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101846.747_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0405_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0696_crop1_person.JPG	person
+G:\Data\data_v16\Fox\APHA-processed\fox\20241023130640-RCNX0496_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0128_crop1_person (5).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0191_crop2_person (3).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0099_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0061_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_80_ (124)_frame_0000_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0306_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0573_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1669_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0015_crop3_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1450_crop3_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0232_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1394_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101741.158_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0587_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1074_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_1428_JPEG_jpg.rf.9dffe63d6863cddea98238c2af331356_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T112738.213_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1954_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0501_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\bird_2_crop.png	bird
+G:\Data\data_v16\Fox\Marion-CP\CT04\IMG_0805_crop1_fox.JPG	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T141923.935_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\042_squirrel_crop.png	squirrel
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d54718s45i1_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0084_crop1_roe deer (9).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\038_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium (3)_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d17490s14i4_crop2_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0320_crop3_person.JPG	person
+G:\Data\data_v16\Fox\APHA-processed\fox\20241122095708-RCNX0535_crop1_fox.jpg	fox
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (120)_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\092_human_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0482_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\FL-08_11_02_2015_FL-08_0013643_crop.jpg	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0703_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0669_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_2498_crop1_badger.JPG	badger
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025085155-RCNX6431_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0695_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0079_crop3_person.JPG	person
+G:\Data\data_v16\Fox\APHA-processed\fox\20241023124440-RCNX0671_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0574_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025084947-RCNX6172_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0130_crop1_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_1635_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0267_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1444_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0025_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142140.217_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0079_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1408_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0076_crop1_roe deer (14).JPG	deer
+G:\Data\data_v16\Fox\FLUX_API\136_baby fox_crop.png	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\NE1_17_ (159)_frame_0001_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0436_crop1_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0109_crop1_roe deer (2).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0630_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0233_crop2_person (2).JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_1450_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0312_crop5_bird.JPG	bird
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\images (61)_crop1_unidentified animal.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0754_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0710_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\2b284123-aabb-4c03-a1eb-508c005ba800_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_15621_JPEG_jpg.rf.1fc20a4601f41a475cf0ad5ed3e12e3e_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\017_human_child_crop.png	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\DeviceMediaActivity_108886_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0014_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0126_crop1_squirrel (2).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0101_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101843.377_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium - 2025-02-18T101931.129_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_3234_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0232_crop1_squirrel (3).JPG	squirrel
+G:\Data\data_v16\Fox\APHA-processed\fox\20241125141710-RCNX1334_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0292_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d35656s17i1_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\medium (5)_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\064_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\DeviceMediaActivity_113005_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_2080_JPEG_jpg.rf.df1026011bbf60cac5f1202946524016_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0152_crop2_roe deer.JPG	deer
+G:\Data\data_v16\Fox\APHA-processed\fox\20241025083524-RCNX4242_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0171_crop3_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_12324_JPEG_jpg.rf.16e55494bcd1dee6932bea77048ee079_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0076_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_0360_crop1_squirrel (3).JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\IMG_0085_crop2_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\IMG_3216_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0091_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_person_images\DeviceMediaActivity_111141_crop1_person.JPG	person
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02326432_11220_JPEG_jpg.rf.373fd4b0aac93e3c8b0b57135c58c8f3_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1206_crop1_bird (2).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_9771_JPEG_jpg.rf.ef17ddfc5de0e4a3caf6d4a938dad57b_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0643_crop4_bird.JPG	bird
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium (176)_crop2_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0023_crop1_roe deer (5).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0191_crop1_roe deer (11).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\026_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_1245_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_1544_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_3214_JPEG_jpg.rf.341de093061af262b1be01a0312b2ba6_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0193_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0452_crop1_bird (3).JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_0149_grooming_frame_0006_crop1_animal.jpg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\041_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\DeviceMediaActivity_109106_crop1_squirrel.JPG	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0079_crop2_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0048_crop6_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0031_crop1_roe deer (4).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0045_crop6_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\039_squirrel_crop.png	squirrel
+G:\Data\data_v16\Fox\emammal (camera trap)\fox\d49316s27i3_crop1_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\181_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_squirrel_images\027_squirrel_crop.png	squirrel
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_7005_JPEG_jpg.rf.5fe97b4273ed801872e2775ffad2a275_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0825_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0146_crop1_roe deer (10).JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0434_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0217_crop2_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\IMG_3161_crop1_badger.JPG	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0191_crop3_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\163_badger_crop.png	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\cf388074-60cb-422d-ba98-68d49f839718_crop1_badger.jpeg	badger
+G:\Data\data_v16\Fox\APHA-processed\fox\20241105115359-RCNX0623_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_deer_images\IMG_0049_crop3_roe deer.JPG	deer
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\021_rabbit_crop.png	lagomorph
+G:\Data\data_v16\Fox\inaturalist (camera trap and other images)\fox\medium - 2025-02-13T142012.809_crop2_fox.jpeg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0253_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_badger_images\2359e690-6274-478d-8126-d12b5653b0de_crop1_badger.jpeg	badger
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\n02325366_2038_JPEG_jpg.rf.eee88d4e734e83b34741fbd56a538371_crop1_animal.jpg	lagomorph
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0264_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_lagomorph_images\IMG_0282_crop1_lagomorph.JPG	lagomorph
+G:\Data\data_v16\Fox\APHA-processed\fox\20241105115342-RCNX0504_crop1_fox.jpg	fox
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0437_crop1_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0057_crop6_bird.JPG	bird
+G:\Data\data_v16\Not Fox\preprocessed\preprocessed_bird_images\IMG_0541_crop1_bird (2).JPG	bird

@@ -13,9 +13,9 @@ def rename_animal_to_fox(folder_path):
             file_path = os.path.join(root, filename)
             
             # Check if "animal" is in the filename
-            if "roe deer" in filename:
+            if "hare" in filename:
                 # Create the new filename with "animal" replaced by "fox"
-                new_filename = filename.replace("roe deer", "muntjack")
+                new_filename = filename.replace("hare", "lagomorph")
                 new_file_path = os.path.join(root, new_filename)
                 
                 # Rename the file
@@ -91,6 +91,6 @@ def rename_png_files(folder_path):
     print(f"\nSummary: Found {total_files} PNG files, renamed {renamed_files} files.")
 
 # Use the specific folder path
-folder_path = r"F:\Fox-AI\To process\Flux\bird"
+folder_path = r"F:/Fox-AI/Dataset/Cleaned_synthetic_Perdix99956/Cleaned/Not Fox/preprocessed/preprocessed_lagomorph_images/"
 #rename_animal_to_fox(folder_path)
 rename_png_files(folder_path)

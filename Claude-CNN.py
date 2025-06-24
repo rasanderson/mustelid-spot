@@ -3,6 +3,7 @@
 
 import os
 import sys
+import random
 import subprocess
 import numpy as np
 import pandas as pd
@@ -15,14 +16,17 @@ import matplotlib.pyplot as plt
 from collections import Counter
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.utils import set_random_seed
+from sklearn.metrics import roc_curve, auc, f1_score
 from sklearn.model_selection import train_test_split
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, TensorBoard
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization, Resizing, Lambda
 from tensorflow.keras.layers.experimental import preprocessing
 from tensorflow.keras.callbacks import ReduceLROnPlateau, EarlyStopping, ModelCheckpoint
 from tensorflow.keras.optimizers import Adam
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.metrics import precision_recall_curve, average_precision_score 
+from tensorflow.python.ops.numpy_ops import np_config
+np_config.enable_numpy_behavior()
 
 def setup_gpu():
     """Check for GPU availability and configure TensorFlow accordingly."""
@@ -55,34 +59,9 @@ def setup_gpu():
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-import numpy as np
-from pathlib import Path
-from PIL import Image
-import random
-
-import numpy as np
-from pathlib import Path
-from PIL import Image
-import random
-
-def load_and_preprocess_image(image_path, target_size=(224, 224), augment=True):
-    """Load and preprocess a single image with optional augmentation."""
-    img = Image.open(image_path).convert('L').resize(target_size, Image.Resampling.LANCZOS)
-    img_array = np.array(img).reshape(*target_size, 1) / 255.0
-    
-    if augment:
-        # Create horizontally flipped version
-        img_flipped = img.transpose(Image.FLIP_LEFT_RIGHT)
-        img_flipped_array = np.array(img_flipped).reshape(*target_size, 1) / 255.0
-        
-        # Return as a list of separate images rather than stacked array
-        return [img_array, img_flipped_array]
-    
-    return img_array
-
-def load_dataset(base_dir, classes, augment=True):
-    """Load images and labels from directory structure with class balancing."""
-    # Dictionary to store images by class
+def load_dataset(base_dir, classes, augment=True, val_split=0.1):
+    """Load image paths and labels without loading actual images into memory."""
+    # Dictionary to store image paths by class
     class_images = {cls_idx: [] for cls_idx in range(len(classes))}
     class_counts = {cls: 0 for cls in classes}
     
@@ -92,12 +71,14 @@ def load_dataset(base_dir, classes, augment=True):
     fox_dir = Path(base_dir) / "Fox"
     print(f"\nLoading fox images from {fox_dir}")
     fox_count = 0
-    for img_path in fox_dir.glob("**/*.jp*g"):
+    fox_patterns = list(fox_dir.glob("**/*.jpg")) + list(fox_dir.glob("**/*.jpeg")) + list(fox_dir.glob("**/*.JPG")) + list(fox_dir.glob("**/*.JPEG")) + list(fox_dir.glob("**/*.png")) + list(fox_dir.glob("**/*.PNG"))
+    
+    for img_path in fox_patterns:
         # Only include images with 'crop' in the filename
         if 'crop' in img_path.name.lower():
             try:
                 # Store the path instead of loading the image now
-                class_images[0].append(img_path)
+                class_images[0].append(str(img_path))  # Convert Path to string
                 fox_count += 1
                 if fox_count % 100 == 0:
                     print(f"Found {fox_count} fox images")
@@ -106,7 +87,7 @@ def load_dataset(base_dir, classes, augment=True):
     class_counts['fox'] = fox_count
     
     # Load non-fox images (classes 1+)
-    notfox_dir = Path(base_dir) / "Not Fox/preprocessed"
+    notfox_dir = Path(base_dir) / "Not Fox/preprocessed/"
     print(f"\nFinding non-fox images from {notfox_dir}")
     
     for folder in notfox_dir.iterdir():
@@ -124,10 +105,11 @@ def load_dataset(base_dir, classes, augment=True):
                     print(f"\nProcessing {class_name} images from {folder}")
                     class_count = 0
                     
-                    for img_path in folder.glob("**/*.jp*g") or folder.glob("**/*JP*G"):
+                    img_patterns = list(folder.glob("**/*.jpg")) + list(folder.glob("**/*.jpeg")) + list(folder.glob("**/*.JPG")) + list(folder.glob("**/*.JPEG")) + list(folder.glob("**/*.png")) + list(folder.glob("**/*.PNG"))
+                    for img_path in img_patterns:
                         try:
                             # Store the path instead of loading the image now
-                            class_images[class_idx].append(img_path)
+                            class_images[class_idx].append(str(img_path))  # Convert Path to string
                             class_count += 1
                             if class_count % 100 == 0:
                                 print(f"Found {class_count} {class_name} images")
@@ -150,10 +132,10 @@ def load_dataset(base_dir, classes, augment=True):
     print(f"\nSmallest class has {min_count} images")
     
     # Randomly sample the same number of images from each class
-    # We'll use a flat list to collect all images
-    all_images = []
+    all_image_paths = []
     all_labels = []
     
+
     for class_idx, image_paths in class_images.items():
         # Randomly sample min_count images from this class
         sampled_paths = random.sample(image_paths, min_count)
@@ -161,55 +143,32 @@ def load_dataset(base_dir, classes, augment=True):
         class_name = classes[class_idx] if class_idx > 0 else 'fox'
         print(f"Randomly sampled {min_count} images for class {class_name}")
         
-        # Process images in batches to show progress
-        batch_size = 100
-        for batch_idx in range(0, len(sampled_paths), batch_size):
-            batch_paths = sampled_paths[batch_idx:batch_idx + batch_size]
-            batch_count = 0
-            
-            for img_path in batch_paths:
-                try:
-                    result = load_and_preprocess_image(img_path, augment=augment)
-                    
-                    # Handle both augmented and non-augmented cases
-                    if augment and isinstance(result, list):
-                        # For augmented data, add each image separately
-                        for img in result:
-                            all_images.append(img)
-                            all_labels.append(class_idx)
-                            batch_count += 1
-                    else:
-                        # For non-augmented data (or if augment=False)
-                        all_images.append(result)
-                        all_labels.append(class_idx)
-                        batch_count += 1
-                        
-                except Exception as e:
-                    print(f"Error loading {img_path}: {e}")
-            
-            print(f"  Processed batch {batch_idx//batch_size + 1}/{(len(sampled_paths)-1)//batch_size + 1} " +
-                  f"({batch_count} images loaded)")
+        # Add paths and labels without loading images
+        all_image_paths.extend(sampled_paths)
+        all_labels.extend([class_idx] * len(sampled_paths))
     
-    # Convert to numpy arrays with proper shapes
-    images_array = np.array(all_images)
-    labels_array = np.array(all_labels)
+    # Split into train and validation sets
+    indices = list(range(len(all_image_paths)))
+    random.shuffle(indices)
+    split_idx = int(len(indices) * val_split)
     
-    # Print information about the final dataset
-    print("\nBalanced dataset loading complete!")
-    imgs_per_class = min_count * (2 if augment else 1)
-    print(f"Each class has exactly {imgs_per_class} images " + 
-          f"({min_count} original + {min_count} augmented)" if augment else "")
-    print(f"Total dataset size: {len(images_array)} images")
-    print(f"Dataset shape: {images_array.shape}")
+    val_indices = indices[:split_idx]
+    train_indices = indices[split_idx:]
     
-    # Create final class counts dictionary for return
-    # Include augmentation in the counts if used
+    X_train = [all_image_paths[i] for i in train_indices]
+    y_train = [all_labels[i] for i in train_indices]
+    X_val = [all_image_paths[i] for i in val_indices]
+    y_val = [all_labels[i] for i in val_indices]
+    
+    # Create final class counts dictionary 
     final_class_counts = {
-        classes[i] if i > 0 else 'fox': min_count * (2 if augment else 1) 
+        classes[i] if i > 0 else 'fox': min_count * (2 if augment else 1)
         for i in range(len(classes))
     }
     
-    return images_array, labels_array, final_class_counts
+    print(f"\nSplit dataset: {len(X_train)} training, {len(X_val)} validation images")
+    
+    return X_train, X_val, y_train, y_val, final_class_counts
 
 def create_model(num_classes, input_shape=(224, 224, 1)):
     """Set CNN learning parameters"""
@@ -229,12 +188,6 @@ def create_model(num_classes, input_shape=(224, 224, 1)):
     model = Sequential([
 	    # Input layer with the specified shape
         tf.keras.Input(shape=input_shape),
-        
-        # Data augmentation layers (part of the model)
-        #preprocessing.RandomFlip("horizontal"), #done in preprocessing now.
-        preprocessing.RandomRotation(0.3),
-        preprocessing.RandomZoom(0.2),
-        preprocessing.RandomTranslation(0.1, 0.1),
 		
 		# Image standardization
 		Lambda(lambda x: tf.image.per_image_standardization(x), input_shape=input_shape, name='standardization'),
@@ -244,34 +197,34 @@ def create_model(num_classes, input_shape=(224, 224, 1)):
         Conv2D(32, (3, 3), padding='same', activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.001)),
         MaxPooling2D((2, 2)),
         BatchNormalization(),
-        Dropout(0.25),
+        Dropout(0.2),
         
         # Second block - 64 filters
         Conv2D(64, (3, 3), padding='same', activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.001)),
         Conv2D(64, (3, 3), padding='same', activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.001)),
         MaxPooling2D((2, 2)),
         BatchNormalization(),
-        Dropout(0.25),
+        Dropout(0.2),
         
         # Third block - 128 filters
         Conv2D(128, (3, 3), padding='same', activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.001)),
         Conv2D(128, (3, 3), padding='same', activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.001)),
         MaxPooling2D((2, 2)),
         BatchNormalization(),
-        Dropout(0.25),
+        Dropout(0.2),
         
         # Fully connected layers
         Flatten(),
         Dense(256, activation='relu'),
         BatchNormalization(),
-        Dropout(0.3),
+        Dropout(0.5),
         Dense(num_classes, activation='softmax')
     ])
     
     model.compile(
         optimizer=optimizer,
-        loss='sparse_categorical_crossentropy', #binary_crossentropy #sparse_categorical_crossentropy
-        metrics=['accuracy']
+        loss='categorical_crossentropy', #binary_crossentropy #sparse_categorical_crossentropy
+        metrics=['accuracy',tf.keras.metrics.SparseCategoricalAccuracy(), tf.keras.metrics.F1Score()]
     )
     
     print("\nModel architecture:")
@@ -402,46 +355,92 @@ def plot_confusion_matrix_with_histogram(y_true, y_pred, classes, plots_dir, run
     
     plt.show()
 
-def plot_precision_recall_curves(y_val, y_pred_prob, classes, plots_dir):
-    """Plot precision-recall curves for each class and save the figure."""
+def plot_f1_scores(y_val, y_pred_classes, classes, plots_dir, run_name):
+    """Plot F1 scores for each class and save the figure."""
+    # Calculate F1 score for each class
+    f1_scores = []
+    for i in range(len(classes)):
+        # Create binary classification for current class
+        y_true_bin = (np.array(y_val) == i).astype(int)
+        y_pred_bin = (np.array(y_pred_classes) == i).astype(int)
+        f1 = f1_score(y_true_bin, y_pred_bin)
+        f1_scores.append(f1)
+    
+    # Plot F1 scores
+    plt.figure(figsize=(12, 8))
+    bars = plt.bar(classes, f1_scores, color='skyblue')
+    
+    # Add value labels on top of bars
+    for bar, score in zip(bars, f1_scores):
+        plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.01,
+                f'{score:.2f}', ha='center', fontsize=10)
+    
+    plt.xlabel('Classes', fontsize=12)
+    plt.ylabel('F1 Score', fontsize=12)
+    plt.title('F1 Scores by Class', fontsize=14)
+    plt.ylim(0, 1.1)  # Set y-axis limit with a little margin for text
+    plt.grid(True, linestyle='--', alpha=0.7, axis='y')
+    plt.tight_layout()
+    
+    # Save the figure
+    plot_path = os.path.join(plots_dir, f"f1_scores_{run_name}.png")
+    plt.savefig(plot_path, dpi=300, bbox_inches='tight')
+    print(f"Saved F1 scores plot to {plot_path}")
+    
+    # Also save the F1 scores as CSV
+    f1_df = pd.DataFrame({'Class': classes, 'F1_Score': f1_scores})
+    f1_csv_path = os.path.join(plots_dir, f"f1_scores_{run_name}.csv")
+    f1_df.to_csv(f1_csv_path, index=False)
+    print(f"Saved F1 scores to {f1_csv_path}")
+    
+    plt.show()
+
+def plot_roc_curves(y_val, y_pred_prob, classes, plots_dir, run_name):
+    """Plot ROC curves for each class and save the figure."""
     n_classes = len(classes)
     
-    # Convert to one-hot encoding for precision-recall curve
+    # Convert to one-hot encoding for ROC curve
     y_val_bin = np.zeros((len(y_val), n_classes))
     for i in range(len(y_val)):
         y_val_bin[i, y_val[i]] = 1
     
+    # Plot ROC curves
     plt.figure(figsize=(12, 8))
     
-    # Store average precision scores for CSV export
-    ap_scores = {}
+    # Store AUC scores for CSV export
+    auc_scores = {}
     
     # For each class
     for i in range(n_classes):
-        precision, recall, _ = precision_recall_curve(y_val_bin[:, i], y_pred_prob[:, i])
-        avg_precision = average_precision_score(y_val_bin[:, i], y_pred_prob[:, i])
-        ap_scores[classes[i]] = avg_precision
+        fpr, tpr, _ = roc_curve(y_val_bin[:, i], y_pred_prob[:, i])
+        roc_auc = auc(fpr, tpr)
+        auc_scores[classes[i]] = roc_auc
         
-        plt.plot(recall, precision, lw=2, 
-                 label=f'{classes[i]} (AP={avg_precision:.2f})')
+        plt.plot(fpr, tpr, lw=2, 
+                 label=f'{classes[i]} (AUC={roc_auc:.2f})')
     
-    plt.xlabel('Recall', fontsize=12)
-    plt.ylabel('Precision', fontsize=12)
-    plt.title('Precision-Recall Curves for Each Class', fontsize=14)
-    plt.legend(loc="best")
+    # Plot diagonal line (random classifier)
+    plt.plot([0, 1], [0, 1], 'k--', lw=2)
+    
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('False Positive Rate', fontsize=12)
+    plt.ylabel('True Positive Rate', fontsize=12)
+    plt.title('Receiver Operating Characteristic (ROC) Curves', fontsize=14)
+    plt.legend(loc="lower right")
     plt.grid(True, linestyle='--', alpha=0.7)
     plt.tight_layout()
     
     # Save the figure
-    plot_path = os.path.join(plots_dir, f"precision_recall_curves_{run_name}.png")
+    plot_path = os.path.join(plots_dir, f"roc_curves_{run_name}.png")
     plt.savefig(plot_path, dpi=300, bbox_inches='tight')
-    print(f"Saved precision-recall curves to {plot_path}")
+    print(f"Saved ROC curves to {plot_path}")
     
-    # Save average precision scores as CSV
-    ap_df = pd.DataFrame({'Class': list(ap_scores.keys()), 'Average_Precision': list(ap_scores.values())})
-    ap_csv_path = os.path.join(plots_dir, f"average_precision_scores_{run_name}.csv")
-    ap_df.to_csv(ap_csv_path, index=False)
-    print(f"Saved average precision scores to {ap_csv_path}")
+    # Save AUC scores as CSV
+    auc_df = pd.DataFrame({'Class': list(auc_scores.keys()), 'AUC': list(auc_scores.values())})
+    auc_csv_path = os.path.join(plots_dir, f"auc_scores_{run_name}.csv")
+    auc_df.to_csv(auc_csv_path, index=False)
+    print(f"Saved AUC scores to {auc_csv_path}")
     
     plt.show()
 
@@ -459,6 +458,9 @@ def evaluate_model(model, X_val, y_val, classes, plots_dir, run_name):
     print(classification_report(y_val, y_pred_classes, target_names=classes))
     
     # Save classification report to CSV
+    if isinstance(report, tf.Tensor):
+        report = report.numpy()
+    # Then create the DataFrame and transpose it
     report_df = pd.DataFrame(report).transpose()
     report_csv_path = os.path.join(plots_dir, f"classification_report_{run_name}.csv")
     report_df.to_csv(report_csv_path)
@@ -467,10 +469,14 @@ def evaluate_model(model, X_val, y_val, classes, plots_dir, run_name):
     # Plot and save confusion matrix with histogram
     plot_confusion_matrix_with_histogram(y_val, y_pred_classes, classes, plots_dir, run_name)
     
-    # Plot and save precision-recall curves for each class (if multi-class)
-    n_classes = len(classes)
-    if n_classes > 2:
-        plot_precision_recall_curves(y_val, y_pred_prob, classes, plots_dir)
+    # Plot and save F1 scores for each class
+    plot_f1_scores(y_val, y_pred_classes, classes, plots_dir, run_name)
+    
+    # Plot and save precision-recall curves for each class
+    plot_precision_recall_curves(y_val, y_pred_prob, classes, plots_dir)
+    
+    # Plot and save ROC curves for each class
+    plot_roc_curves(y_val, y_pred_prob, classes, plots_dir, run_name)
     
     return report
 
@@ -512,6 +518,9 @@ def save_training_summary(output_dir, classes, class_counts, history, report, ru
     
     return summary
 
+# Don't forget to add these imports at the top of your script
+# from sklearn.metrics import roc_curve, auc, f1_score
+
 def create_output_directory(base_output_dir, run_name):
     """Create a named output directory to save results."""
     # Use the run name as part of the output directory
@@ -528,7 +537,179 @@ def create_output_directory(base_output_dir, run_name):
     print(f"Created output directory: {output_dir}")
     return output_dir, plots_dir, models_dir
 
-def train_model(base_dir, classes, output_dir, run_name, epochs=100, batch_size=32):
+def preprocess_and_augment(image_path, target_size=(224, 224), augment=True):
+    """Load and preprocess a single image with optional augmentation."""
+    img = Image.open(image_path).convert('L').resize(target_size, Image.Resampling.LANCZOS) # check add padding tf.pad
+    img_array = np.array(img).reshape(*target_size, 1) / 255.0
+    
+    if not augment:
+        # Return the same image three times if no augmentation
+        return [img_array]
+    
+    # 1. Original image
+    original = img_array
+    
+    # 2. Horizontally flipped version
+    img_flipped = img.transpose(Image.FLIP_LEFT_RIGHT)
+    flipped = np.array(img_flipped).reshape(*target_size, 1) / 255.0
+    
+    return [original, flipped]
+
+def preprocess_image(image_path, label, target_size=(224, 224), augment=False):
+    """Preprocess a single image and apply optional augmentation."""
+    # Convert tensor path to string properly
+    try:
+        if isinstance(image_path, tf.Tensor):
+            image_path = image_path.numpy()
+            
+        if isinstance(image_path, np.ndarray):
+            if image_path.dtype.type is np.str_:
+                # It's a string in numpy array format
+                image_path = str(image_path)
+            elif image_path.dtype == np.object_:
+                # It might be a numpy array of Python objects
+                image_path = str(image_path.item())
+            elif image_path.dtype == np.bytes_:
+                # It's bytes, decode to string
+                image_path = image_path.tobytes().decode('utf-8')
+            else:
+                # It's a numpy array containing bytes
+                image_path = bytes(image_path).decode('utf-8')
+        elif isinstance(image_path, bytes):
+            # It's raw bytes, decode to string
+            image_path = image_path.decode('utf-8')
+            
+        # Load and process image
+        img = Image.open(image_path).convert('L').resize(target_size, Image.Resampling.LANCZOS)
+        img_array = np.array(img).reshape(*target_size, 1) / 255.0
+        
+        # Convert to tensor for TF operations
+        if augment:
+            img_tensor = tf.convert_to_tensor(img_array)
+            img_tensor = tf.image.random_flip_left_right(img_tensor)
+            img_tensor = tf.image.random_brightness(img_tensor, lower=0.9, upper=1.1)
+            img_tensor = tf.image.random_contrast(img_tensor, lower=0.8, upper=1.2)
+            return img_tensor, label
+        
+        return tf.convert_to_tensor(img_array), label
+        
+    except Exception as e:
+        print(f"Error preprocessing image: {e}")
+        print(f"Type of image_path: {type(image_path)}")
+        if isinstance(image_path, np.ndarray):
+            print(f"NumPy array dtype: {image_path.dtype}")
+            print(f"NumPy array shape: {image_path.shape}")
+        raise
+
+def preprocess_image_tf(image_path, label, target_size=(224, 224), augment=False):
+    """Wrapper for TensorFlow's `tf.py_function` to preprocess images."""
+    # Use partial to fix the target_size and augment parameters
+    def _preprocess_wrapper(path, lbl):
+        return preprocess_image(path, lbl, target_size=target_size, augment=augment)
+    
+    # Only pass the path and label to py_function
+    return tf.py_function(
+        func=_preprocess_wrapper,
+        inp=[image_path, label],
+        Tout=(tf.float32, tf.int32)
+    )
+
+def create_tf_dataset(image_paths, labels, batch_size, augment=False):
+    """Create a TensorFlow dataset from image paths and labels."""
+    # Create the dataset from paths and labels (not loading images yet)
+    dataset = tf.data.Dataset.from_tensor_slices((image_paths, labels))
+    
+    # Add caching before preprocessing to avoid repeatedly reading data
+    dataset = dataset.cache()
+    
+    # Apply preprocessing on-demand (images are loaded one at a time)
+    dataset = dataset.map(
+        lambda x, y: preprocess_image_tf(x, y, augment=augment), 
+        num_parallel_calls=tf.data.AUTOTUNE
+    )
+    
+    # Add shuffling for training data
+    if augment:  # Assuming augment=True means we're processing training data
+        dataset = dataset.shuffle(buffer_size=min(len(image_paths), 1000))
+    
+    # Batch the dataset
+    dataset = dataset.batch(batch_size)
+   
+   # This caches the preprocessed images to avoid redundant preprocessing
+    dataset = dataset.cache()
+    
+    # Prefetch for performance - allows the pipeline to fetch data while model is training
+    dataset = dataset.prefetch(tf.data.AUTOTUNE)
+    
+    dataset = dataset.__iter__()
+    return dataset
+
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+def create_data_generators(X_train, X_val, y_train, y_val, batch_size=32):
+    """Create data generators for training and validation using Keras ImageDataGenerator.
+    
+    This simplifies image loading and augmentation without complex preprocessing pipelines.
+    """
+    # Create training data generator with augmentation
+    train_datagen = ImageDataGenerator(
+        rescale=1./255,
+        rotation_range=10,
+        width_shift_range=0.1,
+        height_shift_range=0.1,
+        shear_range=0.1,
+        zoom_range=0.1,
+        horizontal_flip=True,
+        fill_mode='nearest'
+    )
+    
+    # Create validation data generator with just rescaling
+    val_datagen = ImageDataGenerator(rescale=1./255)
+    
+    # Create flow_from_directory generators 
+    # Note: Here we assume X_train and X_val are lists of file paths
+    
+    # Option 1: If data is already in memory as arrays (not recommended for large datasets)
+    # train_generator = train_datagen.flow(X_train, y_train, batch_size=batch_size)
+    # val_generator = val_datagen.flow(X_val, y_val, batch_size=batch_size)
+    
+    # Option 2: For file paths, we need to create DataFrameIterator or use flow_from_directory
+    # This is more memory efficient
+    import pandas as pd
+    
+    # Convert integer labels to strings for categorical mode
+    y_train_str = [str(y) for y in y_train]
+    y_val_str = [str(y) for y in y_val]
+
+	# Create DataFrames with paths and labels
+    train_df = pd.DataFrame({'filename': X_train, 'class': y_train_str})
+    val_df = pd.DataFrame({'filename': X_val, 'class': y_val_str})
+    
+    # Create generators from DataFrames
+    train_generator = train_datagen.flow_from_dataframe(
+        dataframe=train_df,
+        x_col='filename',
+        y_col='class',
+        target_size=(224, 224),
+        color_mode='grayscale',
+        class_mode='categorical' if len(set(y_train)) > 2 else 'binary',
+        batch_size=batch_size
+    )
+    
+    val_generator = val_datagen.flow_from_dataframe(
+        dataframe=val_df,
+        x_col='filename',
+        y_col='class',
+        target_size=(224, 224),
+        color_mode='grayscale',
+        class_mode='categorical' if len(set(y_val)) > 2 else 'binary',
+        batch_size=batch_size
+    )
+    
+    return train_generator, val_generator
+
+
+def train_model(base_dir, classes, output_dir, run_name, epochs=30, batch_size=32):
     """Main function to train the model."""
     print(f"Starting training process with {len(classes)} classes")
     print(f"Results will be saved to: {output_dir}")
@@ -537,55 +718,98 @@ def train_model(base_dir, classes, output_dir, run_name, epochs=100, batch_size=
     output_dir, plots_dir, models_dir = create_output_directory(output_dir, run_name)
     
     # Load and preprocess data
-    X, y, class_counts = load_dataset(base_dir, classes)
-    print(f"\nTotal dataset size: {len(X)} images")
+    X_train, X_val, y_train, y_val, class_counts = load_dataset(base_dir, classes, val_split=0.1)
+    print(f"\nTraining set size: {len(X_train)} images")
+    print(f"Validation set size: {len(X_val)} images")
     
-    # Find which classes are actually present in the dataset
-    unique_classes = np.unique(y)
-    present_classes = [classes[i] for i in unique_classes]
+    # Split the dataset into training and validation sets
+    #X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
+    #print(f"\nTraining set size: {len(X_train)}")
+    #print(f"Validation set size: {len(X_val)}")
     
-    print("\nClasses present in dataset:")
-    for i, class_idx in enumerate(unique_classes):
-        count = np.sum(y == class_idx)
-        print(f"{classes[class_idx]}: {count} images (class index {class_idx})")
+    # Configure TensorFlow memory growth to avoid allocating all GPU memory at once
+    gpus = tf.config.experimental.list_physical_devices('GPU')
+    if gpus:
+        try:
+            for gpu in gpus:
+                tf.config.experimental.set_memory_growth(gpu, True)
+        except RuntimeError as e:
+            print(f"Memory growth setting failed: {e}")
     
-    print("\nMissing classes:")
-    missing_classes = [cls for i, cls in enumerate(classes) if i not in unique_classes]
-    for cls in missing_classes:
-        print(f"- {cls}")
+    # Create generators with built-in caching and prefetching
+    # Pass the classes parameter to the function
+    train_generator, val_generator = create_data_generators(
+        X_train, X_val, y_train, y_val, batch_size=batch_size
+    )
     
-    X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
-    print(f"\nTraining set size: {len(X_train)}")
-    print(f"Validation set size: {len(X_val)}")
-    
-    # Create and train model using only the number of classes actually present
-    num_classes = len(unique_classes)
+    # Create and train model
+    num_classes = len(classes)
     print(f"\nCreating model with {num_classes} output classes")
     model = create_model(num_classes)
-
-	# Define Early Stopping and Model Checkpoint callbacks
+    
+    # Define Early Stopping and Model Checkpoint callbacks
     early_stopping = EarlyStopping(monitor='val_accuracy', patience=10, mode='max', restore_best_weights=True, verbose=1)
-    checkpoint = ModelCheckpoint(os.path.join(models_dir, f'best_model_{run_name}.h5'), 
-                                monitor='val_accuracy', 
-                                save_best_only=True)
+    checkpoint = ModelCheckpoint(os.path.join(models_dir, f'best_model_{run_name}.h5'),
+                                 monitor='val_accuracy',
+                                 save_best_only=True)
     
     print("\nStarting model training...")
+    
+    # Calculate steps per epoch for better memory management
+    steps_per_epoch = len(X_train) // batch_size
+    validation_steps = len(X_val) // batch_size
+
+	# add class Weight
+    class_weight = {0: 2, 1: 1, 2: 1,3: 1,4: 1,5: 1,6: 1,7: 1,8: 1,9: 1}
+    
     history = model.fit(
-        X_train, y_train,
+        train_generator,
         epochs=epochs,
-        batch_size=batch_size,
-        validation_data=(X_val, y_val),
-		callbacks=[early_stopping, checkpoint],
-        verbose=1
+        steps_per_epoch=steps_per_epoch,
+        validation_data=val_generator,
+        validation_steps=validation_steps,
+        callbacks=[early_stopping, checkpoint],# TensorBoard],
+        verbose=1,
+		class_weight=class_weight
     )
     
     print("\nTraining complete! Generating evaluation plots...")
+    # We need to modify the evaluate_model function to work with generators
+    # For now, let's use a simplified version
+    
+    # Get predictions batch by batch to avoid memory issues
+    y_pred_probs = []
+    y_true = []
+    
+    # Reset the generator
+    val_generator.reset()
+    
+    # Predict in batches
+    for i in range(validation_steps):
+        x_batch, y_batch = next(val_generator)
+        batch_preds = model.predict(x_batch)
+        y_pred_probs.append(batch_preds)
+        y_true.append(y_batch)
+    
+    # Concatenate batches
+    y_pred_probs = np.vstack(y_pred_probs)
+    y_true = np.vstack(y_true)
+    
+    # Convert from one-hot back to label indices
+    y_true_indices = np.argmax(y_true, axis=1)
+    y_pred_indices = np.argmax(y_pred_probs, axis=1)
+    
+    # Generate classification report
+    report = classification_report(y_true_indices, y_pred_indices, 
+                                  target_names=classes, output_dict=True)
+    print("\nClassification Report:")
+    print(classification_report(y_true_indices, y_pred_indices, target_names=classes))
     
     # Plot and save training history
     plot_training_history(history, plots_dir, run_name)
     
-    # Evaluate model and save results
-    report = evaluate_model(model, X_val, y_val, present_classes, plots_dir, run_name)
+    # Plot confusion matrix
+    plot_confusion_matrix_with_histogram(y_true_indices, y_pred_indices, classes, plots_dir, run_name)
     
     # Save model
     model_path = os.path.join(models_dir, f"fox_classifier_model_{run_name}.h5")
@@ -593,9 +817,16 @@ def train_model(base_dir, classes, output_dir, run_name, epochs=100, batch_size=
     print(f"Saved model to {model_path}")
     
     # Save training summary
-    summary = save_training_summary(output_dir, present_classes, class_counts, history, report, run_name)
-    
+    summary = save_training_summary(output_dir, classes, class_counts, history, report, run_name)
     return model, history, summary
+
+# TensorBoard
+#tf.keras.callbacks.TensorBoard(
+#    log_dir= './logs',
+#    histogram_freq=0,  # How often to log histogram visualizations
+#    embeddings_freq=0,  # How often to log embedding visualizations
+#    update_freq="epoch",
+#) #call this from cmd line tensorboard --logdir=/full_path_to_your_logs
 
 # Example usage:
 if __name__ == "__main__":
@@ -604,24 +835,24 @@ if __name__ == "__main__":
     
     # Set batch size based on GPU availability
     if using_gpu:
-        batch_size = 64  # Larger batch size for GPU
+        batch_size = 16  # Larger batch size for GPU
     else:
         batch_size = 4  # Smaller batch size for CPU
     
     # Data directory
-    base_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Cleaned/"
+    base_dir = "D:/Data/data_v15/Cleaned/"  # Change this to your data directory
     
     # Output directory for saving results
-    output_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/"
+    output_dir = "C:/Users/c0062193/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/"
 
 	# Set a name for this training run
-    run_name = f"fox_v11_synthetic_{timestamp}"  # Change this for each run
+    run_name = f"fox_v17_cleaned_{timestamp}"  # Change this for each run
     
     # Class definitions
-    classes = ['fox', 'lagomorph', 'person', 'squirrel', 'badger', 'dog', 'bird', 'deer', 'muntjack', 'boar']#, 'cat']
+    classes = ['fox', 'person', 'badger', 'deer', 'bird'] #, 'squirrel',  'lagomorph', 'dog',  'deer', 'muntjack', 'boar']#, 'cat']
     
     # Train model
-    model, history, summary = train_model(base_dir, classes, output_dir, epochs=50, run_name=run_name, batch_size=batch_size)
+    model, history, summary = train_model(base_dir, classes, output_dir, epochs=100, run_name=run_name, batch_size=batch_size)
     
     print("\nTraining and evaluation completed successfully!")
     print(f"All results saved to {output_dir}")

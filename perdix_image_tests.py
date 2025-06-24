@@ -23,11 +23,16 @@ def evaluate_cnn_model(model_path, test_dir, output_dir, img_size=(224, 224), gr
     print("Loading model...")
     model = tf.keras.models.load_model(model_path)
     
-    # Get class labels from folder names
-    class_labels = sorted([d for d in os.listdir(test_dir) 
-                          if os.path.isdir(os.path.join(test_dir, d))])
+    # All possible class labels (for reference)
+    all_possible_classes = ['fox', 'lagomorph', 'person', 'squirrel', 'badger', 'dog', 'bird', 'deer', 'muntjack', 'boar']
     
-    print(f"Found {len(class_labels)} classes: {class_labels}")
+    # Determine which classes are actually present in the test directory
+    class_labels = [d for d in os.listdir(test_dir) if os.path.isdir(os.path.join(test_dir, d)) and d in all_possible_classes]
+    
+    if not class_labels:
+        raise ValueError(f"No valid class directories found in {test_dir}. Expected one or more of these: {all_possible_classes}")
+    
+    print(f"Found {len(class_labels)} classes in test directory: {class_labels}")
     
     # 2. Create output directories
     correct_dir = os.path.join(output_dir, "correct_classifications")
@@ -37,7 +42,7 @@ def evaluate_cnn_model(model_path, test_dir, output_dir, img_size=(224, 224), gr
     os.makedirs(correct_dir, exist_ok=True)
     os.makedirs(incorrect_dir, exist_ok=True)
     
-    # Create class subdirectories in correct and incorrect folders
+    # Create class subdirectories in correct and incorrect folders (only for present classes)
     for class_name in class_labels:
         os.makedirs(os.path.join(correct_dir, class_name), exist_ok=True)
         os.makedirs(os.path.join(incorrect_dir, class_name), exist_ok=True)
@@ -49,8 +54,13 @@ def evaluate_cnn_model(model_path, test_dir, output_dir, img_size=(224, 224), gr
     
     print("Processing test images...")
     
-    for class_idx, class_name in enumerate(class_labels):
+    # Create a mapping from class name to index for this specific run
+    class_to_idx = {name: idx for idx, name in enumerate(class_labels)}
+    
+    for class_name in class_labels:
         class_dir = os.path.join(test_dir, class_name)
+        class_idx = class_to_idx[class_name]
+        
         image_files = [f for f in os.listdir(class_dir) 
                        if "crop" in f.lower() and f.lower().endswith(('.png', '.jpg', '.jpeg'))]
         
@@ -66,8 +76,31 @@ def evaluate_cnn_model(model_path, test_dir, output_dir, img_size=(224, 224), gr
             img_array = img_array / 255.0  # Normalize to [0,1]
             img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
             
-            # Get model predictions
-            predictions = model.predict(img_array, verbose=0)[0]
+            # Get model predictions (for all possible classes the model was trained on)
+            full_predictions = model.predict(img_array, verbose=0)[0]
+            
+            # Map the predictions to the classes present in this run
+            # We'll create a prediction array that only includes scores for classes present in test_dir
+            if len(full_predictions) > len(class_labels):
+                # Handle case where model predicts more classes than present in test directory
+                # We need to map model output indices to the actual class names
+                
+                # Assuming model output order matches all_possible_classes
+                # Map from model prediction indices to class names
+                model_classes = all_possible_classes[:len(full_predictions)]
+                
+                # Extract only predictions for classes present in the test directory
+                predictions = np.array([full_predictions[model_classes.index(cls)] 
+                                       if cls in model_classes else 0.0 
+                                       for cls in class_labels])
+                
+                # Normalize to ensure they sum to 1
+                if np.sum(predictions) > 0:
+                    predictions = predictions / np.sum(predictions)
+            else:
+                # Model outputs match exactly the number of classes we found
+                predictions = full_predictions
+            
             pred_class_idx = np.argmax(predictions)
             pred_class_name = class_labels[pred_class_idx]
             confidence = predictions[pred_class_idx]
@@ -212,9 +245,9 @@ def evaluate_cnn_model(model_path, test_dir, output_dir, img_size=(224, 224), gr
 # Example usage
 if __name__ == "__main__":
     # Replace these paths with your actual paths
-    model_path = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/fox_v10_20250325_170446/models/best_model_fox_v10_20250325_170446.h5"
-    test_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/PhD/Jobs/Fox detection/Results/perdix_test/test_images/"  # Should contain subdirectories for each class
-    output_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/PhD/Jobs/Fox detection/Results/perdix_test/Output_v10"
+    model_path = "C:/Users/c0062193/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/fox_v14_synthetic_20250425_151559/models/best_model_fox_v14_synthetic_20250425_151559.h5"
+    test_dir = "D:/Perdix-images/ActivityMedia/SITE/99953/"  # Should contain subdirectories for each class
+    output_dir = "F:/Fox-AI/Dataset/Perdix_99953_v14/"
     
     # Optional: Specify image size based on your model's input requirements
     img_size = (224, 224)  # (height, width)

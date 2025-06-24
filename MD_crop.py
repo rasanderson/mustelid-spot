@@ -2,7 +2,7 @@
 """
 Animal Detector and Cropper
 This script uses MegaDetectorV6 via PytorchWildlife to detect animals in images and crop them.
-Usage: python animal_detector.py /path/to/image/folder
+Usage: python animal_detector.py /path/to/image/folder --output /path/to/output/folder
 """
 
 import os
@@ -20,12 +20,13 @@ def parse_args():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(description='Detect and crop animals in images.')
     parser.add_argument('folder', type=str, help='Path to folder containing images')
+    parser.add_argument('--output', type=str, help='Output folder for cropped images (default: same as original image folder)')
     parser.add_argument('--batch-size', type=int, default=8, help='Batch size for detection')
     parser.add_argument('--threshold', type=float, default=0.5, help='Confidence threshold for detections')
     parser.add_argument('--recursive', action='store_true', help='Process images in subfolders recursively')
     return parser.parse_args()
 
-def process_detection_results(results, threshold=0.5):
+def process_detection_results(results, threshold=0.5, output_folder=None):
     """Process detection results and save crops for animal detections."""
     processed_count = 0
     
@@ -68,6 +69,14 @@ def process_detection_results(results, threshold=0.5):
         height, width = image.shape[:2]
         animal_count = 0
         
+        # Determine output directory
+        if output_folder:
+            output_dir = Path(output_folder)
+            # Create output directory if it doesn't exist
+            output_dir.mkdir(parents=True, exist_ok=True)
+        else:
+            output_dir = original_img_path.parent
+        
         # Handle different result formats
         if hasattr(detections, 'xyxy'):
             # Original format with detections object
@@ -97,11 +106,22 @@ def process_detection_results(results, threshold=0.5):
                     # Crop the image
                     cropped_image = image[y1:y2, x1:x2]
                     
-                    # Generate output path
-                    output_path = original_img_path.stem + "_crop"
+                    # Generate output path with original filename
+                    output_filename = original_img_path.stem + "_crop"
                     if animal_count > 0:
-                        output_path += f"_{animal_count}"
-                    output_path = original_img_path.parent / (output_path + original_img_path.suffix)
+                        output_filename += f"_{animal_count}"
+                    output_filename += original_img_path.suffix
+                    output_path = output_dir / output_filename
+                    
+                    # Handle filename conflicts by adding numbers
+                    counter = 1
+                    while output_path.exists():
+                        conflict_filename = original_img_path.stem + "_crop"
+                        if animal_count > 0:
+                            conflict_filename += f"_{animal_count}"
+                        conflict_filename += f"_({counter})" + original_img_path.suffix
+                        output_path = output_dir / conflict_filename
+                        counter += 1
                     
                     # Save the cropped image
                     cv2.imwrite(str(output_path), cropped_image)
@@ -137,11 +157,22 @@ def process_detection_results(results, threshold=0.5):
                             # Crop the image
                             cropped_image = image[y1:y2, x1:x2]
                             
-                            # Generate output path
-                            output_path = original_img_path.stem + "_crop"
+                            # Generate output path with original filename
+                            output_filename = original_img_path.stem + "_crop"
                             if animal_count > 0:
-                                output_path += f"_{animal_count}"
-                            output_path = original_img_path.parent / (output_path + original_img_path.suffix)
+                                output_filename += f"_{animal_count}"
+                            output_filename += original_img_path.suffix
+                            output_path = output_dir / output_filename
+                            
+                            # Handle filename conflicts by adding numbers
+                            counter = 1
+                            while output_path.exists():
+                                conflict_filename = original_img_path.stem + "_crop"
+                                if animal_count > 0:
+                                    conflict_filename += f"_{animal_count}"
+                                conflict_filename += f"_({counter})" + original_img_path.suffix
+                                output_path = output_dir / conflict_filename
+                                counter += 1
                             
                             # Save the cropped image
                             cv2.imwrite(str(output_path), cropped_image)
@@ -151,14 +182,14 @@ def process_detection_results(results, threshold=0.5):
     
     return processed_count
 
-def find_processable_images(folder, recursive=False):
+def find_processable_images(folder, recursive=False, output_folder=None):
     """
     Find all image files that should be processed.
     
     Conditions for processing:
     1. File is an image with valid extension
     2. Filename does not contain 'crop'
-    3. There is no existing crop version of the file
+    3. There is no existing crop version of the file (checks output folder if specified)
     """
     image_extensions = ['.jpg', '.jpeg', '.png', '.bmp', '.tif', '.tiff']
     folder_path = Path(folder)
@@ -172,8 +203,21 @@ def find_processable_images(folder, recursive=False):
         all_images.extend(list(folder_path.glob(f'{pattern_prefix}{ext}')))
         all_images.extend(list(folder_path.glob(f'{pattern_prefix}{ext.upper()}')))
     
-    # Create a set of all image paths for quick lookup
-    all_image_paths = {str(img) for img in all_images}
+    # Create a set of existing crops for quick lookup
+    existing_crops = set()
+    
+    if output_folder:
+        # Check for existing crops in the output folder
+        output_path = Path(output_folder)
+        if output_path.exists():
+            for ext in image_extensions:
+                existing_crops.update(str(img.stem) for img in output_path.glob(f'*{ext}'))
+                existing_crops.update(str(img.stem) for img in output_path.glob(f'*{ext.upper()}'))
+    else:
+        # Check for existing crops in the same directories as the original images
+        for ext in image_extensions:
+            existing_crops.update(str(img.stem) for img in folder_path.glob(f'{pattern_prefix}{ext}'))
+            existing_crops.update(str(img.stem) for img in folder_path.glob(f'{pattern_prefix}{ext.upper()}'))
     
     # Find images that need processing
     images_to_process = []
@@ -184,16 +228,16 @@ def find_processable_images(folder, recursive=False):
             
         # Check if a crop version exists
         crop_exists = False
-        base_crop_path = str(img.parent / f"{img.stem}_crop{img.suffix}")
+        base_crop_name = f"{img.stem}_crop"
         
         # Check for base crop or numbered crops
-        if base_crop_path in all_image_paths:
+        if base_crop_name in existing_crops:
             crop_exists = True
         else:
             # Check for numbered crops (_crop_0, _crop_1, etc.)
             for i in range(10):  # Check reasonable number of crops
-                numbered_crop = str(img.parent / f"{img.stem}_crop_{i}{img.suffix}")
-                if numbered_crop in all_image_paths:
+                numbered_crop = f"{img.stem}_crop_{i}"
+                if numbered_crop in existing_crops:
                     crop_exists = True
                     break
         
@@ -203,10 +247,13 @@ def find_processable_images(folder, recursive=False):
     
     return sorted(images_to_process)
 
-def process_folder(folder_path, images, detection_model, batch_size, threshold):
+def process_folder(folder_path, images, detection_model, batch_size, threshold, output_folder=None):
     """Process a single folder of images."""
     print(f"Processing folder: {folder_path}")
     print(f"Found {len(images)} images needing processing")
+    
+    if output_folder:
+        print(f"Output folder: {output_folder}")
     
     if not images:
         return 0
@@ -253,7 +300,7 @@ def process_folder(folder_path, images, detection_model, batch_size, threshold):
                 )
                 
                 # Process and save crops
-                crops = process_detection_results(results, threshold)
+                crops = process_detection_results(results, threshold, output_folder)
                 total_processed += crops
                 
             except Exception as e:
@@ -273,6 +320,16 @@ def main():
         print(f"Error: Folder {args.folder} does not exist")
         return
     
+    # Validate output folder if specified
+    if args.output:
+        output_path = Path(args.output)
+        try:
+            output_path.mkdir(parents=True, exist_ok=True)
+            print(f"Output folder: {args.output}")
+        except Exception as e:
+            print(f"Error: Could not create output folder {args.output}: {e}")
+            return
+    
     # Initialize model
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"Using device: {device}")
@@ -281,7 +338,7 @@ def main():
     
     # First, get all images that need processing
     print("Finding images that need processing...")
-    image_files = find_processable_images(args.folder, args.recursive)
+    image_files = find_processable_images(args.folder, args.recursive, args.output)
     print(f"Found {len(image_files)} images to process")
     
     if not image_files:
@@ -300,10 +357,12 @@ def main():
     total_crops = 0
     for folder_idx, (folder, images) in enumerate(global_folder_images.items(), 1):
         print(f"\n[{folder_idx}/{len(global_folder_images)}] Processing folder: {folder}")
-        crops = process_folder(folder, images, detection_model, args.batch_size, args.threshold)
+        crops = process_folder(folder, images, detection_model, args.batch_size, args.threshold, args.output)
         total_crops += crops
     
     print(f"\nProcessing complete! Created {total_crops} animal crops.")
+    if args.output:
+        print(f"All crops saved to: {args.output}")
 
 if __name__ == "__main__":
     main()

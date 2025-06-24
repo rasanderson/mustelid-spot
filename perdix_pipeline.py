@@ -15,9 +15,9 @@ import json
 import shutil
 
 # Fixed paths and settings
-MODEL_NAME = "fox_v21_newdata_20250618_185001" #"fox_v19_cleaned_20250531_104919" #"fox_v20_cleaned_20250603_121146" 
-MODEL_PATH = f"C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/{MODEL_NAME}/models/best_model_{MODEL_NAME}.h5"
-CLASS_NAMES = ['fox', 'person', 'badger', 'deer', 'bird', 'squirrel', 'lagomorph'] #'lagomorph', 'squirrel', 'badger', 'dog', 'muntjack', 'boar'
+MODEL_NAME = "FoxSpot_v20" 
+MODEL_PATH = f"C:/Users/Fox-AI/AI results/Model performance/{MODEL_NAME}/models/{MODEL_NAME}.h5"
+CLASS_NAMES = ['fox', 'person', 'badger', 'deer', 'bird', 'squirrel', 'lagomorph']
 TARGET_SIZE = (224, 224)
 DETECTION_THRESHOLD = 0.7
 CLASSIFICATION_THRESHOLD = 0.7

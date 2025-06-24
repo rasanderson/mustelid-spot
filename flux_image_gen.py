@@ -13,37 +13,48 @@ load_dotenv()
 
 FAL_KEY = os.environ.get('FAL_KEY')
 
-output_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Cleaned/Fox/FLUX_API"
-#output_dir = "F:/Fox-AI/To process/Flux/human"
+#output_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Cleaned/Fox/FLUX_API"
+output_dir = "F:/Fox-AI/To process/Flux/newrabbit"
 Path(output_dir).mkdir(exist_ok=True)
 
 # Parameters
-animal = "baby fox"
+animal = "hare"
 prompt = f"zoomed in, up close and realistic picture of a {animal} walking"
 batch_size = 4  # Number of images per API call
-total_images = 100  # Total images to generate
+total_images = 400  # Total images to generate
 image_width = 512
 image_height = 512
 
 # Optional: Additional prompt variations for diversity
 prompt_variations = [
-    f"zoomed in, up close and realistic picture of a young {animal} walking in snow",
-    f"zoomed in, up close and realistic picture of a young {animal} walking in autumn leaves",
-    f"zoomed in, up close and realistic picture of a young {animal} walking in a meadow",
-    f"zoomed in, up close and realistic picture of a young {animal} walking through forest",
-	f"zoomed in, up close and realistic picture of a young {animal} walking away in a hedge",
-    f"zoomed in, up close and realistic picture of a {animal} walking away in autumn leaves",
     f"zoomed in, up close and realistic picture of a {animal} walking away in grass next to a wooden fence",
     f"zoomed in, up close and realistic picture of a {animal} walking away through forest",
-	f"zoomed in, up close and realistic picture of a young {animal} walking across the shot in a hedge",
-    f"zoomed in, up close and realistic picture of a young {animal} walking across the shot in autumn leaves",
-    f"zoomed in, up close and realistic picture of a young {animal} walking across the shot in grass by a wooden fence",
-    f"zoomed in, up close and realistic picture of a {animal} walking across the shot through forest",
-    f"zoomed in, up close and realistic picture of a {animal} looking away in a clearing",
-    f"zoomed in, up close and realistic picture of a {animal} looking away in autumn leaves",
+	f"zoomed in, up close and realistic picture of a young {animal} running across a field in a hedge",
+    f"zoomed in, up close and realistic picture of a young {animal} running across a field in scattered autumn leaves",
+    f"zoomed in, up close and realistic picture of a young {animal} running across a field with a wooden fence",
+    f"zoomed in, up close and realistic picture of a {animal} running across a field through forest",
+    f"zoomed in, up close and realistic picture of a {animal} running across a field clearing",
+    f"zoomed in, up close and realistic picture of a {animal} looking away running across a field with scattered autumn leaves",
     f"zoomed in, up close and realistic picture of a young {animal} looking away in a meadow",
     f"zoomed in, up close and realistic picture of a {animal} looking away through forest",
 	f"zoomed in, up close and realistic picture of a {animal} looking away away along a hedge",
+	f"zoomed in, up close and realistic picture of a baby {animal} running across a field in snow",
+    f"zoomed in, up close and realistic picture of a baby {animal} running across a field in autumn leaves",
+    f"zoomed in, up close and realistic picture of a baby {animal} running across a field in a meadow",
+    f"zoomed in, up close and realistic picture of a baby {animal} running across a field through forest",
+	f"zoomed in, up close and realistic picture of a baby {animal} running across a field away in a hedge",
+    f"zoomed in, up close and realistic picture of a baby {animal} running across a field away in autumn leaves",
+    f"zoomed in, up close and realistic picture of a baby {animal} running across a field away in grass next to a wooden fence",
+    f"zoomed in, up close and realistic picture of a baby {animal} running across a field away through forest",
+	f"zoomed in, up close and realistic picture of a baby {animal} running across a field across the shot in a hedge",
+    f"zoomed in, up close and realistic picture of a baby {animal} running across a field across the shot on grass",
+    f"zoomed in, up close and realistic picture of a baby {animal} running across a field across the shot in grass by a wooden fence",
+    f"zoomed in, up close and realistic picture of a running {animal} walking across the shot through forest",
+    f"zoomed in, up close and realistic picture of a running {animal} looking away in a clearing",
+    f"zoomed in, up close and realistic picture of a running {animal} looking away on bare ground",
+    f"zoomed in, up close and realistic picture of a running {animal} looking away in a meadow",
+    f"zoomed in, up close and realistic picture of a running {animal} looking away through trees",
+	f"zoomed in, up close and realistic picture of a running {animal} looking away away along a hedge",
 ]
 
 # Track all generated images metadata
@@ -86,7 +97,7 @@ for batch in tqdm(range(num_batches)):
             url = image_data['url']
             
             # Create a unique filename
-            global_index = batch * batch_size + i #+ 111
+            global_index = batch * batch_size + i + 500
             filename = f"{global_index:03d}_{animal}.png"
             filepath = os.path.join(output_dir, filename)
             

@@ -26,4 +26,4 @@ dependencies:
     - tensorflow==2.10.0
     - tensorflow_addons
     - tqdm
-	- seaborn
+    - seaborn

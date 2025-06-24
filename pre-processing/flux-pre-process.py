@@ -15,7 +15,7 @@ import glob
 import os
 
 # Data directory paths
-notfox_image_folder = "F:/Fox-AI/To process/Flux/lagomorph/"
+notfox_image_folder = "F:/Fox-AI/To process/Flux/newrabbit/"
 
 # This will search subdirectories
 notfox_files = glob.glob(f"{notfox_image_folder}**/*.png", recursive=True)
@@ -180,15 +180,15 @@ def process_crop_images(df, class_name, target_size=(224, 224), channels=1, outp
 # Main execution
 if __name__ == "__main__":
     # Define all animal classes to process
-    animal_classes = ['badger', 'bird', 'boar', 'deer', 'dog', 'human', 'lagomorph', 'squirrel', 'rabbit']
+    animal_classes = ['badger', 'bird', 'boar', 'deer', 'dog', 'human', 'lagomorph', 'squirrel', 'hare'] #'rabbit', 
     
     # Additional valid classes that might be in the data but not in our processing list
-    all_classes = animal_classes + ['person', 'empty', 'cat', 'animal']
+    all_classes = animal_classes + ['person', 'empty', 'cat', 'animal', 'hare']
     
     # Set parameters
     target_size = (224, 224)
     channels = 1  # 1 for grayscale, 3 for RGB
-    output_base_dir = 'F:/Fox-AI/Processed/FLUX'
+    output_base_dir = 'F:/Fox-AI/Processed/FLUX/newlago'
     
     # Classify all images first
     df = classify_images(notfox_image_folder, all_classes)
