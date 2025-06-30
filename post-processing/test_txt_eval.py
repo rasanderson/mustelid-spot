@@ -225,7 +225,7 @@ class CNNEvaluator:
         print(f"Saved precision/recall/confidence analysis to: {save_path}")
         plt.show()
     
-    def plot_confusion_matrices(self, y_true, y_pred_proba, confidences=[0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 0.99]):
+    def plot_confusion_matrices(self, y_true, y_pred_proba, confidences=[0.8, 0.9, 0.95, 0.99]):
         """
         Plot normalized and absolute confusion matrices at different confidence thresholds
         """

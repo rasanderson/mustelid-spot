@@ -11,7 +11,7 @@ def get_image_hash(image_path):
             # Convert to RGB to handle different formats consistently
             img = img.convert('RGB')
             # Resize to small size for faster comparison
-            img = img.resize((8, 8))
+            img = img.resize((16, 16))
             # Get hash of pixel data
             return hashlib.md5(img.tobytes()).hexdigest()
     except Exception as e:

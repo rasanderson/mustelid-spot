@@ -134,11 +134,12 @@ CNNs perform best when trained on a balanced dataset. Therefore ~5,000 images of
 -	Deer
 -	Squirrels
 -	Birds
--	Dog
 -	Human
 -	Rabbit/Hare
 
 An 'other' class was discussed, but not included due to the range of possible images which would likely confuse the model. Instead, in deployment the model defaults to 'unknown' when confidence in the predictions are low. 
+
+Other images for classes Muntjack, Dog, Cat and Boar were collected but not in sufficient number for the model at this stage. They could form part of a future effort. 
 
 #### Folder structure
 The images are structured to allow for rapid deployment in your own training models. There are two main folders, Original Images, and Pre-processed images. The pre-processed images are ready transformed to 224, 224 resolution, and single channel (Grayscale) for use in CNN or other models. 
@@ -147,17 +148,24 @@ The exact structure is as follows:
 ```
 ├── Raw
 │   ├── fox
-│   │   ├── source
+│   │   ├── source 1
+│   │   │   ├── img_1
+│   │   │   ├── img_1_crop
+│   │   ├── source 2
 │   ├── not fox
-│   │   ├── species 1
-│   │   ├── species 2
+│   │   ├── badger
+│   │   ├── lagomorph
 ├── Pre-processed
 │   ├── fox
-│   │   ├── source
+│   │   ├── source 1
+│   │   │   ├── img_1
+│   │   │   ├── img_1_crop
+│   │   ├── source 2
 │   ├── not fox
-│   │   ├── species 1
-│   │   │   ├── source
-│   │   ├── species 2
+│   │   ├── badger
+│   │   │   ├── img_1_crop
+│   │   ├── lagomorph
+│   │   │   ├── img_1_crop
 ```
 #### Image pre-processing and augmentation
 Images from our dataset and partners were first passed through EcoAssist, now [AddaxAI](https://addaxdatascience.com/addaxai/) in order to leverage Megadetector's cropping function. Indeed, cropped images of animals were used in order to standardise the size of the individual and remove effects of background and other confounding factors, allowing the model to pick out features of interest directly on the animal. 
