@@ -2,7 +2,7 @@
 """
 Animal Detector and Cropper
 This script uses MegaDetectorV6 via PytorchWildlife to detect animals in images and crop them.
-Usage: python animal_detector.py /path/to/image/folder --output /path/to/output/folder
+Usage: python MD_crop.py /path/to/image/folder --output /path/to/output/folder
 """
 
 import os

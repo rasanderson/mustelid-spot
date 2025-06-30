@@ -20,7 +20,7 @@ import os
 
 #uni
 #fox_image_folder = 'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Fox/'
-notfox_image_folder = "G:/Data/data_v15/Lila/squirrel/squirrel/" #'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Not Fox/'
+notfox_image_folder = "G:/Data/data_v15/Lila/rabbit/crops" #'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Not Fox/'
 
 # This will search subdirectories
 #fox_files = glob.glob(f"{fox_image_folder}**/*.jp*g", recursive=True)
@@ -106,7 +106,7 @@ def classify_images(base_path, valid_classes):
 # Example usage
 if __name__ == "__main__":
     # Define valid classes
-    classes = ['person', 'fox', 'bird', 'dog', 'lagomorph', 'deer', 'squirrel', 'badger', 'empty', 'cat', 'animal', 'boar', 'human']
+    classes = ['person', 'fox', 'bird', 'dog', 'lagomorph', 'deer', 'squirrel', 'badger', 'empty', 'cat', 'animal', 'boar', 'human', 'rabbit', 'hare']
     
     # Classify images
     df = classify_images(notfox_image_folder, classes)
@@ -167,7 +167,7 @@ def process_crop_images(df, class_name, target_size=(224, 224), channels=1):
             
             # Add after img_array is created but before appending to processed_images:
             #output_folder = 'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/Processed/Not Fox/' + f"preprocessed/preprocessed_{class_name}_images"
-            output_folder = "G:/Data/data_v15/Lila/squirrel/preprocessed_" + f"{class_name}_images"
+            output_folder = "G:/Data/data_v15/Lila/lagomorph/preprocessed_" + f"{class_name}_images"
             Path(output_folder).mkdir(exist_ok=True)
             
             # Convert back to 0-255 range and correct data type
@@ -201,7 +201,7 @@ def process_crop_images(df, class_name, target_size=(224, 224), channels=1):
 # Example usage
 if __name__ == "__main__":
     # Assuming df is your DataFrame from the previous classification
-    class_name = 'squirrel'  # choose your class
+    class_name = 'rabbit'  # choose your class
     target_size = (224, 224)  # specify desired size
     channels = 1  # 1 for grayscale, 3 for RGB
     

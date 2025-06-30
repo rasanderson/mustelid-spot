@@ -15,11 +15,11 @@ import json
 import shutil
 
 # Fixed paths and settings
-MODEL_NAME = "fox_v21_newdata_20250618_185001" #"fox_v19_cleaned_20250531_104919" #"fox_v20_cleaned_20250603_121146" 
+MODEL_NAME =  "fox_v23_cleanednewdata_20250627_172030" #fox_v23_cleanednewdata_20250627_172030 #"fox_v19_cleaned_20250531_104919" #"fox_v20_cleaned_20250603_121146" "fox_v21_newdata_20250618_185001" #fox_v22_newdata_20250625_172502
 MODEL_PATH = f"C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/{MODEL_NAME}/models/best_model_{MODEL_NAME}.h5"
 CLASS_NAMES = ['fox', 'person', 'badger', 'deer', 'bird', 'squirrel', 'lagomorph'] #'lagomorph', 'squirrel', 'badger', 'dog', 'muntjack', 'boar'
 TARGET_SIZE = (224, 224)
-DETECTION_THRESHOLD = 0.7
+DETECTION_THRESHOLD = 0.4
 CLASSIFICATION_THRESHOLD = 0.7
 BATCH_SIZE = 16
 
@@ -54,7 +54,7 @@ def classify_images(crop_dir, model, output_csv):
             try:
                 # Load and preprocess image
                 img = tf.keras.preprocessing.image.load_img(
-                    img_path, target_size=TARGET_SIZE, color_mode='grayscale')
+                    img_path, target_size=TARGET_SIZE, interpolation = 'lanczos', color_mode='grayscale')
                 img_array = tf.keras.preprocessing.image.img_to_array(img)
                 img_array = img_array / 255.0  # Normalize to [0,1]
                 img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
@@ -369,16 +369,16 @@ def main():
                     
                     # Set color based on category
                     if category_id == 0:  # Animal
-                        color = "green"
+                        color = "red"
                     elif category_id == 1:  # Person
                         color = "blue"
                     elif category_id == 2:  # Vehicle
-                        color = "orange"
+                        color = "yellow"
                     else:
-                        color = "red"
+                        color = "green"
                         
                     # Draw bounding box
-                    draw.rectangle([x1, y1, x2, y2], outline=color, width=2)
+                    draw.rectangle([x1, y1, x2, y2], outline=color, width=4)
                     
                     # Draw label
                     label = f"Class {category_id}: {conf:.2f}"

@@ -106,7 +106,7 @@ class CNNEvaluator:
             np.array: Preprocessed image
         """
         try:
-            img = image.load_img(img_path, target_size=target_size, color_mode = 'grayscale')
+            img = image.load_img(img_path, target_size=target_size, interpolation = 'lanczos', color_mode = 'grayscale')
             img_array = image.img_to_array(img)
             img_array = np.expand_dims(img_array, axis=0)
             img_array = img_array / 255.0  # Normalize to [0,1]
@@ -225,45 +225,59 @@ class CNNEvaluator:
         print(f"Saved precision/recall/confidence analysis to: {save_path}")
         plt.show()
     
-    def plot_confusion_matrices(self, y_true, y_pred_proba, confidences=[0.7, 0.8, 0.9, 0.99]):
+    def plot_confusion_matrices(self, y_true, y_pred_proba, confidences=[0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 0.99]):
         """
         Plot normalized and absolute confusion matrices at different confidence thresholds
         """
         n_conf = len(confidences)
-        fig, axes = plt.subplots(2, n_conf, figsize=(5*n_conf, 10))
-        
+        # Fixed: Create 2 columns and n_conf rows
+        fig, axes = plt.subplots(n_conf, 2, figsize=(15, n_conf*5))
+    
+        # Handle case where there's only one confidence level
+        if n_conf == 1:
+            axes = axes.reshape(1, -1)
+    
         for i, conf in enumerate(confidences):
             # Get predictions at this confidence threshold
             y_pred = np.argmax(y_pred_proba, axis=1)
             max_probs = np.max(y_pred_proba, axis=1)
-            
+        
             # Only keep predictions above confidence threshold
             confident_mask = max_probs >= conf
             y_true_conf = y_true[confident_mask]
             y_pred_conf = y_pred[confident_mask]
-            
+        
             if len(y_true_conf) == 0:
                 print(f"No predictions above confidence {conf}")
+                # Clear the axes for this row if no data
+                axes[i, 0].text(0.5, 0.5, f'No data\n(conf={conf})', 
+                               ha='center', va='center', transform=axes[i, 0].transAxes)
+                axes[i, 0].set_xticks([])
+                axes[i, 0].set_yticks([])
+                axes[i, 1].text(0.5, 0.5, f'No data\n(conf={conf})', 
+                               ha='center', va='center', transform=axes[i, 1].transAxes)
+                axes[i, 1].set_xticks([])
+                axes[i, 1].set_yticks([])
                 continue
-            
+        
             # Compute confusion matrices
             cm_abs = confusion_matrix(y_true_conf, y_pred_conf, labels=range(self.n_classes))
             cm_norm = confusion_matrix(y_true_conf, y_pred_conf, labels=range(self.n_classes), normalize='true')
-            
-            # Plot absolute confusion matrix with magma colormap
-            sns.heatmap(cm_abs, annot=True, fmt='d', cmap='magma', 
-                       xticklabels=self.classes, yticklabels=self.classes, ax=axes[0, i])
-            axes[0, i].set_title(f'Absolute CM (conf={conf})\nSamples: {len(y_true_conf)}')
-            axes[0, i].set_xlabel('Predicted')
-            axes[0, i].set_ylabel('True')
-            
-            # Plot normalized confusion matrix with magma colormap
-            sns.heatmap(cm_norm, annot=True, fmt='.2f', cmap='magma', 
-                       xticklabels=self.classes, yticklabels=self.classes, ax=axes[1, i])
-            axes[1, i].set_title(f'Normalized CM (conf={conf})\nSamples: {len(y_true_conf)}')
-            axes[1, i].set_xlabel('Predicted')
-            axes[1, i].set_ylabel('True')
         
+            # Plot absolute confusion matrix (left column)
+            sns.heatmap(cm_abs, annot=True, fmt='d', cmap='magma', 
+                       xticklabels=self.classes, yticklabels=self.classes, ax=axes[i, 0])
+            axes[i, 0].set_title(f'Absolute CM (conf={conf})\nSamples: {len(y_true_conf)}')
+            axes[i, 0].set_xlabel('Predicted')
+            axes[i, 0].set_ylabel('True')
+        
+            # Plot normalized confusion matrix (right column)
+            sns.heatmap(cm_norm, annot=True, fmt='.2f', cmap='magma', 
+                       xticklabels=self.classes, yticklabels=self.classes, ax=axes[i, 1])
+            axes[i, 1].set_title(f'Normalized CM (conf={conf})\nSamples: {len(y_true_conf)}')
+            axes[i, 1].set_xlabel('Predicted')
+            axes[i, 1].set_ylabel('True')
+    
         plt.tight_layout()
         save_path = self.save_dir / "confusion_matrices.png"
         plt.savefig(save_path, dpi=300, bbox_inches='tight')
@@ -427,16 +441,18 @@ if __name__ == "__main__":
     # =============================================================================
     
     # Specify your model path
-    MODEL_PATH = 'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/fox_v20_cleaned_20250603_121146/models/FoxSpot_v20.h5' #best_model_fox_v21_newdata_20250618_185001.h5'
+    MODEL_PATH = 'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/fox_v23_cleanednewdata_20250627_172030/models/best_model_fox_v23_cleanednewdata_20250627_172030.h5' 
+    #fox_v20_cleaned_20250603_121146 #FoxSpot_v20 #best_model_fox_v21_newdata_20250618_185001.h5' #best_model_fox_v22_newdata_20250625_172502 #fox_v23_cleanednewdata_20250627_172030
     
     # Specify your txt files with image paths and labels
     TXT_FILES = [
-        'G:/Data/data_v16/test_set_paths.txt',
+        'G:/Data/data_v16/test_set_paths_data_v16.txt',
         'G:/Data/data_v15/Removed/test_set_paths_removed.txt'
     ]
     
     # Specify where to save the figures
-    SAVE_DIRECTORY = 'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/fox_v20_cleaned_20250603_121146/tests/'
+    SAVE_DIRECTORY = 'C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/fox_v23_cleanednewdata_20250627_172030/tests_v16/'
+    os.makedirs(SAVE_DIRECTORY,exist_ok=True)
     
     # Define classes (these should match your model's classes)
     CLASSES = ['fox', 'person', 'badger', 'deer', 'bird', 'squirrel', 'lagomorph']

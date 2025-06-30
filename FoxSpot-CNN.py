@@ -501,6 +501,7 @@ def create_data_generators(X_train, X_val, X_test, y_train, y_val, y_test, batch
         color_mode='grayscale',
         class_mode=class_mode,
         batch_size=batch_size,
+        interpolation='lanczos',
         shuffle=True  # Shuffle training data
     )
     
@@ -512,6 +513,7 @@ def create_data_generators(X_train, X_val, X_test, y_train, y_val, y_test, batch
         color_mode='grayscale',
         class_mode=class_mode,
         batch_size=batch_size,
+        interpolation='lanczos',
         shuffle=False  # Don't shuffle validation data
     )
     
@@ -523,6 +525,7 @@ def create_data_generators(X_train, X_val, X_test, y_train, y_val, y_test, batch
         color_mode='grayscale',
         class_mode=class_mode,
         batch_size=batch_size,
+        interpolation='lanczos',
         shuffle=False  # Don't shuffle test data
     )
     
@@ -955,7 +958,7 @@ if __name__ == "__main__":
     output_dir = "C:/Users/c0062193.CAMPUS/OneDrive - Newcastle University/General - Fox-AI/AI results/Model performance/"
 
     # Set a name for this training run
-    run_name = f"fox_v21_newdata_{timestamp}"  # Change this for each run
+    run_name = f"fox_v23_cleanednewdata_{timestamp}"  # Change this for each run
     
     # Class definitions
     classes = ['fox', 'person', 'badger', 'deer', 'bird', 'squirrel', 'lagomorph']

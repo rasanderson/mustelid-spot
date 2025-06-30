@@ -1,7 +1,9 @@
-image_scraping/library/
-image_scraping/images/
+pre-processing/image_scraping_roy/library/
+pre-processing/image_scraping_roy/images/
 tfenv/
 MegaDetectorV6.pt
 tensorflow-gpu-project/
 .env
 transfer_classification_model.h5
+cnn_test_results
+test_set_paths.txt

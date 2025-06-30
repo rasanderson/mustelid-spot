@@ -26,10 +26,10 @@ for s in lila_base_urls.values():
 
 # If any of these strings appear in the common name of a species, we'll download that image
 # species_of_interest = ['grey fox','gray fox','cape fox','red fox','kit fox']
-species_of_interest = ['squirrel']
+species_of_interest = ['hare']
 
 # We'll write images, metadata downloads, and temporary files here
-lila_local_base = os.path.expanduser("G:/Data/data_v15/Lila/squirrel")
+lila_local_base = os.path.expanduser("G:/Data/data_v15/Lila/hare")
 
 metadata_dir = os.path.join(lila_local_base,'metadata')
 os.makedirs(metadata_dir,exist_ok=True)

@@ -95,7 +95,7 @@ if __name__ == "__main__":
     classes = ['fox', 'person', 'badger', 'deer', 'bird', 'squirrel', 'lagomorph']
     
     # Extract test set
-    base_directory = "G:/Data/data_v15/Removed/"  # Update with your actual path
+    base_directory = "G:/Data/data_v16/"  # Update with your actual path
     test_images, test_labels = extract_test_set(
         base_dir=base_directory,
         classes=classes,
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     )
     
     # Save test set paths to file for later use
-    output_path = Path(base_directory) / 'test_set_paths_removed.txt'
+    output_path = Path(base_directory) / 'test_set_paths_data_v16.txt'
     with open(output_path, 'w') as f:
         for img_path, label in zip(test_images, test_labels):
             class_name = classes[label] if label > 0 else 'fox'
