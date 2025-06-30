@@ -54,7 +54,7 @@ def classify_images(crop_dir, model, output_csv):
             try:
                 # Load and preprocess image
                 img = tf.keras.preprocessing.image.load_img(
-                    img_path, target_size=TARGET_SIZE, color_mode='grayscale')
+                    img_path, target_size=TARGET_SIZE, interpolation = 'lanczos', color_mode='grayscale')
                 img_array = tf.keras.preprocessing.image.img_to_array(img)
                 img_array = img_array / 255.0  # Normalize to [0,1]
                 img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
