@@ -1,5 +1,27 @@
 # set FAL_KEY = '${.env.FAL.AI_KEY}'
 
+"""
+flux_image_gen.py
+
+Synthetic camera trap image generator using FAL.AI's FLUX Schnell diffusion model.
+Creates realistic animal images with varied prompts and environments for data augmentation
+of camera trap classification datasets.
+
+Features:
+- Batch processing with configurable batch sizes
+- Multiple prompt variations for visual diversity (poses, environments, ages)
+- Automatic image downloading and local storage
+- Comprehensive metadata logging (prompts, batch info, generation parameters)
+- Progress tracking and error handling
+- Environment-based API key management
+- Sequential filename generation with animal prefix
+
+Current setup: Generates hare images with forest/field/hedge backgrounds.
+Easily configurable for other species by changing animal variable and prompts.
+
+Requires FAL.AI API key and sufficient credits for image generation.
+"""
+
 import fal_client
 import os
 from dotenv import load_dotenv, dotenv_values

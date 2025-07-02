@@ -1,8 +1,23 @@
-# -*- coding: utf-8 -*-
 """
-Created on Mon Jan 27 11:38:00 2025
+Image preprocessing pipeline for camera trap dataset classification.
 
-@author: nicho
+Automatically classifies images based on folder structure and preprocesses them 
+for training. Searches through directory hierarchies to find images, assigns 
+class labels based on parent folder names, and converts to standardized arrays.
+
+Key Functions:
+- classify_images(): Auto-assigns classes based on folder names (supports multi-class)
+- process_crop_images(): Converts images to grayscale/RGB arrays with normalization
+- Filters for cropped images (filename contains 'crop')
+- Saves preprocessed images to organized output directories
+
+Supported Classes: person, fox, bird, dog, lagomorph, deer, squirrel, badger, 
+empty, cat, animal, boar, human, rabbit, hare
+
+Output: Normalized numpy arrays (224x224) ready for model training, plus 
+organized preprocessed image files saved to disk.
+
+Usage: Update folder paths, specify target class, run to get training-ready arrays
 """
 # Import require packages
 import numpy as np

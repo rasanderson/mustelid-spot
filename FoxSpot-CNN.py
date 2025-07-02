@@ -1,6 +1,35 @@
-# Nicholas Allen
+﻿# Nicholas Allen
 # MEP, Newcastle University
 # 28/05/2025
+
+"""
+FoxSpot CNN Training Pipeline - Complete British Mammals Classification System
+
+Full end-to-end training pipeline for multi-class camera trap image classification.
+Trains a custom CNN to distinguish between 7 species: fox, person, badger, deer, 
+bird, squirrel, and lagomorph using preprocessed cropped images.
+
+Key Features:
+- Balanced dataset loading with reproducible train/val/test splits (0.7/0.2/0.1)
+- Custom CNN architecture with batch normalization, dropout, and L2 regularization
+- Data augmentation for training set (rotation, shifts, zoom, horizontal flip)
+- GPU/CPU auto-detection with optimized batch sizes
+- Comprehensive evaluation suite: ROC, PR curves, F1 optimization, confusion matrices
+- Auto-saving: best model, latest model, final model + training history/metrics
+- Memory-efficient generators for large datasets
+
+Architecture:
+- 3 Conv blocks (32→64→128 filters) with MaxPooling and BatchNorm
+- Dense layers with dropout for classification
+- Per-image standardization and polynomial learning rate decay
+
+Dataset Structure Expected:
+- base_dir/Fox/ (fox crops)
+- base_dir/Not Fox/preprocessed/[class_folders]/ (other species)
+
+Output: Trained models, performance plots, classification reports, confusion matrices
+Usage: Configure paths/classes in main section, run for complete training pipeline
+"""
 
 import os
 import sys

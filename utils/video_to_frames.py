@@ -1,3 +1,30 @@
+﻿"""
+Video frame extraction utility for camera trap footage preprocessing.
+
+Batch processes video files to extract frames at regular time intervals, creating 
+individual image files suitable for further analysis with detection/classification 
+pipelines. Designed for processing camera trap videos into manageable frame datasets.
+
+Key Features:
+- Recursive directory scanning for multiple video formats (mp4, avi, mov, mkv, wmv, flv)
+- Configurable time intervals between extracted frames
+- Organized output structure with separate folders per video
+- Frame numbering with zero-padding for proper sorting
+- Video metadata extraction (FPS, duration, total frames)
+
+Output Structure:
+- output_dir/[video_name]/[video_name]_frame_0001.jpg
+- output_dir/[video_name]/[video_name]_frame_0002.jpg
+- etc.
+
+Usage Examples:
+- python video_to_frames.py /path/to/videos /path/to/frames --interval 5.0
+- python video_to_frames.py /videos /frames --interval 1.0 --recursive
+
+Typical workflow: Video → Frames → Detection pipeline → Classification
+Essential for converting camera trap videos into frame-based datasets for analysis.
+"""
+
 import os
 import argparse
 import cv2

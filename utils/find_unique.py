@@ -1,4 +1,21 @@
-﻿import os
+﻿"""
+find_unique.py
+
+Duplicate detection and dataset deduplication tool for camera trap image collections.
+Identifies and removes duplicate images within datasets, then finds unique images between datasets.
+
+Features:
+- Content-based duplicate detection using perceptual hashing (16x16 RGB thumbnail MD5)
+- Flexible folder structure handling (flat folders vs class-based subfolders)
+- Mixed structure support (one dataset flat, one with subfolders)
+- Intra-dataset duplicate removal with detailed logging
+- Inter-dataset unique image extraction
+- Automatic filename conflict resolution
+
+Usage: Configure folder paths and structure flags, then run process_datasets()
+"""
+
+import os
 import hashlib
 from PIL import Image
 import shutil

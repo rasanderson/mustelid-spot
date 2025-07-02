@@ -1,3 +1,21 @@
+"""
+copy_crop_images.py
+
+Utility to collect and organize cropped images from camera trap processing results.
+Recursively searches source directories for images containing "crop" in filename and copies them 
+to a destination directory while preserving the original folder structure.
+
+Features:
+- Recursive directory traversal
+- Filename pattern matching (contains "crop")
+- Multiple image format support (.jpg, .jpeg, .png, .gif, .bmp, .tiff, .webp)
+- Folder structure preservation
+- Duplicate detection (skips existing files)
+- Detailed copy statistics and logging
+
+Usage: python copy_crop_images.py /path/to/source /path/to/destination
+"""
+
 import os
 import shutil
 import argparse

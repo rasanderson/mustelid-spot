@@ -1,4 +1,20 @@
-﻿import matplotlib.pyplot as plt
+﻿"""
+Image viewer for camera trap dataset with keyboard navigation.
+
+Loads image paths and labels from a tab-delimited text file and displays them 
+in a 4x4 grid (16 images per page). Navigate through pages using arrow keys.
+Handles both grayscale and color images, shows filename and label for each image.
+
+Usage: Update DIR variable to point to your data directory containing the 
+test_set_paths_data_v16.txt file.
+
+Controls:
+- Arrow keys (←→↑↓): Navigate between pages  
+- 'q': Quit viewer
+
+Requires: matplotlib, images must exist at paths specified in the text file
+"""
+import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import os
 from pathlib import Path

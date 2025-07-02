@@ -1,4 +1,27 @@
-﻿import os
+﻿"""
+FoxSpot: British Mammals Classifier - Gradio Web Application
+
+Complete camera trap analysis pipeline combining MegaDetectorV6 for animal detection 
+and a custom TensorFlow classifier for British mammal species identification.
+
+Features:
+- Animal detection using PyTorchWildlife MegaDetectorV6
+- Classification of 7 species: fox, person, badger, deer, bird, squirrel, lagomorph
+- Interactive web interface with adjustable confidence thresholds
+- Batch processing for efficient GPU utilization on HuggingFace Spaces
+- Real-time cropped animal gallery with species predictions
+
+Models:
+- Detection: MegaDetectorV6 (MDV6-yolov10-c)
+- Classification: Custom grayscale model (best_model_fox_v22_newdata_20250625_172502.h5)
+
+Deployment: Optimized for HuggingFace Spaces with ZeroGPU support and graceful 
+CPU fallback. Includes image resizing and caching for performance.
+
+Usage: Upload image, adjust thresholds, click 'Analyze Image'
+"""
+
+import os
 import spaces  # Import spaces for ZeroGPU
 import torch
 import numpy as np

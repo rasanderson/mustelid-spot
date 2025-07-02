@@ -1,12 +1,24 @@
 """
-
 download_lila_subset.py
 
-Example of how to download a list of files from LILA, e.g. all the files
-in a data set corresponding to a particular species.
+LILA (Labeled Information Library of Alexandria) dataset downloader for specific species.
+Downloads camera trap images from LILA based on species common names, with support for 
+multiple cloud providers and concurrent downloads.
 
+Features:
+- Species-based filtering using common names (configurable list)
+- Multi-provider support (Google Cloud, Azure, AWS) 
+- Concurrent downloads with configurable thread count
+- Optional per-dataset image limits with random sampling
+- Preserves original folder structure from LILA
+- Progress tracking and download statistics
+- Metadata management and caching
+
+Current configuration: Downloads bear images with 10 image limit per dataset.
+Modify species_of_interest list to target different animals (foxes, etc.).
+
+Requires MegaDetector utilities and LILA metadata access.
 """
-
 #%% Constants and imports
 
 import os

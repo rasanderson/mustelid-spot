@@ -1,3 +1,15 @@
+"""
+rename_images.py
+
+Batch file renaming utilities for camera trap image datasets. Contains functions to:
+- Replace "hare" with "lagomorph" in filenames (taxonomic standardization)
+- Replace "child" with "human_child" in filenames (classification clarity)  
+- Rename PNG files to sequential format using folder name as prefix
+
+Recursively processes folders and provides detailed logging of rename operations.
+Used for standardizing filename conventions in camera trap classification datasets.
+"""
+
 import os
 import glob
 

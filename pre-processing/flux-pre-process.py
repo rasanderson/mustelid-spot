@@ -1,8 +1,26 @@
-# -*- coding: utf-8 -*-
 """
-Created on Mon Jan 27 11:38:00 2025
+Batch preprocessing pipeline for FLUX-generated synthetic camera trap images.
 
-@author: nicho
+Processes multiple animal classes from synthetic image datasets, classifying based 
+on filename patterns rather than folder structure. Designed specifically for 
+FLUX AI-generated training data with systematic naming conventions.
+
+Key Differences from standard preprocessing:
+- Filename-based classification (not folder-based)
+- Batch processing for multiple animal classes
+- Handles PNG format synthetic images
+- Organized output structure by class
+
+Workflow:
+1. Scans directory for PNG files containing class names in filenames
+2. Filters for cropped images (filename contains 'crop')
+3. Batch processes all animal classes: badger, bird, boar, deer, dog, human, 
+   lagomorph, squirrel, hare
+4. Converts to grayscale 224x224 normalized arrays
+5. Saves processed images organized by class folders
+
+Usage: Update input/output paths, run to process entire synthetic dataset
+Output: Training-ready arrays + organized class directories for model training
 """
 # Import require packages
 import numpy as np

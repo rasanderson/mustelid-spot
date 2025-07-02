@@ -1,3 +1,31 @@
+﻿"""
+Complete camera trap analysis pipeline: Detection → Classification → Visualization
+
+End-to-end processing of camera trap images using MegaDetectorV6 for object detection
+followed by custom TensorFlow classification for British mammal species identification.
+
+Pipeline Steps:
+1. MegaDetectorV6 batch detection (animals, people, vehicles)
+2. Image organization by detection class (empty/animal/person/vehicle folders)
+3. Crop extraction and saving by detection class
+4. Species classification on animal crops only
+5. Multi-grid visualization of classified results with confidence scores
+
+Models:
+- Detection: MegaDetectorV6 (MDV6-yolov10-c) 
+- Classification: Custom TF model for 7 species (fox, person, badger, deer, bird, squirrel, lagomorph)
+
+Output Structure:
+- foxdetect_output_[model]/
+  ├── animal/crops/ (classified animal crops)
+  ├── person/, vehicle/, empty/ (organized by detection)
+  ├── detection_images/ (annotated originals)
+  ├── animal_classification_results.csv
+  └── animal_classification_grid_[N].png (visualization grids)
+
+Usage: python pipeline.py /path/to/images
+Configurable thresholds: DETECTION_THRESHOLD=0.4, CLASSIFICATION_THRESHOLD=0.7
+"""
 import os
 import argparse
 import math

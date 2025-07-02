@@ -1,25 +1,28 @@
-
-# =============================================================================
-# ALTERNATIVE USAGE EXAMPLES
-# =============================================================================
-
 """
-# Example 1: Basic usage with default save directory
-classes = ['fox', 'person', 'badger', 'deer', 'bird', 'squirrel', 'lagomorph']
-evaluator = CNNEvaluator('/path/to/model.h5', classes)
-results = evaluator.evaluate(['/path/to/file1.txt', '/path/to/file2.txt'])
+Comprehensive CNN model evaluation suite for camera trap classifiers.
 
-# Example 2: Custom save directory
-evaluator = CNNEvaluator('/path/to/model.h5', classes, save_dir='/custom/save/path')
-results = evaluator.evaluate(['/path/to/file1.txt'])
+Complete evaluation pipeline that loads test images from text files and generates 
+detailed performance visualizations and metrics for multi-class classification models.
 
-# Example 3: Multiple evaluation runs
-evaluator = CNNEvaluator('/path/to/model.h5', classes, save_dir='./results/run1')
-train_results = evaluator.evaluate(['/path/to/train.txt'])
+Key Analysis Features:
+- Precision/Recall vs Confidence threshold curves (fox-specific + all classes)
+- Confusion matrices at multiple confidence levels (0.8, 0.9, 0.95, 0.99)
+- F1 score optimization curves with automatic optimal threshold detection
+- Class distribution analysis and sample counting
+- Handles multiple test set files for comprehensive evaluation
 
-evaluator = CNNEvaluator('/path/to/model.h5', classes, save_dir='./results/run2') 
-test_results = evaluator.evaluate(['/path/to/test.txt'])
+Visualization Outputs:
+- precision_recall_confidence_analysis.png (2-panel precision/recall curves)
+- confusion_matrices.png (multi-threshold normalized + absolute CMs)
+- f1_curves.png (fox-specific + macro-averaged F1 optimization)
+
+Input Format: Tab-delimited files with "image_path<tab>class_name"
+Classes: fox, person, badger, deer, bird, squirrel, lagomorph
+
+Usage: Configure MODEL_PATH, TXT_FILES, SAVE_DIRECTORY in main section and run.
+Essential for model comparison and production threshold selection.
 """
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

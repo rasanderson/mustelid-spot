@@ -1,8 +1,19 @@
 #!/usr/bin/env python3
 """
-Animal Detector and Cropper
-This script uses MegaDetectorV6 via PytorchWildlife to detect animals in images and crop them.
-Usage: python MD_crop.py /path/to/image/folder --output /path/to/output/folder
+MD_crop.py
+
+Animal detection and cropping tool using MegaDetectorV6 via PytorchWildlife.
+Processes camera trap images to detect and extract animal bounding boxes as separate crop files.
+
+Features:
+- Batch processing with configurable batch size and confidence threshold
+- Recursive folder processing option
+- Smart duplicate detection (skips images that already have crops)
+- Flexible output directory (same folder or specified location)
+- Handles multiple animals per image with sequential numbering
+- GPU acceleration when available
+
+Usage: python MD_crop.py /path/to/images --output /path/to/crops --threshold 0.5 --recursive
 """
 
 import os
