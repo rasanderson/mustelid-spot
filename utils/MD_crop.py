@@ -18,7 +18,7 @@ Usage: python MD_crop.py /path/to/images --output /path/to/crops --threshold 0.5
 
 import os
 import cv2
-import torch
+#import torch
 import argparse
 from pathlib import Path
 from tqdm import tqdm
@@ -342,7 +342,7 @@ def main():
             return
     
     # Initialize model
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    device = '/GPU:0' if tf.config.list_physical_devices('GPU') else '/CPU:0'
     print(f"Using device: {device}")
     print("Initializing MegaDetector...")
     detection_model = pw_detection.MegaDetectorV6(device=device, pretrained=True, version="MDV6-yolov10-c")

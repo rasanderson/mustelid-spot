@@ -7,3 +7,5 @@ tensorflow-gpu-project/
 transfer_classification_model.h5
 cnn_test_results
 test_set_paths.txt
+docs/
+.vs/

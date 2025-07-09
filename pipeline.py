@@ -30,7 +30,7 @@ import os
 import argparse
 import math
 import csv
-import torch
+#import torch
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -281,7 +281,7 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
     
     # Set device for detection model
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    device = '/GPU:0' if tf.config.list_physical_devices('GPU') else '/CPU:0'
     print(f"Using device: {device}")
     
     # Step 1: Run MegaDetector on images
