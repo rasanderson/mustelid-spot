@@ -51,7 +51,11 @@ def download_species(taxon_name, folder_name):
         try:
             response = get_observations(
                 taxon_name=taxon_name,
-                place_id=PLACE_ID,
+                # place_id=PLACE_ID,
+                nelat=56.0,
+                nelng=16.0,
+                swlat=49.0,
+                swlng=-11.0,
                 photos=True,
                 per_page=PER_PAGE,
                 page=page,
