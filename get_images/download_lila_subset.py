@@ -37,17 +37,20 @@ for s in lila_base_urls.values():
     assert s.endswith('/')
 
 # If any of these strings appear in the common name of a species, we'll download that image
-# species_of_interest = ['grey fox','gray fox','cape fox','red fox','kit fox']
 species_of_interest = ['stoat','european stoat','ermine','eurasian stoat', 'eurasian ermine']
+species_name = "stoat"
 
-# We'll write images, metadata downloads, and temporary files here
-lila_local_base = os.path.expanduser('images/lila/stoat')
+# Global LILA root
+lila_root = os.path.expanduser("images/lila")
 
-metadata_dir = os.path.join(lila_local_base,'metadata')
-os.makedirs(metadata_dir,exist_ok=True)
+# Shared metadata directory (downloaded only once)
+metadata_dir = os.path.join(lila_root, "metadata")
+os.makedirs(metadata_dir, exist_ok=True)
 
-output_dir = os.path.join(lila_local_base,'lila_downloads_by_dataset')
-os.makedirs(output_dir,exist_ok=True)
+# Species-specific image directory
+species_base = os.path.join(lila_root, species_name)
+output_dir = os.path.join(species_base, "lila_downloads_by_dataset")
+os.makedirs(output_dir, exist_ok=True)
 
 # Number of concurrent download threads
 n_download_threads = 20
