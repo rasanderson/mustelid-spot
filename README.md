@@ -127,6 +127,13 @@ A comprehensive dataset has been compiled from multiple sources and partners. Th
 |CEH, Chornobyl Exclusion Zone, Ukraine|[Online](https://catalogue.ceh.ac.uk/documents/a657ffc3-8f62-458f-bcb7-30e116807174)|Camera trap images of Deer, Hares, Foxes, Squirrels, Wild Boar|
 |CEH, Cairngorms|[Online](https://catalogue.ceh.ac.uk/documents/b0c13df5-f606-4bf2-9397-a9c51a7e8d93)|Foxes and other species|
 
+CEH EIDC datasets can be downloaded with `wget` e.g.
+
+```
+wget --recursive --no-parent https://catalogue.ceh.ac.uk/datastore/eidchub/b0c13df5-f606-4bf2-9397-a9c51a7e8d93/images/Otter/ --user=xxx --password=xxxx --auth-no-challenge
+```
+The `--no-parent` option is needed to ensure entire dataset is not downloaded for other spp higher up in the tree.
+
 #### Image classes
 CNNs perform best when trained on a balanced dataset. Therefore ~5,000 images of the following classes were gathered for inclusion in model training:
 -	Fox
