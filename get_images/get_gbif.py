@@ -75,16 +75,13 @@ for i, url in enumerate(image_urls, start=1):
         r = requests.get(url, timeout=60)
         r.raise_for_status()
 
-        suffix = Path(urlparse(url).path).suffix
+        content_type = r.headers.get("Content-Type", "").lower()
 
-        if suffix.lower() not in [
-            ".jpg", ".jpeg", ".png",
-            ".tif", ".tiff", ".webp"
-        ]:
-            suffix = ".jpg"
+        # Only save JPEG images
+        if "image/jpeg" not in content_type:
+            continue
 
-        # Add a zero-padded index to the filename 0001, 0002, etc.
-        filename = output_dir / f"{common_name.replace(' ', '_')}_{i:04d}{suffix}"
+        filename = output_dir / f"{common_name.replace(' ', '_')}_{i:04d}.jpg"
 
         with open(filename, "wb") as f:
             f.write(r.content)
