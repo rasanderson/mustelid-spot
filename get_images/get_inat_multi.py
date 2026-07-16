@@ -5,7 +5,7 @@ import requests
 from pyinaturalist import get_observations
 
 # Great Britain place ID
-PLACE_ID = 6857
+# PLACE_ID = 6857
 # Note GB-only gives less than 1000 images for some species. Many images are
 # footprints, spraints, scats so unusable.
 # Could omit place_id to get more images, or use a bounding box for north
@@ -30,6 +30,7 @@ SPECIES = {
     "Mustela erminea": "stoat",
     "Mustela nivalis": "weasel",
     "Martes martes": "pine_marten",
+    "Mustela furo": "ferret",
 }
 
 TARGET_IMAGES = 1000

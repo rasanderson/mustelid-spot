@@ -5,7 +5,7 @@ import requests
 from pyinaturalist import get_observations
 
 # Great Britain place ID
-PLACE_ID = 6857
+# PLACE_ID = 6857
 
 # TAXON_NAME
 # - Lutra lutra (European otter)
@@ -14,8 +14,9 @@ PLACE_ID = 6857
 # - Mustela erminea (stoat)
 # - Mustela nivalis (weasel)
 # - Martes martes (pinemarten)
-TAXON_NAME = "Mustela nivalis"  # least weasel
-OUTPUT_DIR = pathlib.Path("images/images_raw/weasel")
+# - Mustela furo (ferret)
+TAXON_NAME = "Mustela furo"  # ferret
+OUTPUT_DIR = pathlib.Path("images/images_raw/ferret")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 TARGET_IMAGES = 1000
@@ -27,14 +28,14 @@ page = 1
 while downloaded < TARGET_IMAGES:
     print(
     f"taxon_name={TAXON_NAME}, "
-    f"place_id={PLACE_ID}, "
+    #f"place_id={PLACE_ID}, "
     f"per_page={PER_PAGE}, "
     f"page={page}"
     )
 
     response = get_observations(
         taxon_name=TAXON_NAME,
-        place_id=PLACE_ID,
+        # place_id=PLACE_ID,
         photos=True,
         per_page=PER_PAGE,
         page=page,

@@ -5,6 +5,7 @@ import requests
 from urllib.parse import urlparse
 import os
 
+
 # Get species key
 def get_species_key(scientific_name):
     r = requests.get(
@@ -22,9 +23,16 @@ def get_species_key(scientific_name):
 
     return result["usageKey"]
 
-# polecat
-common_name = "polecat"
-species_key = get_species_key("Mustela putorius")
+# TAXON_NAME
+# - Lutra lutra (European otter)
+# - Neovison vison (American mink)
+# - Mustela putorius (European polecat) / Mustela furo (ferret)
+# - Mustela erminea (stoat)
+# - Mustela nivalis (weasel)
+# - Martes martes (pinemarten)
+# Target species
+common_name = "ferret"
+species_key = get_species_key("Mustela furo")  # ferret
 
 print(species_key)
 
