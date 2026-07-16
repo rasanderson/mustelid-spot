@@ -39,7 +39,7 @@ PER_PAGE = 200
 
 def download_species(taxon_name, folder_name):
 
-    output_dir = Path(f"images/images_raw/{folder_name}")
+    output_dir = Path(f"images/inat/{folder_name}")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     downloaded = 0

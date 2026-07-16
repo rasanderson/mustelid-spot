@@ -16,7 +16,7 @@ from pyinaturalist import get_observations
 # - Martes martes (pinemarten)
 # - Mustela furo (ferret)
 TAXON_NAME = "Mustela furo"  # ferret
-OUTPUT_DIR = pathlib.Path("images/images_raw/ferret")
+OUTPUT_DIR = pathlib.Path("images/inat/ferret")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 TARGET_IMAGES = 1000
