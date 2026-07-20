@@ -10,13 +10,14 @@ from PytorchWildlife.models import detection as pw_detection
 # CONFIGURATION
 # ============================================================
 
-INPUT_ROOT = Path("images/images_raw")
-OUTPUT_ROOT = Path("images/images_crop")
+INPUT_ROOT = Path("images/lila")
+OUTPUT_ROOT = Path("images/lila_crop")
 
 SPECIES = [
+    "ferret",
     "mink",
     "otter",
-    "pine_marten",
+    "pinemarten",
     "polecat",
     "stoat",
     "weasel",
