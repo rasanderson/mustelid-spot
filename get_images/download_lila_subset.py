@@ -14,7 +14,7 @@ Features:
 - Progress tracking and download statistics
 - Metadata management and caching
 
-Current configuration: Downloads bear images with 10 image limit per dataset.
+Current configuration: Downloads pine marten images with 1000 image limit per dataset.
 Modify species_of_interest list to target different animals (foxes, etc.).
 
 Requires MegaDetector utilities and LILA metadata access.
@@ -37,8 +37,9 @@ for s in lila_base_urls.values():
     assert s.endswith('/')
 
 # If any of these strings appear in the common name of a species, we'll download that image
-species_of_interest = ['stoat','european stoat','ermine','eurasian stoat', 'eurasian ermine']
-species_name = "stoat"
+# Note: pine marten absent from lila dataset
+species_of_interest = ['pine marten','pinemarten']
+species_name = "pine_marten" # Used for folder name, etc.
 
 # Global LILA root
 lila_root = os.path.expanduser("images/lila")
@@ -158,9 +159,6 @@ download_results = parallel_download_urls(url_to_target_file=url_to_target_file,
                                           pool_type='thread')
 
 
-#%% Open output folder
-
-open_file(output_dir)
 
 
 #%% Scrap
