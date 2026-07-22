@@ -1,6 +1,6 @@
 # Download photos using pyinaturalise
 
-import pathlib
+import pathlib  
 import requests
 from pyinaturalist import get_observations
 
@@ -15,8 +15,8 @@ from pyinaturalist import get_observations
 # - Mustela nivalis (weasel)
 # - Martes martes (pinemarten)
 # - Mustela furo (ferret)
-TAXON_NAME = "Mustela furo"  # ferret
-OUTPUT_DIR = pathlib.Path("images/inat/ferret")
+TAXON_NAME = "Martes martes"  # pinemarten
+OUTPUT_DIR = pathlib.Path("images/inat/pinemarten")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 TARGET_IMAGES = 1000
@@ -52,33 +52,40 @@ while downloaded < TARGET_IMAGES:
 
         photos = obs.get("photos", [])
 
-        for photo in photos:
+        if not photos:
+            continue
 
-            if downloaded >= TARGET_IMAGES:
-                break
+        photo = photos[0]
 
-            # Use a higher-resolution image
-            image_url = photo["url"].replace("square", "original")
+        if downloaded >= TARGET_IMAGES:
+            break
 
-            photo_id = photo["id"]
-            obs_id = obs["id"]
+        # Use a higher-resolution image
+        image_url = photo["url"].replace("square", "original")
 
-            filename = OUTPUT_DIR / f"{obs_id}_{photo_id}.jpg"
+        photo_id = photo["id"]
+        obs_id = obs["id"]
+        #print(
+        #    f"Obs {obs_id}: {len(photos)} photos "
+        #    f"https://www.inaturalist.org/observations/{obs_id}"
+        #)
 
-            try:
-                r = requests.get(image_url, timeout=30)
-                r.raise_for_status()
+        filename = OUTPUT_DIR / f"{obs_id}_{photo_id}.jpg"
 
-                with open(filename, "wb") as f:
-                    f.write(r.content)
+        try:
+            r = requests.get(image_url, timeout=30)
+            r.raise_for_status()
 
-                downloaded += 1
+            with open(filename, "wb") as f:
+                f.write(r.content)
 
-                if downloaded % 50 == 0:
-                    print(f"Downloaded {downloaded} images")
+            downloaded += 1
 
-            except Exception as e:
-                print(f"Failed: {filename}: {e}")
+            if downloaded % 50 == 0:
+                print(f"Downloaded {downloaded} images")
+
+        except Exception as e:
+            print(f"Failed: {filename}: {e}")
 
     page += 1
 
